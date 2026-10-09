@@ -4,8 +4,8 @@
     {
       "name": "site",
       "runtimeExecutable": "uv",
-      "runtimeArgs": ["run", "--no-project", "python", "-m", "http.server", "8765", "--directory", "site"],
-      "port": 8765
+      "runtimeArgs": ["run", "betting-apps-blog", "--port", "8000"],
+      "port": 8000
     }
   ]
 }
