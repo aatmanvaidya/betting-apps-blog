@@ -1,0 +1,1669 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>Win Guaranteed, Withdrawal Pending</title>
+<meta name="description" content="How illegal betting apps recruit Indians through Facebook and Instagram, and what users report after they sign up. A data story from 10,526 ads, 2,695 Instagram posts and 329,501 one-star reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@500;600;700;800&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
+<style>
+/* Layout: a long-read column (40rem) with wide breakouts (74rem) for charts and ad specimens,
+   and full-bleed always-dark "stage" sections where the ads themselves take over. */
+:root{
+  --bg:#F4F4F0; --surface:#FFFFFF; --ink:#141417; --ink-2:#4D4D56; --ink-3:#83838C; --rule:#D7D6CF; --chip:#EAE9E3;
+  --red:#C8102E; --paid:#2F46B8; --organic:#D27700; --hl:rgba(255,186,0,.36);
+  --stage:#0B0B0E; --stage-2:#16161B; --stage-3:#202027; --stage-ink:#F2F1EC; --stage-ink-2:#A8A7AF; --stage-rule:#2D2D35; --stage-red:#FF3B4F;
+  --f-display:"Eczar","Iowan Old Style",Georgia,serif;
+  --f-body:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  --f-ui:"Libre Franklin","Helvetica Neue",Arial,sans-serif;
+  --col:40rem; --wide:74rem; --gut:clamp(16px,4vw,44px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F0F12; --surface:#18181D; --ink:#ECEBE6; --ink-2:#ABAAB2; --ink-3:#7A7982; --rule:#2B2B31; --chip:#232329;
+    --red:#FF4A5D; --paid:#93A1FF; --organic:#FFB23A; --hl:rgba(255,186,0,.24); color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F0F12; --surface:#18181D; --ink:#ECEBE6; --ink-2:#ABAAB2; --ink-3:#7A7982; --rule:#2B2B31; --chip:#232329;
+  --red:#FF4A5D; --paid:#93A1FF; --organic:#FFB23A; --hl:rgba(255,186,0,.24); color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1.1875rem;line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+@media (max-width:640px){body{font-size:1.0625rem;line-height:1.58}}
+img{max-width:100%;height:auto}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.18em}
+a:hover{color:var(--red)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:2px}
+::selection{background:var(--hl)}
+.wrap{padding-inline:var(--gut)}
+.col{max-width:var(--col);margin-inline:auto}
+.wide{max-width:var(--wide);margin-inline:auto}
+section{padding-block:clamp(56px,9vw,120px)}
+.prose p{margin:0 0 1.1em}
+.prose p:last-child{margin-bottom:0}
+.kicker{font:700 .74rem/1.2 var(--f-ui);letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin:0 0 .9rem}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0}
+h2.chap{font-weight:700;font-size:clamp(2.3rem,5.4vw,4.2rem);line-height:1;letter-spacing:-.012em;margin-bottom:1.6rem}
+h3.sub{font-weight:700;font-size:clamp(1.5rem,2.6vw,2rem);line-height:1.1;margin:3.2rem 0 1rem}
+.lede{font-size:1.32em;line-height:1.45;color:var(--ink)}
+.dim{color:var(--ink-2)}
+mark{background:linear-gradient(transparent 12%,var(--hl) 12%,var(--hl) 88%,transparent 88%);color:inherit;padding:0 .1em}
+.num{font-variant-numeric:tabular-nums lining-nums}
+.ui{font-family:var(--f-ui)}
+.note{font:400 .84rem/1.5 var(--f-ui);color:var(--ink-3)}
+.caption{font:400 .86rem/1.45 var(--f-ui);color:var(--ink-2)}
+.caption b{color:var(--ink);font-weight:600}
+.src{font:500 .74rem/1.4 var(--f-ui);color:var(--ink-3);letter-spacing:.01em}
+hr.rule{border:0;border-top:1px solid var(--rule);margin:0}
+
+/* ---------- top bar ---------- */
+.topbar{position:fixed;inset:0 0 auto 0;z-index:50;padding-top:env(safe-area-inset-top,0px);background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule);transform:translateY(-110%);transition:transform .35s ease}
+.topbar.on{transform:none}
+.topbar .in{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:42px;padding-inline:var(--gut);font:600 .8rem/1 var(--f-ui)}
+.topbar{overflow:hidden}
+.topbar .t{font-family:var(--f-display);font-weight:700;font-size:1rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0}
+.topbar .ch{color:var(--ink-2);white-space:nowrap;letter-spacing:.06em;text-transform:uppercase;font-size:.7rem;flex:none}
+@media (max-width:480px){.topbar .t{font-size:.9rem}}
+.topbar .bar{position:absolute;left:0;bottom:-1px;height:2px;background:var(--red);width:0}
+
+/* ---------- stage (always dark) ---------- */
+.stage{background:var(--stage);color:var(--stage-ink);--ink:var(--stage-ink);--ink-2:var(--stage-ink-2);--ink-3:#7E7D86;--rule:var(--stage-rule);--surface:var(--stage-2);--chip:var(--stage-3);--red:var(--stage-red);color-scheme:dark}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;padding-block:clamp(96px,11vw,150px) clamp(44px,6vw,72px);isolation:isolate}
+.hero .mosaic{position:absolute;inset:-4% -4% -4% -4%;background:url(assets/img/mosaic.webp) 0 0/1920px auto repeat;opacity:.5;filter:saturate(.9) contrast(1.05);z-index:-2;animation:drift 160s linear infinite}
+@keyframes drift{to{background-position:-1920px -960px}}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(11,11,14,.97) 0%,rgba(11,11,14,.9) 38%,rgba(11,11,14,.55) 72%,rgba(11,11,14,.35) 100%),linear-gradient(0deg,rgba(11,11,14,1) 0%,rgba(11,11,14,0) 30%)}
+.hero .kicker{color:var(--stage-red)}
+.hero h1{font-weight:800;font-size:clamp(2.9rem,7.2vw,7rem);line-height:.92;letter-spacing:-.025em}
+.hero h1 .l1,.hero h1 .l2{display:block}
+.hero h1 .l2{color:var(--stage-red)}
+.hero h1 .l2 span{position:relative}
+.hero .dek{max-width:34rem;font-size:clamp(1.12rem,1.8vw,1.32rem);line-height:1.5;color:#DAD9D3;margin:2rem 0 1.6rem}
+.hero .by{font:500 .9rem/1.5 var(--f-ui);color:var(--stage-ink-2)}
+.hero .by b{color:var(--stage-ink);font-weight:700}
+.tally{display:flex;flex-wrap:wrap;gap:1px;margin-top:2.4rem;background:var(--stage-rule);border:1px solid var(--stage-rule);max-width:46rem}
+.tally div{flex:1 1 11rem;background:rgba(11,11,14,.86);padding:1rem 1.1rem}
+.tally b{display:block;font:800 clamp(1.7rem,3.4vw,2.4rem)/1 var(--f-display);color:var(--stage-ink);font-variant-numeric:tabular-nums}
+.tally span{font:500 .78rem/1.35 var(--f-ui);color:var(--stage-ink-2)}
+.hero .mnote{position:absolute;right:var(--gut);bottom:1rem;font:500 .72rem/1.3 var(--f-ui);color:#8F8E96;max-width:16rem;text-align:right}
+@media (max-width:640px){.hero .mnote{position:static;text-align:left;margin-top:1.4rem}}
+
+/* ---------- intro / sources ---------- */
+.dropcap::first-letter{font-family:var(--f-display);font-weight:800;float:left;font-size:4.1em;line-height:.82;margin:.06em .09em 0 0;color:var(--red)}
+.sources{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:2.6rem;border-top:2px solid var(--ink)}
+.sources .s{padding:1.4rem 1.4rem 1.6rem 0;position:relative}
+.sources .s+.s{padding-left:1.4rem;border-left:1px solid var(--rule)}
+.sources .ico{height:72px;margin-bottom:1rem;display:block}
+.sources .lab{font:700 .72rem/1 var(--f-ui);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.sources .big{font:800 clamp(2rem,3.6vw,2.9rem)/1 var(--f-display);margin:.5rem 0 .4rem;font-variant-numeric:tabular-nums}
+.sources .what{font:600 1rem/1.35 var(--f-ui);margin-bottom:.4rem}
+.sources .how{font:400 .88rem/1.45 var(--f-ui);color:var(--ink-2)}
+.sources .stagewd{position:absolute;top:-.85rem;left:0;background:var(--bg);padding-right:.5rem;font:700 .7rem/1.4 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
+.sources .s+.s .stagewd{left:1.4rem;padding-inline:.5rem}
+@media (max-width:760px){.sources{grid-template-columns:minmax(0,1fr)}.sources .s+.s{padding-left:0;border-left:0;border-top:1px solid var(--rule)}.sources .s+.s .stagewd{left:0;padding-left:0}}
+
+/* ---------- scrolly sieve ---------- */
+.scrolly{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,25rem);gap:clamp(24px,4vw,64px);align-items:start}
+.scrolly .gfx{position:sticky;top:64px;height:calc(100vh - 88px);display:flex;flex-direction:column;justify-content:center;grid-column:1;grid-row:1}
+.scrolly .steps{grid-column:2;grid-row:1}
+.scrolly canvas{width:100%;display:block}
+.step{min-height:78vh;display:flex;align-items:center}
+.step:first-child{min-height:55vh;align-items:flex-start}
+.step:last-child{min-height:70vh}
+.step .card{background:var(--surface);border:1px solid var(--rule);padding:1.3rem 1.4rem;border-radius:4px;box-shadow:0 1px 0 rgba(0,0,0,.03);font-size:1.05rem;line-height:1.55;opacity:.45;transition:opacity .3s}
+.step.on .card{opacity:1;border-color:var(--ink-3)}
+.step .card b.n{font:800 1.9rem/1 var(--f-display);display:block;margin-bottom:.4rem;font-variant-numeric:tabular-nums}
+.legend{display:flex;flex-wrap:wrap;gap:.4rem 1.1rem;font:500 .78rem/1.3 var(--f-ui);color:var(--ink-2);margin-top:.9rem;min-height:2.6em}
+.legend i{display:inline-block;width:.8em;height:.8em;margin-right:.4em;vertical-align:-.05em;border-radius:1px}
+@media (max-width:860px){
+  .scrolly{grid-template-columns:minmax(0,1fr)}
+  .scrolly .gfx{top:44px;height:auto;padding-block:.6rem;background:var(--bg);z-index:2}
+  .scrolly .steps{grid-column:1;grid-row:2;position:relative;z-index:3}
+  .step{min-height:70vh}
+  .step .card{opacity:1;box-shadow:0 6px 24px rgba(0,0,0,.12)}
+  .step:first-child{min-height:40vh}
+}
+
+/* ---------- stat row ---------- */
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--rule);border-block:1px solid var(--rule);margin:2.6rem 0}
+.stats>div{background:var(--bg);padding:1.3rem 1.2rem 1.4rem}
+.stats b{display:block;font:800 clamp(2.6rem,5.6vw,4.4rem)/.95 var(--f-display);font-variant-numeric:tabular-nums;color:var(--red);letter-spacing:-.02em}
+.stats span{display:block;font:500 .9rem/1.4 var(--f-ui);color:var(--ink-2);margin-top:.6rem}
+.stats span strong{color:var(--ink);font-weight:700}
+@media (max-width:680px){.stats{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- ad specimen ---------- */
+.ad{margin:0;background:var(--surface);border:1px solid var(--rule);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;font-family:var(--f-ui);min-width:0}
+.ad-head{display:flex;gap:.55rem;align-items:center;padding:.6rem .7rem .45rem}
+.ad-av{width:26px;height:26px;border-radius:50%;flex:none;background:var(--chip);display:grid;place-items:center;font:700 .66rem/1 var(--f-ui);color:var(--ink-3)}
+.ad-page{font:700 .8rem/1.2 var(--f-ui);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ad-page.masked{font-style:italic;font-weight:500;color:var(--ink-2)}
+.ad-sub{font:400 .7rem/1.3 var(--f-ui);color:var(--ink-3)}
+.ad-text{font:400 .8rem/1.4 var(--f-ui);padding:0 .7rem .55rem;margin:0;color:var(--ink);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;white-space:pre-line}
+.ad-media{position:relative;background:#000;display:block;border:0;padding:0;width:100%;cursor:zoom-in}
+.ad-media img{display:block;width:100%;height:auto;max-height:min(70vh,560px);object-fit:contain}
+.ad-media.vid{cursor:pointer}
+.ad-media video{display:block;width:100%;height:auto;background:#000}
+.play{position:absolute;left:.7rem;bottom:.7rem;background:rgba(11,11,14,.82);color:#fff;font:700 .72rem/1 var(--f-ui);letter-spacing:.08em;text-transform:uppercase;padding:.55rem .7rem;border-radius:3px;display:flex;gap:.45rem;align-items:center}
+.play::before{content:"";width:0;height:0;border-left:8px solid currentColor;border-top:5px solid transparent;border-bottom:5px solid transparent}
+.ad-foot{display:flex;justify-content:space-between;align-items:center;gap:.5rem;padding:.5rem .7rem;background:var(--chip);font:600 .68rem/1.3 var(--f-ui);text-transform:uppercase;letter-spacing:.05em;color:var(--ink-2)}
+.ad-foot span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.ad-foot .arrow{flex:none;color:var(--ink-3)}
+.ad figcaption,.post figcaption{padding:.65rem .7rem .8rem;font:400 .8rem/1.45 var(--f-ui);color:var(--ink-2);border-top:1px solid var(--rule)}
+.ad figcaption b,.post figcaption b{color:var(--ink);font-weight:600}
+.stamp{display:inline-block;font:700 .62rem/1 var(--f-ui);letter-spacing:.11em;text-transform:uppercase;padding:.32rem .42rem .28rem;border:1.5px solid currentColor;color:var(--red);border-radius:2px;white-space:nowrap}
+.stamp.ink{color:var(--ink-2)}
+.stamps{display:flex;flex-wrap:wrap;gap:.3rem;margin-bottom:.45rem}
+.post{margin:0;background:var(--surface);border:1px solid var(--rule);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.post .ad-media{aspect-ratio:auto}
+.post .tag{font:700 .7rem/1 var(--f-ui);color:var(--organic);padding:.6rem .7rem .2rem;letter-spacing:.02em}
+#finGrid{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:900px){#finGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.grid-ex{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,13.5rem),1fr));gap:1rem;align-items:start}
+
+/* ---------- narrative explorer ---------- */
+.explorer{display:grid;grid-template-columns:minmax(0,19rem) minmax(0,1fr);gap:clamp(20px,3vw,44px);margin-top:2rem;align-items:start}
+.nlist{display:flex;flex-direction:column;border-top:2px solid var(--ink)}
+.nbtn{all:unset;box-sizing:border-box;cursor:pointer;padding:.75rem .2rem .8rem;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:1fr auto;gap:.15rem .8rem;align-items:center;font-family:var(--f-ui)}
+.nbtn .nl{font:600 .95rem/1.25 var(--f-ui)}
+.nbtn .np{font:700 .82rem/1 var(--f-ui);font-variant-numeric:tabular-nums;color:var(--ink-2);text-align:right}
+.nbtn .mini{grid-column:1/-1;display:grid;gap:3px;margin-top:.35rem}
+.nbtn .mini i{display:block;height:4px;border-radius:2px;background:var(--paid);min-width:2px}
+.nbtn .mini i.o{background:var(--organic)}
+.nbtn[aria-selected="true"]{box-shadow:inset 3px 0 0 var(--red);padding-left:.8rem}
+.nbtn[aria-selected="true"] .nl{color:var(--red)}
+.nbtn:hover .nl{color:var(--red)}
+.npanel h3{font:700 clamp(1.6rem,3vw,2.3rem)/1.05 var(--f-display);margin-bottom:.6rem}
+.npanel .def{font-size:1.08rem;color:var(--ink-2);margin:0 0 1.2rem;max-width:38rem}
+.pair{display:flex;gap:2rem;flex-wrap:wrap;margin-bottom:1.4rem;font-family:var(--f-ui)}
+.pair div{min-width:9rem}
+.pair b{display:block;font:800 2.3rem/1 var(--f-display);font-variant-numeric:tabular-nums}
+.pair .p b{color:var(--paid)} .pair .o b{color:var(--organic)}
+.pair span{font:600 .74rem/1.3 var(--f-ui);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+@media (max-width:860px){
+  .explorer{grid-template-columns:minmax(0,1fr)}
+  .nlist{flex-direction:row;overflow-x:auto;border-top:0;border-bottom:1px solid var(--rule);gap:.4rem;padding-bottom:.6rem;scrollbar-width:thin}
+  .nbtn{border:1px solid var(--rule);border-radius:999px;padding:.45rem .8rem;flex:none;display:flex;gap:.5rem}
+  .nbtn .mini{display:none}
+  .nbtn[aria-selected="true"]{box-shadow:none;padding-left:.8rem;border-color:var(--red)}
+}
+.key{display:flex;flex-wrap:wrap;gap:.3rem 1.2rem;font:500 .8rem/1.3 var(--f-ui);color:var(--ink-2)}
+.key i{display:inline-block;width:.75em;height:.75em;border-radius:50%;margin-right:.4em;vertical-align:-.04em}
+.key .kp i{background:var(--paid)} .key .ko i{background:var(--organic)}
+
+/* ---------- horizontal bars (html) ---------- */
+.hbars{display:grid;gap:.85rem;font-family:var(--f-ui)}
+.hbar .lab{display:flex;justify-content:space-between;gap:1rem;font:500 .88rem/1.3 var(--f-ui);margin-bottom:.3rem}
+.hbar .lab b{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.hbar .track{height:12px;background:var(--chip);border-radius:1px;position:relative}
+.hbar .fill{position:absolute;inset:0 auto 0 0;background:var(--ink);border-radius:1px;transition:width .8s cubic-bezier(.2,.7,.2,1)}
+.hbar.hot .fill{background:var(--red)}
+.hbar .sub{font:400 .76rem/1.4 var(--f-ui);color:var(--ink-3);margin-top:.3rem}
+button.hbar{all:unset;box-sizing:border-box;display:block;cursor:pointer;width:100%;padding:.35rem .5rem .45rem;margin:-.35rem -.5rem -.45rem;border-radius:4px}
+button.hbar:hover{background:var(--chip)}
+button.hbar[aria-pressed="true"]{background:var(--chip);box-shadow:inset 3px 0 0 var(--red)}
+button.hbar:focus-visible{outline:2px solid var(--red)}
+
+/* ---------- two-col layouts ---------- */
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:start}
+.split-3-2{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:clamp(24px,4vw,64px);align-items:start}
+@media (max-width:860px){.split,.split-3-2{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- faces (stage) ---------- */
+.faces .lede{color:#E5E4DF}
+.vwall{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin-top:2.4rem;align-items:start}
+@media (max-width:1000px){.vwall{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.vwall{grid-template-columns:minmax(0,1fr)}}
+.vwall .ad{background:var(--stage-2);border-color:var(--stage-rule)}
+.vwall .ad-media.vid img{aspect-ratio:1/1;object-fit:cover}
+.vwall .ad-media.vid .orig{position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity .35s}
+.vwall .ad-media.vid:hover .orig,.vwall .ad-media.vid:focus-visible .orig{opacity:1}
+.vwall .hint{position:absolute;right:.6rem;bottom:.7rem;font:600 .64rem/1 var(--f-ui);letter-spacing:.08em;text-transform:uppercase;color:#C9C8C2;background:rgba(11,11,14,.7);padding:.4rem .45rem;border-radius:2px}
+.gantt{margin-top:2.6rem}
+.gantt h4{font:700 1rem/1.3 var(--f-ui);margin:0 0 .2rem;color:var(--stage-ink)}
+.gantt .fsub{font:400 .86rem/1.4 var(--f-ui);color:var(--stage-ink-2);margin:0 0 .8rem}
+.dfbadge{position:absolute;top:.6rem;left:.6rem;z-index:2}
+.dfbadge .stamp{background:rgba(11,11,14,.8);color:var(--stage-red)}
+.cloak{display:grid;grid-template-columns:minmax(0,22rem) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:center;margin-top:4rem;padding-top:3rem;border-top:1px solid var(--stage-rule)}
+@media (max-width:860px){.cloak{grid-template-columns:minmax(0,1fr)}}
+.hidden-media{aspect-ratio:1/1;display:grid;place-items:center;text-align:center;padding:1.4rem;background:repeating-linear-gradient(135deg,var(--stage-3) 0 10px,var(--stage-2) 10px 20px);color:var(--stage-ink-2);font:600 .82rem/1.45 var(--f-ui);cursor:pointer;border:0;width:100%}
+.hidden-media strong{display:block;color:var(--stage-ink);font-size:.95rem;margin-bottom:.6rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font:700 .8rem/1 var(--f-ui);letter-spacing:.06em;text-transform:uppercase;padding:.8rem 1rem;border:1.5px solid currentColor;border-radius:3px;background:transparent;cursor:pointer;color:var(--red)}
+.btn:hover{background:var(--red);color:var(--bg)}
+.stage .btn:hover{color:var(--stage)}
+.bignum{font:800 clamp(3.4rem,8vw,6.4rem)/.9 var(--f-display);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+
+/* ---------- crash ---------- */
+.crashbox{background:var(--stage);color:var(--stage-ink);border-radius:10px;overflow:hidden;border:1px solid var(--stage-rule)}
+.hist{display:flex;gap:.35rem;padding:.7rem .8rem;overflow:hidden;border-bottom:1px solid var(--stage-rule);font:700 .74rem/1 var(--f-ui);font-variant-numeric:tabular-nums;mask-image:linear-gradient(90deg,#000 80%,transparent)}
+.hist span{padding:.32rem .5rem;border-radius:999px;background:var(--stage-3);color:#9DA6FF;flex:none}
+.hist span.m{color:#C49BFF}.hist span.h{color:#FF7AB6}
+.crashbox canvas{display:block;width:100%;height:260px}
+.crashbox .foot{display:flex;justify-content:space-between;gap:1rem;padding:.6rem .8rem;font:500 .74rem/1.3 var(--f-ui);color:var(--stage-ink-2);border-top:1px solid var(--stage-rule)}
+.sim{margin-top:2rem;background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:clamp(16px,2.4vw,28px)}
+.sim .ctrl{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:flex-end;font-family:var(--f-ui)}
+.sim label{display:block;font:700 .72rem/1 var(--f-ui);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-bottom:.55rem}
+.sim .tv{font:800 2.2rem/1 var(--f-display);font-variant-numeric:tabular-nums}
+.sim .tv small{font:500 .82rem/1 var(--f-ui);color:var(--ink-2);margin-left:.4rem}
+.sim input[type=range]{width:min(22rem,100%);accent-color:var(--red)}
+.sim .ctrl>div:first-child{flex:1 1 18rem}
+.sim canvas{width:100%;height:300px;display:block;margin-top:1.2rem}
+.simstats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1rem;font-family:var(--f-ui)}
+.simstats b{display:block;font:800 1.9rem/1 var(--f-display);font-variant-numeric:tabular-nums}
+.simstats span{font:500 .8rem/1.35 var(--f-ui);color:var(--ink-2)}
+@media (max-width:600px){.simstats{grid-template-columns:minmax(0,1fr)}.sim canvas{height:240px}}
+
+/* ---------- svg charts ---------- */
+.chart{width:100%;overflow:visible;font-family:var(--f-ui);font-size:12px;fill:var(--ink-2)}
+.chartbox{position:relative}
+.figure{margin:2.4rem 0}
+.figure h4{font:700 1rem/1.3 var(--f-ui);margin:0 0 .2rem}
+.figure .fsub{font:400 .86rem/1.4 var(--f-ui);color:var(--ink-2);margin:0 0 1rem}
+
+/* ---------- hashtag browser ---------- */
+.tabs{display:flex;flex-wrap:wrap;gap:.4rem;margin:1.6rem 0 1.2rem}
+.tab{border:1px solid var(--rule);background:var(--surface);border-radius:999px;padding:.45rem .8rem;font:600 .82rem/1 var(--f-ui);cursor:pointer;display:flex;gap:.45rem;align-items:center}
+.tab small{font-weight:500;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tab[aria-selected="true"] small{color:inherit;opacity:.7}
+.igwrap{display:grid;grid-template-columns:minmax(0,46rem) minmax(0,18rem);justify-content:space-between;gap:clamp(20px,3vw,40px);align-items:start}
+@media (max-width:860px){.igwrap{grid-template-columns:minmax(0,1fr)}}
+.iggrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;background:var(--surface);padding:4px;border:1px solid var(--rule);border-radius:6px}
+.iggrid button{all:unset;cursor:zoom-in;position:relative;aspect-ratio:1/1;overflow:hidden;background:var(--chip);display:block}
+.iggrid button:focus-visible{outline:2px solid var(--red);outline-offset:-2px}
+.iggrid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.iggrid button:hover img{transform:scale(1.04)}
+.iggrid .ai{position:absolute;top:6px;left:6px}
+.iggrid .ai .stamp{background:rgba(11,11,14,.75);color:#FF6B7C;border-color:currentColor;font-size:.56rem}
+.tagnote h4{font:800 1.6rem/1.1 var(--f-display);margin:0 0 .5rem;color:var(--organic)}
+.tagnote p{font:400 .95rem/1.5 var(--f-ui);color:var(--ink-2);margin:0 0 1rem}
+.tagnote .tn{font:800 2.6rem/1 var(--f-display);font-variant-numeric:tabular-nums}
+.tagnote .tl{font:500 .8rem/1.3 var(--f-ui);color:var(--ink-3)}
+.profile{display:grid;grid-template-columns:auto 1fr;gap:1rem 1.2rem;align-items:center;background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:1.2rem;font-family:var(--f-ui)}
+.profile .pic{width:76px;height:76px;border-radius:50%;background:conic-gradient(var(--organic),var(--red),var(--paid),var(--organic));padding:3px}
+.profile .pic div{width:100%;height:100%;border-radius:50%;background:var(--chip);display:grid;place-items:center;font:800 1.5rem/1 var(--f-display);color:var(--ink-3)}
+.profile .row{display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;font:500 .82rem/1.2 var(--f-ui);color:var(--ink-2)}
+.profile .row b{display:block;font:700 1.05rem/1.2 var(--f-ui);color:var(--ink)}
+.profile .bio{grid-column:1/-1;font:400 .85rem/1.45 var(--f-ui);color:var(--ink-2)}
+.profile .bio b{color:var(--ink)}
+.profile .mini{grid-column:1/-1;display:grid;grid-template-columns:repeat(6,1fr);gap:3px}
+.profile .mini i{aspect-ratio:1;background:var(--chip);border-radius:2px;position:relative}
+.profile .mini i::after{content:"";position:absolute;inset:30% 20%;border-radius:2px;background:var(--organic);opacity:.55}
+.profile .mini i:nth-child(3n)::after{background:var(--red)}
+.profile .mini i:nth-child(4n)::after{background:var(--paid)}
+
+/* ---------- dumbbell ---------- */
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:999px;padding:3px;background:var(--surface);gap:2px;flex-wrap:wrap}
+.seg button{border:0;background:transparent;border-radius:999px;padding:.45rem .85rem;font:600 .8rem/1 var(--f-ui);cursor:pointer;color:var(--ink-2)}
+.seg button[aria-selected="true"]{background:var(--ink);color:var(--bg)}
+.db{margin-top:1.6rem;font-family:var(--f-ui)}
+.db .r{display:grid;grid-template-columns:minmax(0,13rem) minmax(0,1fr);gap:1rem;align-items:center;padding:.55rem 0;border-bottom:1px solid var(--rule)}
+.db .r .l{font:600 .9rem/1.25 var(--f-ui)}
+.db .tr{position:relative;height:30px}
+.db .tr .base{position:absolute;left:0;right:0;top:50%;height:1px;background:var(--rule)}
+.db .tr .ln{position:absolute;top:calc(50% - 1.5px);height:3px;background:var(--ink-3);opacity:.45;transition:left .7s,width .7s}
+.db .dot{position:absolute;top:50%;width:13px;height:13px;margin:-6.5px 0 0 -6.5px;border-radius:50%;transition:left .7s;border:2px solid var(--bg)}
+.db .dot.p{background:var(--paid)} .db .dot.o{background:var(--organic)}
+.db .v{position:absolute;top:-2px;font:700 .72rem/1 var(--f-ui);font-variant-numeric:tabular-nums;transform:translateX(-50%);transition:left .7s;white-space:nowrap}
+.db .v.p{color:var(--paid);top:auto;bottom:-3px}
+.db .v.o{color:var(--organic)}
+.db .axis{display:grid;grid-template-columns:minmax(0,13rem) minmax(0,1fr);gap:1rem;font:500 .72rem/1 var(--f-ui);color:var(--ink-3)}
+.db .axis div:last-child{display:flex;justify-content:space-between}
+@media (max-width:600px){.db .r,.db .axis{grid-template-columns:minmax(0,1fr);gap:.2rem}.db .axis div:first-child{display:none}}
+
+/* ---------- funnel ---------- */
+.chat{max-width:24rem;background:var(--surface);border:1px solid var(--rule);border-radius:16px;padding:1rem;font:400 .92rem/1.35 var(--f-ui);display:flex;flex-direction:column;gap:.5rem}
+.chat .meta{text-align:center;font:500 .72rem/1.3 var(--f-ui);color:var(--ink-3);margin-bottom:.3rem}
+.bub{max-width:82%;padding:.6rem .8rem;border-radius:16px;background:var(--chip)}
+.bub small{display:block;font-size:.76rem;color:var(--ink-3);margin-top:.25rem;font-style:italic}
+.bub.me{align-self:flex-end;background:var(--paid);color:#fff}
+.bub.me small{color:rgba(255,255,255,.75)}
+
+/* ---------- reviews ---------- */
+.quotes{display:grid;gap:1rem}
+.q{margin:0;padding:1.1rem 1.2rem;background:var(--surface);border:1px solid var(--rule);border-radius:4px;position:relative}
+.q p{margin:0 0 .6rem;font:400 1.02rem/1.5 var(--f-body)}
+.q .stars{color:var(--red);letter-spacing:.1em;font-size:.8rem}
+.q footer{font:500 .76rem/1.3 var(--f-ui);color:var(--ink-3);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.q footer b{color:var(--ink-2);font-weight:700}
+.pv{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:0 1.4rem;align-items:center;padding:1.3rem 0;border-bottom:1px solid var(--rule)}
+.pv:first-of-type{border-top:2px solid var(--ink)}
+.pv .pr{font:700 clamp(1.05rem,1.9vw,1.35rem)/1.3 var(--f-display);color:var(--ink)}
+.pv .pr::before{content:"Ad";display:block;font:700 .66rem/1 var(--f-ui);letter-spacing:.14em;text-transform:uppercase;color:var(--organic);margin-bottom:.45rem}
+.pv .re{font:italic 400 1.05rem/1.45 var(--f-body);color:var(--ink)}
+.pv .re::before{content:"One-star review";display:block;font:700 .66rem/1 var(--f-ui);font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:.45rem}
+.pv .re small{display:block;font:500 .74rem/1.3 var(--f-ui);font-style:normal;color:var(--ink-3);margin-top:.35rem}
+.pv .ar{width:34px;height:2px;background:var(--ink-3);position:relative}
+.pv .ar::after{content:"";position:absolute;right:-1px;top:-4px;border-left:8px solid var(--ink-3);border-top:5px solid transparent;border-bottom:5px solid transparent}
+@media (max-width:700px){.pv{grid-template-columns:minmax(0,1fr);gap:.9rem}.pv .ar{transform:rotate(90deg);margin-left:.5rem}}
+.distress{background:var(--stage);color:var(--stage-ink);border-radius:10px;padding:clamp(22px,4vw,48px)}
+.distress blockquote{margin:0 0 1.6rem;font:500 clamp(1.4rem,2.8vw,2.1rem)/1.25 var(--f-display);text-wrap:balance}
+.distress blockquote::before{content:"“";color:var(--stage-red);margin-right:.05em}
+.distress blockquote::after{content:"”";color:var(--stage-red)}
+.distress .small{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));gap:1.2rem;margin-top:1rem}
+.distress .small p{font:italic 400 1rem/1.5 var(--f-body);color:#D6D5CF;margin:0;padding-left:.9rem;border-left:2px solid var(--stage-red)}
+.help{margin-top:1.8rem;padding-top:1.2rem;border-top:1px solid var(--stage-rule);font:500 .88rem/1.5 var(--f-ui);color:var(--stage-ink-2)}
+.help b{color:var(--stage-ink)}
+
+/* ---------- findings ---------- */
+.findings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:2.4rem}
+.findings article{background:var(--bg);padding:clamp(20px,3vw,36px)}
+.findings .fn{font:800 .75rem/1 var(--f-ui);letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.findings h3{font:700 clamp(1.4rem,2.4vw,1.9rem)/1.1 var(--f-display);margin:.7rem 0 .8rem}
+.findings p{font-size:1rem;line-height:1.55;color:var(--ink-2);margin:0}
+.findings .fig{font:800 2.6rem/1 var(--f-display);color:var(--ink);margin-top:1.2rem;font-variant-numeric:tabular-nums}
+.findings .fig small{display:block;font:500 .78rem/1.35 var(--f-ui);color:var(--ink-3);margin-top:.35rem}
+@media (max-width:760px){.findings{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- beyond ---------- */
+.heat{display:grid;grid-template-columns:auto 1fr 1fr;gap:3px;font:600 .8rem/1 var(--f-ui);max-width:24rem}
+.heat .h{font:700 .7rem/1 var(--f-ui);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);padding:.3rem 0;text-align:center}
+.heat .a{color:var(--ink-2);padding-right:.6rem;display:flex;align-items:center;font-variant-numeric:tabular-nums}
+.heat .c{padding:.75rem .5rem;text-align:center;font-variant-numeric:tabular-nums;border-radius:2px}
+.waffle{width:100%;display:block}
+
+/* ---------- methods ---------- */
+ol.pipe{list-style:none;padding:0;margin:2rem 0 0;counter-reset:p;display:grid;gap:0;border-top:2px solid var(--ink)}
+ol.pipe li{counter-increment:p;display:grid;grid-template-columns:3rem minmax(0,1fr) minmax(0,auto);gap:1rem;padding:1rem 0;border-bottom:1px solid var(--rule);align-items:baseline;font-family:var(--f-ui)}
+ol.pipe li::before{content:counter(p,decimal-leading-zero);font:800 1.1rem/1 var(--f-display);color:var(--red)}
+ol.pipe b{font:700 1rem/1.3 var(--f-ui)}
+ol.pipe span{display:block;font:400 .88rem/1.45 var(--f-ui);color:var(--ink-2);margin-top:.2rem}
+ol.pipe em{font:700 1.15rem/1 var(--f-display);font-style:normal;font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+@media (max-width:600px){ol.pipe li{grid-template-columns:2.4rem minmax(0,1fr)}ol.pipe em{grid-column:2;text-align:left}}
+.lims{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,16rem),1fr));gap:1.4rem;margin-top:1.6rem}
+.lims div{font:400 .92rem/1.5 var(--f-ui);color:var(--ink-2)}
+.lims b{display:block;color:var(--ink);font-weight:700;margin-bottom:.25rem}
+footer.site{padding-block:3rem 4rem;border-top:1px solid var(--rule);font:400 .88rem/1.55 var(--f-ui);color:var(--ink-2)}
+footer.site .fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));gap:1.6rem}
+footer.site b{color:var(--ink)}
+.links{list-style:none;padding:0;margin:.6rem 0 0;display:grid;gap:.45rem}
+
+/* ---------- lightbox ---------- */
+dialog.lb{border:0;padding:0;background:transparent;max-width:min(94vw,64rem);max-height:94vh;color:var(--stage-ink)}
+dialog.lb::backdrop{background:rgba(8,8,10,.86)}
+.lb-in{display:grid;grid-template-columns:minmax(0,auto) minmax(0,20rem);gap:0;background:var(--stage-2);border-radius:8px;overflow:hidden;max-height:92vh}
+.lb-in .m{background:#000;display:grid;place-items:center;min-width:0}
+.lb-in .m img{max-height:92vh;max-width:min(60vw,40rem);display:block;object-fit:contain}
+.lb-in .t{padding:1.4rem;font:400 .9rem/1.5 var(--f-ui);color:var(--stage-ink-2);overflow:auto}
+.lb-in .t h5{font:700 .7rem/1 var(--f-ui);letter-spacing:.14em;text-transform:uppercase;color:var(--stage-red);margin:0 0 .8rem}
+.lb-in .t p{margin:0 0 1rem;color:var(--stage-ink)}
+.lb-x{position:absolute;top:.5rem;right:.5rem;width:2.2rem;height:2.2rem;border-radius:50%;border:0;background:rgba(11,11,14,.8);color:#fff;font:700 1.1rem/1 var(--f-ui);cursor:pointer;z-index:2}
+@media (max-width:760px){.lb-in{grid-template-columns:minmax(0,1fr)}.lb-in .m img{max-width:94vw;max-height:60vh}}
+.lb-in .stamp{color:var(--stage-red)}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .hero .mosaic{animation:none}
+  *{transition-duration:.01ms!important}
+}
+</style>
+
+<header class="topbar" id="topbar" aria-hidden="true">
+  <div class="in"><span class="t">Win guaranteed. Withdrawal pending.</span><span class="ch" id="chap"></span></div>
+  <div class="bar" id="pbar"></div>
+</header>
+
+<main>
+<!-- ================= HERO ================= -->
+<section class="hero stage wrap" aria-labelledby="h1">
+  <div class="mosaic" aria-hidden="true"></div>
+  <div class="wide">
+    <p class="kicker">A data investigation · India · 2023–2025</p>
+    <h1 id="h1"><span class="l1">Win guaranteed.</span> <span class="l2">Withdrawal pending.</span></h1>
+    <p class="dek">Illicit betting apps find Indian users through a flood of Facebook and Instagram ads that promise quick, risk-free money. We read 10,526 of those ads, 2,695 Instagram posts and 329,501 one-star app reviews to compare the pitch with what people say happens after they sign up.</p>
+    <p class="by">Research by <b>Aatman Vaidya</b> (University of Tübingen) and <b>Kiran Garimella</b> (Rutgers University)</p>
+    <div class="tally num" role="list">
+      <div role="listitem"><b>10,526</b><span>betting ads from Meta’s Ad Library, annotated by hand</span></div>
+      <div role="listitem"><b>2,695</b><span>public Instagram posts from 10 betting hashtags</span></div>
+      <div role="listitem"><b>329,501</b><span>one-star Google Play reviews of 58 apps</span></div>
+    </div>
+  </div>
+  <p class="mnote">Behind this headline: 800 ad creatives from the study’s corpus.</p>
+</section>
+
+<!-- ================= INTRO ================= -->
+<section class="wrap" id="intro" data-chap="Introduction">
+  <div class="col prose">
+    <p class="lede dropcap">Online betting is now a multi-billion-dollar global industry. It sells sports bets, casino games, fantasy leagues and quick-fire prediction games, and cheap mobile data has put all of it in every pocket, at every hour.</p>
+    <p>In India the business sits in a legal grey zone. Gambling is regulated state by state. Many platforms describe themselves as “games of skill.” Offshore operators target Indian users from outside the country’s jurisdiction, and when they are blocked they return with new domains, new brand names and surrogate pages. News reports and public-health researchers have tied these apps to financial loss, debt, addiction and, in some cases, loss of life. A 2025 law aims to curb real-money gaming ads.</p>
+    <p>For most users, the first contact with a betting app is an ad in their feed: a short video, a celebrity, a screenshot of a winning slip. So this study starts with recruitment. What do the ads promise? How does that promise spread outside paid advertising? And how does it compare with what users report once they have downloaded the app and deposited their money?</p>
+  </div>
+
+  <div class="wide">
+    <div class="sources" role="list">
+      <div class="s" role="listitem">
+        <span class="stagewd">Recruitment</span>
+        <svg class="ico" viewBox="0 0 120 72" aria-hidden="true"><rect x="2" y="2" width="58" height="68" rx="6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="11" r="4" fill="currentColor" opacity=".3"/><rect x="19" y="8" width="26" height="3" rx="1.5" fill="currentColor" opacity=".3"/><rect x="8" y="18" width="46" height="32" fill="var(--red)"/><text x="31" y="38.5" text-anchor="middle" font-family="Eczar,serif" font-weight="800" font-size="13" fill="#fff">2.72x</text><rect x="8" y="55" width="46" height="9" fill="currentColor" opacity=".12"/><rect x="66" y="12" width="50" height="58" rx="6" fill="none" stroke="currentColor" stroke-width="2" opacity=".35"/><rect x="72" y="26" width="38" height="24" fill="currentColor" opacity=".18"/></svg>
+        <div class="lab">Paid ads · Meta Ad Library</div>
+        <div class="big">23,620</div>
+        <div class="what">What the industry pays to say</div>
+        <div class="how">Ads with downloadable images or video, 2023 to mid-2025. 10,526 turned out to promote betting.</div>
+      </div>
+      <div class="s" role="listitem">
+        <span class="stagewd">Normalization</span>
+        <svg class="ico" viewBox="0 0 120 72" aria-hidden="true"><g fill="currentColor"><rect x="2" y="2" width="21" height="21" opacity=".18"/><rect x="25" y="2" width="21" height="21" fill="var(--organic)"/><rect x="48" y="2" width="21" height="21" opacity=".18"/><rect x="2" y="25" width="21" height="21" fill="var(--organic)" opacity=".6"/><rect x="25" y="25" width="21" height="21" opacity=".18"/><rect x="48" y="25" width="21" height="21" fill="var(--organic)"/><rect x="2" y="48" width="21" height="21" opacity=".18"/><rect x="25" y="48" width="21" height="21" fill="var(--organic)" opacity=".6"/><rect x="48" y="48" width="21" height="21" opacity=".18"/></g><text x="80" y="44" font-family="Eczar,serif" font-weight="800" font-size="30" fill="currentColor">#</text></svg>
+        <div class="lab">Organic posts · Instagram</div>
+        <div class="big">2,695</div>
+        <div class="what">What circulates outside the ad system</div>
+        <div class="how">Public posts from ten hashtags such as #aviatorgame, #iplbetting and #colortrading.</div>
+      </div>
+      <div class="s" role="listitem">
+        <span class="stagewd">Harm</span>
+        <svg class="ico" viewBox="0 0 120 72" aria-hidden="true"><g font-family="Eczar,serif" font-size="26" font-weight="800"><text x="2" y="30" fill="var(--red)">★</text><text x="26" y="30" fill="currentColor" opacity=".18">★</text><text x="50" y="30" fill="currentColor" opacity=".18">★</text><text x="74" y="30" fill="currentColor" opacity=".18">★</text><text x="98" y="30" fill="currentColor" opacity=".18">★</text></g><rect x="2" y="42" width="110" height="3" rx="1.5" fill="currentColor" opacity=".3"/><rect x="2" y="52" width="86" height="3" rx="1.5" fill="currentColor" opacity=".3"/><rect x="2" y="62" width="98" height="3" rx="1.5" fill="currentColor" opacity=".3"/></svg>
+        <div class="lab">User reviews · Google Play</div>
+        <div class="big">329,501</div>
+        <div class="what">What users report afterwards</div>
+        <div class="how">Every one-star review of 58 betting and casino-style apps that the ads and posts linked to.</div>
+      </div>
+    </div>
+    <p class="note" style="margin-top:1rem">The three sources are linked by construction. Keywords found on Instagram, Telegram and betting websites drove the ad collection. The ads and posts revealed which apps were being pushed. Those apps defined the review corpus.</p>
+  </div>
+</section>
+
+<!-- ================= SIEVE (scrolly) ================= -->
+<section class="wrap" id="sieve" data-chap="Sifting the ads" style="padding-top:0">
+  <div class="wide">
+    <p class="kicker">Meta Ad Library · 2023–2025</p>
+    <h2 class="chap">Sifting 340,000 ads</h2>
+  </div>
+  <div class="wide scrolly">
+    <div class="gfx">
+      <canvas id="sieveCanvas" role="img" aria-label="Unit chart: each square is 100 ads. About 340,000 collected ads narrow to 10,526 betting ads."></canvas>
+      <div class="legend" id="sieveLegend"></div>
+    </div>
+    <div class="steps">
+      <div class="step" data-step="0"><div class="card"><b class="n">≈340,000</b>Our keyword list ran from “Aviator” and “IPL betting” to “colour trading” and “Mahadev Book.” We built it by following hashtags, Telegram groups and betting websites. It pulled about 340,000 unique ads out of Meta’s Ad Library. <span class="dim">Each square is 100 ads.</span></div></div>
+      <div class="step" data-step="1"><div class="card"><b class="n">290,394</b>Most were noise: ads for fiction-story apps, caught because their copy is full of words like “win.”</div></div>
+      <div class="step" data-step="2"><div class="card"><b class="n" style="color:var(--red)">20,591</b>These were already gone when we collected them. The Ad Library showed only a placeholder saying Meta had removed them.</div></div>
+      <div class="step" data-step="3"><div class="card"><b class="n">29,772</b>That left the ads that plausibly promoted betting, gambling or real-money gaming. We could download the creative for 23,620 of them: 14,069 images and 9,551 videos.</div></div>
+      <div class="step" data-step="4"><div class="card"><b class="n" style="color:var(--red)">10,526</b>Many creatives were near-copies. Perceptual hashing grouped them into 9,892 unique items, and one of us annotated every one by hand. 10,526 ads turned out to be betting ads. The rest of this story is about them.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PITCH ================= -->
+<section class="wrap" id="pitch" data-chap="The pitch" style="border-top:1px solid var(--rule)">
+  <div class="col prose">
+    <p class="kicker">What the ads say · 10,526 annotated ads</p>
+    <h2 class="chap">Nearly every ad sold easy money</h2>
+    <p>We coded each ad for what it promotes, how it tries to persuade, and which potentially harmful narratives it carries. The codebook grew out of the ads themselves: one of us annotated an initial batch, and new categories were added as they appeared.</p>
+    <p>Two narratives ran through almost the entire corpus. The ads were also built for conversion. 99.8% were aimed at signing up new users, 85.9% sold a specific feature such as an instant withdrawal or a sign-up bonus, and 59.1% leaned on social proof: winning slips, testimonials and screenshots of payouts.</p>
+  </div>
+  <div class="wide">
+    <div class="stats">
+      <div><b class="num">99.4%</b><span><strong>Easy money.</strong> Small stakes shown turning into large, quick wins.</span></div>
+      <div><b class="num">98.4%</b><span><strong>Risk minimization.</strong> Outcomes framed as safe, knowable or verified.</span></div>
+      <div><b class="num">67.4%</b><span><strong>Misleading or deceptive</strong> claims, by our annotation.</span></div>
+    </div>
+
+    <div class="split-3-2" style="margin-top:3rem">
+      <div>
+        <h3 class="sub" style="margin-top:0">Explore the narratives</h3>
+        <p class="caption" style="max-width:36rem">Pick a narrative to see how often it appeared in paid ads and in Instagram posts, with examples from the data. Ad cards show the page that ran the ad, how long it ran and where it linked, from the Ad Library record. Pages named after private individuals are not shown.</p>
+      </div>
+      <div class="key" style="align-self:end;justify-content:flex-end"><span class="kp"><i></i>Paid Meta ads</span><span class="ko"><i></i>Instagram posts</span></div>
+    </div>
+    <div class="explorer">
+      <div class="nlist" role="tablist" aria-label="Narratives" id="nlist"></div>
+      <div class="npanel" role="tabpanel" id="npanel" aria-live="polite"></div>
+    </div>
+
+    <div class="figure" style="margin-top:4.5rem">
+      <div class="split">
+        <div>
+          <h4>What the ads sold</h4>
+          <p class="fsub">Share of the 10,526 betting ads in each category. An ad can fall in more than one.</p>
+          <div class="hbars" id="catBars"></div>
+        </div>
+        <div class="prose" style="font-size:1.05rem">
+          <p>Casino games led, with slot machines spinning out jackpots and crash games climbing to 2.72x. Sports betting ads leaned on winning slips and “high-confidence” predictions across major and minor leagues.</p>
+          <p>Many casino-style ads never named an operator or a legal entity. They showed the win, the balance and the bonus (“200% welcome bonus”) and left out who was making the offer.</p>
+          <p>A fifth of the ads sold something else entirely.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINANCE ================= -->
+<section class="wrap" id="finance" data-chap="Camouflage" style="border-top:1px solid var(--rule)">
+  <div class="wide split">
+    <div class="prose">
+      <p class="kicker">Camouflage</p>
+      <h2 class="chap">Gambling dressed as finance</h2>
+      <p>One in five betting ads, 20.1%, sold trading or crypto. Lottery and jackpot formats added another 18.9%. These ads borrow the look of fintech: dashboards, candlestick charts, trading bots, tables that convert an “investment amount” into a “daily income.”</p>
+      <p>The disguise widens the audience beyond people who think of themselves as gamblers, and makes it harder to recognise the creative as prohibited betting promotion.</p>
+      <p>On Instagram, where people searching betting hashtags already know what they are looking for, the camouflage almost disappears.</p>
+    </div>
+    <div>
+      <div class="figure" style="margin-top:0">
+        <h4>Trading and crypto, as a share of each channel</h4>
+        <p class="fsub">Same codebook, two channels.</p>
+        <div class="hbars" id="finBars"></div>
+      </div>
+      <div class="q" style="margin-top:1.6rem">
+        <p style="font-family:var(--f-ui);font-size:.95rem"><b class="num" style="font:800 2rem/1 var(--f-display);display:block;margin-bottom:.4rem">115 ads</b>in our data linked to <b>tradingview.app-desktops-pc.com</b>, a domain that imitates the charting site TradingView. Its ads offered TradingView’s desktop app free, with Elon Musk’s photo.</p>
+      </div>
+    </div>
+  </div>
+  <div class="wide" style="margin-top:2.6rem">
+    <div class="grid-ex" id="finGrid"></div>
+  </div>
+</section>
+
+<!-- ================= FACES (stage) ================= -->
+<section class="wrap stage faces" id="faces" data-chap="Borrowed faces">
+  <div class="wide">
+    <div class="split">
+      <div class="prose">
+        <p class="kicker">Synthetic credibility</p>
+        <h2 class="chap">Borrowed faces</h2>
+        <p class="lede">Without a friend’s share or a creator’s following to vouch for them, paid ads manufacture trust. Fake news bulletins. Cloned voices. Celebrities who never said a word.</p>
+      </div>
+      <div class="prose" style="align-self:end">
+        <div class="pair"><div class="p"><b class="num" style="color:#9AA6FF">14.8%</b><span>of paid ads used AI-generated media</span></div><div class="o"><b class="num" style="color:#FFB23A">4.4%</b><span>of Instagram posts</span></div></div>
+        <p>Several deepfakes put Indian public figures behind the crash game Aviator, among them cricketer Virat Kohli, YouTuber CarryMinati, and businessmen Mukesh and Anant Ambani. Fact-checkers at <a href="https://www.boomlive.in/fact-check/virat-kohli-aaj-tak-shweta-singh-betting-app-aviator-deepfake-scam-26523" target="_blank" rel="noopener">BOOM</a> have documented the same campaign.</p>
+      </div>
+    </div>
+    <div class="vwall" id="vwall"></div>
+    <p class="src" style="margin-top:1rem">Clips are shown as they ran, for research and criticism. Every clip on this page is fabricated: none of the people shown endorsed these apps. Tap to play with sound.</p>
+
+    <div class="cloak">
+      <div id="cloakCard"></div>
+      <div class="prose">
+        <h3 class="sub" style="margin-top:0">The text says auto-clicker</h3>
+        <p>Look at what surrounds the two news-style deepfakes. Both ran from a page called <b>“File recovery V5 1002.”</b> The ad text reads <b>“Auto click x10000. Easy to use.”</b> The link goes to a Google Play listing. Nothing in the words mentions betting.</p>
+        <p>A system that reads the text sees a phone utility. A person who watches the video sees Virat Kohli promising that their money will multiply.</p>
+        <div style="display:flex;gap:2.4rem;flex-wrap:wrap;margin:1.8rem 0 1.2rem">
+          <div><div class="bignum">30</div><div class="caption" style="color:var(--stage-ink-2)">ads with this mismatch</div></div>
+          <div><div class="bignum">12</div><div class="caption" style="color:var(--stage-ink-2)">pages named after phone utilities</div></div>
+          <div><div class="bignum">30<span style="font-size:.45em;color:var(--stage-ink-2)">/30</span></div><div class="caption" style="color:var(--stage-ink-2)">linked to Google Play</div></div>
+        </div>
+        <p class="note" style="color:var(--stage-ink-2)">Pages with names like “Auto clicker 3103v4”, “File recovery V5 1002” and “1103 Launcher via4” ran these ads between September 2024 and June 2025. Most promoted Aviator. The Kohli clip alone ran as five separate ads from three pages. Counts come from the ad records released with the study, matched by name and by video fingerprint.</p>
+      </div>
+    </div>
+    <div class="gantt">
+      <h4>Two deepfakes, eight ads, five utility-named pages</h4>
+      <p class="fsub">Each bar is one ad, from first to last delivery. Same video, relaunched again and again.</p>
+      <div id="gantt"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CRASH ================= -->
+<section class="wrap" id="crash" data-chap="The game">
+  <div class="wide split">
+    <div class="prose">
+      <p class="kicker">The game being sold</p>
+      <h2 class="chap">The plane always flies away</h2>
+      <p>Aviator is a crash game. A multiplier climbs from 1.00x as a small plane takes off. Cash out before it flies away and your stake is multiplied. Wait too long and the stake is gone. Rounds last seconds, so a player can bet hundreds of times in an hour.</p>
+      <p>The ads sell it as something you can read. “Predictor” apps promise to call the crash from the strip of past results at the top of the screen. Telegram channels sell signals. A testimonial video shows a running profit counter.</p>
+    </div>
+    <div>
+      <div class="crashbox" aria-label="Animated crash-game rounds drawn at random">
+        <div class="hist num" id="hist"></div>
+        <canvas id="crashCanvas"></canvas>
+        <div class="foot"><span>Simulated rounds, drawn at random with a 3% house edge</span><span id="roundNo" class="num"></span></div>
+      </div>
+      <p class="caption" style="margin-top:.8rem">Each round is an independent draw. The strip of past results that “predictor” apps claim to read carries no information about the next one.</p>
+    </div>
+  </div>
+
+  <div class="wide split" style="margin-top:3.4rem;align-items:center">
+    <div style="max-width:22rem" id="ad97"></div>
+    <div class="prose">
+      <p>Crash games advertise a 97% “return to player.” That means that across all bets, the house keeps about three rupees in every hundred. It does this every round, forever, whatever the player does.</p>
+      <p>One ad in our data turned the house’s cut into a slogan: <mark>“97% players win every day.”</mark></p>
+    </div>
+  </div>
+
+  <div class="wide">
+    <h3 class="sub">Try every strategy</h3>
+    <div class="sim" id="sim">
+      <div class="ctrl">
+        <div>
+          <label for="target">Cash out at</label>
+          <div class="tv num"><span id="tval">2.00x</span><small id="tprob">wins 48.5% of rounds</small></div>
+          <input type="range" id="target" min="0" max="1000" value="206" aria-describedby="tprob">
+        </div>
+        <div class="note" style="max-width:20rem">1,000 simulated players each start with ₹10,000 and bet ₹100 a round for 200 rounds, cashing out at the same target every time.</div>
+        <button class="btn" id="rerun" type="button">Run again</button>
+      </div>
+      <canvas id="simCanvas" role="img" aria-label="Balance of simulated players over 200 rounds"></canvas>
+      <div class="simstats" id="simstats"></div>
+    </div>
+    <div class="split" style="margin-top:1.6rem">
+      <p class="prose" style="margin:0">No cash-out target beats the 3% edge. Low targets win often and bleed slowly. High targets lose most rounds and occasionally pay out big. Those rare big wins are real, and they are exactly the screenshots that end up in ads and on Instagram.</p>
+      <p class="note" style="margin:0">This simulation is ours and not part of the study. It models a fair crash game with a 3% house edge. Users in the reviews below describe apps that behave worse than that.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CHURN ================= -->
+<section class="wrap" id="churn" data-chap="Burn and churn" style="border-top:1px solid var(--rule)">
+  <div class="col prose">
+    <p class="kicker">Burn and churn</p>
+    <h2 class="chap">Here today, gone in four days</h2>
+    <p>Betting ads lived fast. In the full collection, over 60% of ads ran for only one to three days. Among the betting ads we annotated that had a recorded end date, the median ran for four days, and two in three were gone within a week.</p>
+  </div>
+  <div class="wide">
+    <div class="split" style="margin-top:2rem">
+      <div class="figure">
+        <h4>How long each betting ad ran</h4>
+        <p class="fsub">8,142 distinct betting ads with a recorded end date, by days between first and last delivery.</p>
+        <div class="chartbox" id="lifeChart"></div>
+      </div>
+      <div class="figure">
+        <h4>New betting ads by month they started</h4>
+        <p class="fsub">8,475 distinct ads. The Ad Library keeps recent ads more reliably than old ones, so part of the rise reflects what it retains. Collection ended in July 2025.</p>
+        <div class="chartbox" id="monthChart"></div>
+      </div>
+    </div>
+  </div>
+  <div class="col prose" style="margin-top:1.4rem">
+    <p>Short runs suit a simple playbook. Generate a creative, launch it from a fresh page, collect sign-ups for a few days, abandon the page before enforcement catches up. The ads we annotated came from 1,224 different Facebook pages. Generative AI has pushed the cost of a new creative close to zero.</p>
+    <p>Enforcement does happen, eventually: 20,591 ads in our collection had already been removed. But during the lag, the platform keeps the ad revenue and the advertiser keeps the sign-ups. Meta’s own policies prohibit real-money gambling ads without prior written permission, and prohibit deceptive practices.</p>
+    <p>There is also a transparency gap. For ads shown in India, the Ad Library gives no reach, spend, payer or beneficiary for this kind of ad. The same kind of ad shown in the European Union has to disclose who paid for it and who saw it.</p>
+  </div>
+  <div class="wide">
+    <div class="figure">
+      <h4>Where the betting ads ran</h4>
+      <p class="fsub">Share of 8,475 distinct ads placed on each Meta surface.</p>
+      <div class="hbars" id="platBars" style="max-width:40rem"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ORGANIC ================= -->
+<section class="wrap" id="organic" data-chap="The organic layer" style="border-top:1px solid var(--rule)">
+  <div class="col prose">
+    <p class="kicker">Instagram · 10 hashtags · 2,695 posts</p>
+    <h2 class="chap">The organic layer speaks cricket</h2>
+    <p>Hashtags show what circulates outside the ad system. We collected 2,695 public posts from ten betting hashtags. Gemini 2.5 Pro coded the 2,607 relevant ones, using our ad codebook and hand-labelled examples. On 300 held-out posts it matched our judgement 97% of the time.</p>
+    <p>The organic layer is blunter than the ads. 71.9% of posts were about sports betting, overwhelmingly cricket. It leans on celebrities, emotion and winners’ stories, and it says out loud what paid ads avoid.</p>
+  </div>
+  <div class="wide">
+    <div class="tabs" role="tablist" aria-label="Hashtags" id="tagTabs"></div>
+    <div class="igwrap">
+      <div class="iggrid" id="igGrid" role="tabpanel"></div>
+      <div class="tagnote" id="tagNote"></div>
+    </div>
+    <p class="src" style="margin-top:.8rem">Tap a post to see how it was coded. Posts are a random sample from each hashtag; posts flagged as sexual content are excluded.</p>
+
+    <div class="split" style="margin-top:4.5rem">
+      <div class="prose">
+        <h3 class="sub" style="margin-top:0">A distribution network that looks like a community</h3>
+        <p>We reviewed about 200 posts and the profiles behind them by hand. Around 90% were dedicated promotion accounts. Every post was about betting. The templates were consistent, and so were the calls to move to WhatsApp or Telegram.</p>
+        <p>Most of these accounts had between 1,000 and 5,000 followers and little genuine engagement. They look like a well-resourced, top-down distribution system dressed as fan pages.</p>
+      </div>
+      <div>
+        <div class="profile" aria-label="Schematic of a typical promotion account">
+          <div class="pic"><div>₹</div></div>
+          <div>
+            <div style="font:700 1rem/1.2 var(--f-ui);margin-bottom:.6rem">a typical promotion account</div>
+            <div class="row num"><div><b>~1,500</b>posts</div><div><b>1K–5K</b>followers</div><div><b>low</b>engagement</div></div>
+          </div>
+          <div class="bio"><b>Cricket ID · Casino · Aviator</b><br>24x7 withdrawal · 10% welcome bonus<br>👇 WhatsApp for your ID 👇 <span style="color:var(--paid)">wa.link/…</span></div>
+          <div class="mini" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <p class="note" style="margin-top:.6rem">A composite drawn from the manual review, not a real account.</p>
+      </div>
+    </div>
+
+    <div class="split" style="margin-top:4rem">
+      <div class="figure" style="margin-top:0">
+        <h4>Brands named most often in the Instagram posts</h4>
+        <p class="fsub">Number of relevant posts naming each brand, from the Gemini annotations. Spelling variants merged.</p>
+        <div class="key" style="margin:-.3rem 0 1rem"><span><i style="background:var(--red);border-radius:1px"></i>Indian “books” and exchanges selling betting IDs</span></div>
+        <div class="hbars" id="brandBars"></div>
+      </div>
+      <div class="prose">
+        <p>The names that come up most are not the international brands. They are Indian “books” and “exchanges” that sell betting IDs over WhatsApp: Thala7 Exch, Dynamo, Samrat Online Book, Dhanwan Book, Everest Book. Some take their names from cricket fandom, like Thala7 and Virat 777.</p>
+        <p>Their posts follow a template: a fixture, two star players, “10% welcome bonus, 5% refill bonus,” “24x7 withdrawal,” a phone number. One #dafabetcricket brand posted the same layout hundreds of times with only the teams changed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMPARE ================= -->
+<section class="wrap" id="compare" data-chap="Two channels" style="border-top:1px solid var(--rule)">
+  <div class="col prose">
+    <p class="kicker">Paid vs organic</p>
+    <h2 class="chap">Two channels, one pitch</h2>
+    <p>Side by side, the two channels share a core of easy money and safety, and differ in how they deliver it. Paid ads lead with features and deception. Organic posts carry the content that is too blunt for paid placement: manipulated success stories, addiction framed as fun, countdown clocks.</p>
+  </div>
+  <div class="wide" style="max-width:60rem">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:2rem">
+      <div class="seg" role="tablist" id="dbTabs"></div>
+      <div class="key"><span class="kp"><i></i>Paid Meta ads (n = 10,526)</span><span class="ko"><i></i>Instagram posts (n = 2,607)</span></div>
+    </div>
+    <div class="db" id="db"></div>
+    <p class="note" style="margin-top:1rem">Meta ads were annotated by hand. Instagram posts were annotated by Gemini 2.5 Pro with the same codebook. Some gaps, such as “promoting a new feature” against “general promotion,” partly reflect the two methods; the difference in tone held up on manual review.</p>
+  </div>
+</section>
+
+<!-- ================= FUNNEL ================= -->
+<section class="wrap" id="funnel" data-chap="The shadow funnel" style="border-top:1px solid var(--rule)">
+  <div class="col prose">
+    <p class="kicker">Off-platform</p>
+    <h2 class="chap">The shadow funnel</h2>
+    <p>Facebook and Instagram are rarely where money changes hands. They sit at the top of a funnel that pushes people somewhere less visible: a Telegram channel, a WhatsApp number, a throwaway website, an app listing that pretends to be something else.</p>
+  </div>
+  <div class="wide">
+    <div class="split" style="margin-top:2rem">
+      <div class="figure" style="margin-top:0">
+        <h4>Where the betting ads sent people</h4>
+        <p class="fsub">Share of 8,475 distinct ads linking to each kind of destination, from the link shown on the ad. An ad can link to more than one.</p>
+        <div class="hbars" id="destBars"></div>
+      </div>
+      <div>
+        <svg viewBox="0 0 420 420" class="chart" id="funnelSvg" role="img" aria-label="Diagram: feed ads lead to Telegram, WhatsApp, look-alike sites and app listings, which lead to deposits"></svg>
+      </div>
+    </div>
+  </div>
+  <div class="wide split" style="margin-top:3.4rem">
+    <div class="prose">
+      <h3 class="sub" style="margin-top:0">“Mera loss recover kara do”</h3>
+      <p>We sampled Telegram groups linked from the ads. Many are organised around one betting form, such as football tips, or around one platform. Tips are presented as near-certain, and uncertainty as something insider knowledge can solve.</p>
+      <p>Some ads go further and sell recovery from losses. One creative in the corpus is a screenshot of a direct message: a user who has lost ₹95,000 begs for help, and the promoter offers to “cover” it for a 40% cut of the withdrawal. Another ad, in Hindi, offers to cover your losses with “ten minutes of hacking” for 30% of the winnings.</p>
+      <p>This is why taking down a single app achieves little. If Google Play removes a listing, the recruitment machinery on Meta stays in place and points to a new domain or a new channel.</p>
+    </div>
+    <div style="display:grid;gap:1rem;justify-items:start">
+      <div class="chat" aria-label="Recreated direct-message screenshot from an ad creative">
+        <div class="meta">Recreated from an ad creative · names removed</div>
+        <div class="bub">Hi sir please mera loss recover kara do<small>Hi sir, please get my losses recovered</small></div>
+        <div class="bub">Sir mera loss 95k ha sir plz 😭😭😭<small>Sir, my loss is ₹95,000, please</small></div>
+        <div class="bub me">Ho jayega cover, withdrawal ke bad 40 commission dena hoga<small>It’ll be covered. After withdrawal you pay 40% commission</small></div>
+        <div class="bub">Sir ma dal dunga<small>Sir, I’ll deposit</small></div>
+        <div class="bub">Sir please link send karo<small>Sir, please send the link</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HARM ================= -->
+<section class="wrap" id="harm" data-chap="After the download" style="border-top:1px solid var(--rule)">
+  <div class="col prose">
+    <p class="kicker">Google Play · 58 apps · 329,501 one-star reviews</p>
+    <h2 class="chap">After the download</h2>
+    <p>We collected the one-star reviews of 58 betting and casino-style apps that the ads and posts pointed to, and grouped them with topic modelling. BERTopic found 220 topics, which we consolidated into ten themes. One-star reviews are not a survey of users. They are a large record of what people say when an app fails them, frustrates them or harms them.</p>
+    <p>The largest theme is money. Combined with generic negative reactions and complaints about rigged play, nearly 60% of reviews describe loss, unfairness or deception.</p>
+  </div>
+  <div class="wide">
+    <div class="split" style="margin-top:2.2rem">
+      <div class="figure" style="margin-top:0">
+        <h4>What 329,501 one-star reviews are about</h4>
+        <p class="fsub">Consolidated BERTopic themes. Select a theme to read reviews from it.</p>
+        <div class="hbars" id="themeBars"></div>
+      </div>
+      <div>
+        <div class="quotes" id="themeQuotes" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <div class="split" style="margin-top:4.5rem;align-items:center">
+      <div class="prose">
+        <h3 class="sub" style="margin-top:0">“They first let you win”</h3>
+        <p>One pattern recurs across apps. Users win early, buy chips or make a deposit, and then lose fast. Many describe the odds as reacting to their spending, a kind of predatory difficulty adjustment designed to extract money.</p>
+        <p>Glitches follow the same shape in users’ telling. The app works for deposits, then crashes or freezes on a winning hand or a withdrawal. These read less like reports of bad luck and more like reports of fraud.</p>
+      </div>
+      <figure style="margin:0">
+        <svg viewBox="0 0 520 300" class="chart" id="hookSvg" role="img" aria-label="Schematic of the pattern users describe: balance rises during free play, then falls after each purchase"></svg>
+        <figcaption class="note">Schematic of the pattern users describe, drawn for this page. Not measured data.</figcaption>
+      </figure>
+    </div>
+
+    <h3 class="sub" style="margin-top:4.5rem">The promise, and the complaint</h3>
+    <p class="caption" style="max-width:40rem;margin-bottom:1.2rem">Lines from ads in the corpus, set against one-star reviews on the same theme. They come from different ads and different apps; we paired them to show how directly the complaints answer the pitch.</p>
+    <div id="pvList"></div>
+  </div>
+
+  <div class="wide" style="margin-top:4.5rem">
+    <div class="distress">
+      <p class="kicker">“Mental torture”</p>
+      <blockquote>This game sucks the life out of you. It triggers depression because they up your betting levels even if you dont win.</blockquote>
+      <p style="font:400 1.05rem/1.55 var(--f-body);color:#D6D5CF;max-width:44rem;margin:0 0 1.4rem">The emotional register of the reviews runs from anger to despair. A cluster of reviews links app use to depression, hypertension and suicidal thoughts, and to family members, including children, who spent money on chips. The ads sell leisure and luxury. The reviews describe compulsion.</p>
+      <div class="small">
+        <p>It is addictive and my son played for first time and spend over 20,000 on chips it is crazy.</p>
+        <p>For what we play game’s? For Mind relaxation but this game make you mad and mentally torture by robbing your wealth.</p>
+        <p>Sudden unexpected debit alerts can lead someone into depression.</p>
+        <p>Please don’t play this game and take money loss and mental disturb.</p>
+      </div>
+      <p class="help">If gambling is affecting you or someone close to you, help is available. In India, <b>Tele-MANAS</b>, the government’s free mental-health helpline, is open around the clock at <b>14416</b> or <b>1-800-891-4416</b>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINDINGS ================= -->
+<section class="wrap" id="findings" data-chap="What we found" style="border-top:1px solid var(--rule)">
+  <div class="wide">
+    <p class="kicker">Summary</p>
+    <h2 class="chap" style="max-width:14ch">What we found</h2>
+    <div class="findings">
+      <article>
+        <div class="fn">Finding 1</div>
+        <h3>The pitch and the experience don’t match</h3>
+        <p>Ads show small stakes turning into large wins and frame outcomes as knowable. Reviews describe losing, blocked withdrawals, unclear rules and absent support.</p>
+        <div class="fig num">99.4% → 28.9%<small>of ads sell easy money · of one-star reviews are about financial loss and scams</small></div>
+      </article>
+      <article>
+        <div class="fn">Finding 2</div>
+        <h3>Enforcement lags, and transparency depends on where you live</h3>
+        <p>Meta had removed 20,591 ads by the time we collected them, after they had run. Ads shown in India disclose no reach, spend or payer; similar ads in the EU must.</p>
+        <div class="fig num">20,591<small>ads already removed at collection</small></div>
+      </article>
+      <article>
+        <div class="fn">Finding 3</div>
+        <h3>AI is a force multiplier</h3>
+        <p>Generative tools make fake news segments and celebrity endorsements cheap to produce, which fits a burn-and-churn playbook of short-lived pages and ads.</p>
+        <div class="fig num">14.8%<small>of paid ads used AI-generated or manipulated media</small></div>
+      </article>
+      <article>
+        <div class="fn">Finding 4</div>
+        <h3>The shadow funnel survives takedowns</h3>
+        <p>Ads and posts push users to Telegram, WhatsApp, look-alike sites and disguised app listings. Removing one app leaves the recruitment infrastructure on Meta intact.</p>
+        <div class="fig num">8.1%<small>of distinct ads linked straight to Telegram</small></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BEYOND ================= -->
+<section class="wrap" id="beyond" data-chap="Beyond India" style="border-top:1px solid var(--rule)">
+  <div class="col prose">
+    <p class="kicker">Work in progress</p>
+    <h2 class="chap">This is not only India’s problem</h2>
+    <p>We ran the same keyword method on other markets. The early results show the same machinery: easy-money framing, risk minimization, and redirection to Telegram and third-party apps.</p>
+  </div>
+  <div class="wide">
+    <div class="split" style="margin-top:2rem">
+      <div class="figure" style="margin-top:0">
+        <h4>Betting-related Meta ads found with the same keywords</h4>
+        <p class="fsub">Not yet fully cleaned or annotated.</p>
+        <div class="hbars" id="regionBars"></div>
+        <p class="caption" style="margin-top:1.4rem">In the EU, 127,811 ads came from 7,349 pages. Germany, Italy and Belgium were the most targeted countries. Because EU rules require it, these ads report who saw them.</p>
+      </div>
+      <div class="figure" style="margin-top:0">
+        <h4>Who saw betting ads in the EU</h4>
+        <p class="fsub">Share of total reach by age and gender (%).</p>
+        <div class="heat num" id="heat"></div>
+        <p class="caption" style="margin-top:1rem">Men accounted for 73% of reach. Men aged 25–34 alone were a quarter of it.</p>
+      </div>
+    </div>
+    <div class="split" style="margin-top:3.4rem;align-items:center">
+      <div class="prose">
+        <h3 class="sub" style="margin-top:0">On cable news, too</h3>
+        <p>Betting is now part of mainstream American television. Between 1 January and 31 May 2026, 977 of 3,595 CNN broadcasts contained prediction-market, sports-betting or casino content, either in commercials or in editorial discussion of the odds.</p>
+      </div>
+      <figure style="margin:0">
+        <canvas class="waffle" id="waffle" role="img" aria-label="3,595 squares, one per CNN broadcast; 977 highlighted"></canvas>
+        <figcaption class="caption" style="margin-top:.6rem"><b class="num" style="color:var(--red)">977 of 3,595</b> CNN broadcasts (27.2%), 1 Jan – 31 May 2026. One square per broadcast.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= METHODS ================= -->
+<section class="wrap" id="methods" data-chap="How we did it" style="border-top:1px solid var(--rule)">
+  <div class="col prose">
+    <p class="kicker">Methods</p>
+    <h2 class="chap">How we did it</h2>
+    <p>The study treats promotion and harm as linked, measurable stages of one pipeline, and follows the same apps and keywords through each source.</p>
+  </div>
+  <div class="wide" style="max-width:60rem">
+    <ol class="pipe">
+      <li><div><b>Snowball the vocabulary</b><span>Seed keywords → Instagram hashtag searches → linked accounts, Telegram groups and sites → new app names and coded terms, until the list stopped growing.</span></div><em>84 keywords</em></li>
+      <li><div><b>Collect paid ads</b><span>Meta Ad Library API, queried in date batches back to 2023, collected mid-2025. Creatives downloaded with Selenium from each ad’s snapshot page.</span></div><em>≈340,000 → 23,620</em></li>
+      <li><div><b>De-duplicate</b><span>PDQ and TMK+PDQF perceptual hashes at 95% similarity grouped near-identical images and videos; labels propagated across each group.</span></div><em>9,892 unique</em></li>
+      <li><div><b>Annotate by hand</b><span>Inductive coding by one author over every unique creative: relevance, category, app, messaging strategy, harmful narratives, media authenticity, sexual content, notes.</span></div><em>10,526 betting ads</em></li>
+      <li><div><b>Scale to Instagram</b><span>Gemini 2.5 Pro, few-shot with the codebook and labelled examples. 97% accuracy on 300 randomly sampled held-out posts.</span></div><em>2,607 posts</em></li>
+      <li><div><b>Read the reviews</b><span>One-star Google Play reviews scraped for the apps linked from ads and posts. BERTopic on all-MiniLM-L12-v2 embeddings (UMAP, HDBSCAN); topics labelled with Qwen2.5-7B and checked by hand on 50 reviews from each of 15 topics.</span></div><em>220 topics → 10 themes</em></li>
+    </ol>
+    <div class="lims">
+      <div><b>The cleanest tier of the market</b>Reviews come only from Google Play, which polices real-money gambling more strictly than the open web. Sideloaded APKs and offshore sites are likely worse.</div>
+      <div><b>A conservative count</b>Only harms explicitly present in an ad’s text or visuals were coded, so subtler manipulation is likely undercounted.</div>
+      <div><b>What hashtags miss</b>Hashtag discovery cannot see private accounts or Stories. The Instagram sample is for comparison, not prevalence.</div>
+      <div><b>Reviews are not a survey</b>One-star reviews over-represent unhappy users and miss those who never write one. The analysis rests on recurring themes, not single complaints.</div>
+    </div>
+  </div>
+</section>
+
+<footer class="site wrap">
+  <div class="wide fg">
+    <div><b>Quantifying the Illicit Ecosystem of Betting Apps in India</b><br>Aatman Vaidya (University of Tübingen) and Kiran Garimella (Rutgers University). This page narrates the paper and the accompanying talk.</div>
+    <div><b>Data and code</b><ul class="links"><li><a href="https://github.com/aatmanvaidya/Quantifying-the-Illicit-Ecosystem-of-Betting-Apps-in-India" target="_blank" rel="noopener">Dataset on GitHub</a></li><li><a href="https://transparency.meta.com/policies/ad-standards/" target="_blank" rel="noopener">Meta advertising standards</a></li><li><a href="https://www.boomlive.in/decode/aviator-youtubers-ai-meta-boost-an-illegal-game-india-28143" target="_blank" rel="noopener">BOOM on Aviator promotion</a></li></ul></div>
+    <div><b>About the media</b><br>Ads and posts are reproduced from Meta’s Ad Library and public Instagram posts for research and criticism. Deepfakes are labelled. Page names that look like private individuals, and phone numbers in ad text, are withheld. Charts on lifespans, destinations, utility-named pages and brands were computed for this page from the released ad records and annotations.</div>
+  </div>
+</footer>
+</main>
+
+<dialog class="lb" id="lb" aria-label="Enlarged media">
+  <button class="lb-x" id="lbx" aria-label="Close">×</button>
+  <div class="lb-in"><div class="m" id="lbm"></div><div class="t" id="lbt"></div></div>
+</dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script>
+const MAN = {"ads":{"aviator_97":{"w":500,"h":500,"page":"Aviator Game","start":"2025-05-20","stop":"2025-05-21","days":2,"cap":"aviator-gamepride.online","title":"Aviator Game Official app","body":"","plat":["facebook","instagram"]},"aviator_89_hi":{"w":338,"h":600,"page":"Aviator Pla","start":"2025-05-02","stop":"2025-05-03","days":2,"cap":"google.play.com","title":"🎁 Up to 50000 INR 💸","body":"🇮🇳 Only for residents of India 🇮🇳\n🤑 700% Welcome Bonus 🤑","plat":["facebook","instagram","audience_network","messenger"]},"aviator_predictor":{"w":307,"h":600,"page":"A page named after a person","start":"2025-07-19","stop":"2025-07-20","days":2,"cap":"t.me","title":"Telegram: Join Group Chat","body":"Are you interested in getting the AVIATOR PREDICTOR? GET APP, ACTIVATION CODES, EMAIL and PASSWORD in order to get next round prediction before staking the aviator game 💯✅✅✅","plat":["facebook","instagram"],"masked":true},"aviator_flew_away":{"w":480,"h":600,"page":"aviator_predictor2025","start":"2024-12-12","stop":"2024-12-14","days":3,"cap":"t.me","title":"Aviator Predictor ✈️","body":"What are you waiting for to get your aviator predictor ? #aviator #aviatorpredictor #gambling #casino","plat":["instagram"]},"aviator_272":{"w":539,"h":283,"page":"AuditFirst.io","start":"2024-11-15","stop":"2024-11-17","days":3,"cap":"1xlite-507958.top","title":"Best Online Games 2025","body":"Play Aviator Online Games","plat":["facebook","instagram","messenger"]},"bc_deposit300":{"w":600,"h":600,"page":"A page named after a person","start":"2025-05-31","stop":"2025-06-18","days":19,"cap":"bcgame-freespin.com","title":"","body":"BIG NEWS! LIFE-CHANGING OPPORTUNITY ALERT!🎉\nWin a DREAM PRIZE that will transform your life forever! 💥\nWill you be the lucky one? Enter now and make it happen!💥","plat":["facebook","instagram","audience_network","messenger","threads"],"masked":true},"bc_hindi_5btc":{"w":600,"h":600,"page":"A page named after a person","start":"2025-05-17","stop":"2025-05-20","days":4,"cap":"bcgame-freespin.com","title":"bcgame-freespin.com","body":"","plat":["facebook","instagram","audience_network","messenger"],"masked":true},"bc_72h":{"w":600,"h":600,"page":"A page named after a person","start":"2025-05-29","stop":"2025-06-03","days":6,"cap":"bcgame-freespin.com","title":"bcgame-freespin.com","body":"Win your dream prize! 😍 Click now and get ready to elevate your life with our exciting giveaway.","plat":["facebook","instagram","audience_network","messenger","threads"],"masked":true},"rummy_instant":{"w":338,"h":600,"page":"Rummy Passion","start":"2025-05-20","stop":"2025-06-13","days":25,"cap":"RummyPassion.com","title":"Rummy Passion: ₹10L Instant Cash Out","body":"Rummy Passion delivers instant withdrawals up to ₹10 Lakhs daily! Fastest payouts in Indian rummy. Cash in NOW! 💸","plat":["facebook","instagram","threads"]},"daily_profit":{"w":600,"h":600,"page":"A page named after a person","start":"2024-12-04","stop":"2024-12-05","days":2,"cap":"philipsvip.top","title":"philipsvip.top","body":"Invite friends and win rewards! 🔥\nInvite 5 friends to buy Lenovo packages to get:\n✨Lenovo 1: Get Lenovo 1 for free\n✨Lenovo 2: Get Lenovo 2 for free\n✨Lenovo 3: Get Lenovo 3 for free\n✨Lenovo 4: Get Lenovo 4 for free\n✨Lenovo 5: Get Lenovo 5 for free\n✨Lenovo 6: Get Lenovo 6 for free","plat":["facebook"],"masked":true},"plane_income":{"w":480,"h":600,"page":"A page named after a person","start":"2025-07-07","stop":"2025-07-11","days":5,"cap":"https://sylvo-staking.com/#/?ref=888811","title":"Attention Required! | Cloudflare","body":"💰 Breaking news!\n🔐Are you ready to unleash your full potential?\n💼We work with top companies with a simple philosophy: sincere communication + win-win cooperation = success!\n🚀 Join us and create brilliance together!","plat":["facebook","instagram","audience_network","messenger","threads"],"masked":true},"tradingview_lookalike":{"w":600,"h":600,"page":"Crypto Trade","start":"2025-06-10","stop":"2025-06-11","days":2,"cap":"tradingview.app-desktops-pc.com","title":"⏳Offer valid until the end of this week!","body":"","plat":["facebook"]},"bybit_pi":{"w":600,"h":600,"page":"A page named with a phone number","start":"2025-04-24","stop":"2025-04-24","days":1,"cap":"bybit.com","title":"📥 Click \"Download\", log in, and claim your crypto reward.","body":"💻 Bybit is now on desktop — and there’s a bonus waiting for you!\n\nDownload the desktop app and get 314 PI (worth ~$358) just for signing up.\n\nWhy try it?\n✅ Faster than browser trading\n✅ Easier to manage your portfolio\n✅ Exclusive features only on desktop","plat":["facebook"],"masked":true},"ai_trading_101":{"w":480,"h":600,"page":"RazgaR","start":"2025-06-03","stop":"2025-06-05","days":3,"cap":"razgar.io","title":"AI‑Driven Crypto Trading 101: How Automation Actually Works in 2025 | RazgaR Insights","body":"🚨 Still missing crypto pumps while you're sleeping or at work?\nYou’re not the only one.\n\n📉 Manual trading involves emotional decisions, chart fatigue, and 70–90% failure rates.\n\n🤖 Let AI do the work—trade 24/7 while you live your life.\n\nIn our latest article:\n🔹 How AI trading bots actually work\n🔹 Wh","plat":["instagram"]},"binomo_signals":{"w":600,"h":600,"page":"stoc.ktrader01","start":"2025-06-25","stop":"2025-06-26","days":2,"cap":"telegram.me","title":"Telegram: Join Group Chat","body":"","plat":["instagram"]},"tips_verified":{"w":600,"h":316,"page":"LatinoBets","start":"2025-04-27","stop":"2025-04-28","days":2,"cap":"t.me","title":"Join group chat on Telegram","body":"JOIN VVIP FOR FREE TODAY.\n\nhttps://t.me/+m_EuazA0KC1mOTY8\nhttps://t.me/+m_EuazA0KC1mOTY8\nhttps://t.me/+m_EuazA0KC1mOTY8\n\nGet premium, sure‑win betting tips — and pay only after you profit!\n\n• ✅ Over 1,270+ winning odds delivered\n• ✅ 24/7 VIP access—free to join now\n• ✅ Proven track record, transpare","plat":["facebook","audience_network","messenger"]},"tips_slip":{"w":600,"h":600,"page":"Football Betting Tips ","start":"2024-12-30","stop":"2024-12-31","days":2,"cap":"t.me","title":"Download App Now!","body":"https://t.me/+nN5Blhh9aek4Mzg0","plat":["facebook","instagram","messenger"]},"odds_100safe":{"w":338,"h":600,"page":"aisportsbets_","start":"2025-07-09","stop":"2025-07-10","days":2,"cap":"instagram.com","title":"instagram.com","body":"Safe bet tonight  Price : £40","plat":["instagram"]},"all_hit":{"w":480,"h":600,"page":"betzedge","start":"2025-02-26","stop":"2025-02-28","days":3,"cap":"instagram.com","title":"instagram.com","body":"Clean sweep! 🎯 If you followed, you’re cashing in tonight! 💰🔥 Who’s ready for more winners? #FlawlessPicks #BigWins #winningstreak #football #sportsbook #stake","plat":["instagram"]},"telegram_member_service":{"w":600,"h":600,"page":"Himanshu Sharma ","start":"2025-07-17","stop":"2025-07-18","days":2,"cap":"fb.com","title":"Booming marketing Agency","body":"","plat":["facebook","instagram"]},"ipl_who_will_win":{"w":600,"h":600,"page":"Sansad Khel Mahakumbh","start":"2022-05-26","stop":"2022-05-27","days":2,"cap":"fb.me","title":"Guess and stand a chance to win prizes worth ₹2000","body":"Stand a chance to win prizes worth ₹2000.\nTell us your prediction on who will win TATA IPL 2022?\n*Terms & Conditions\nYou must follow our Facebook and Instagram page.\nSend us a screenshot after submitting your answer.\nYou must follow our Facebook and Instagram pages.","plat":["facebook","instagram"]},"lotus_ipl_id":{"w":600,"h":600,"page":"A page named after a person","start":"2024-03-24","stop":"2024-03-25","days":2,"cap":"","title":"","body":"👇 WhatsApp now to get your ID 👇 [phone number removed]","plat":["facebook","instagram"],"masked":true},"loss_cover_hi":{"w":564,"h":600,"page":"91____club__games___","start":"2025-07-15","stop":null,"days":null,"cap":"instagram.com","title":"instagram.com","body":"","plat":["instagram"]},"ipl_1win":{"w":600,"h":600,"page":"A page named after a person","start":"2025-03-23","stop":"2025-03-24","days":2,"cap":"cpxzen.top","title":"🔥BET NOW or CRY LATER!🔥","body":"Oye bhai, IPL 2025 is ON! 💪 Get 1win app – live odds, Kohli ke runs, Bumrah ke wickets! 🎉 500% bonus up to ₹80,400! 💰 Download ABHI, jeet ka chance mat chod! 🚀","plat":["facebook","instagram","audience_network","messenger"],"masked":true},"df_kohli_news":{"w":360,"h":360,"video":true,"page":"File recovery V5 1002","start":"2025-03-27","stop":"2025-03-29","days":3,"cap":"play.google.com","title":"Auto click x10000","body":"Easy to use","plat":["facebook","instagram","audience_network","messenger"]},"df_ambani_news":{"w":360,"h":360,"video":true,"page":"File recovery V5 1002","start":"2025-03-27","stop":"2025-03-29","days":3,"cap":"play.google.com","title":"Auto click x10000","body":"Easy to use","plat":["facebook","instagram","audience_network","messenger"]},"df_autoclicker":{"w":360,"h":640,"video":true,"page":"Auto Clicker - Auto Tap 1","start":"2025-06-10","stop":"2025-06-12","days":3,"cap":"play.google.com","title":"Boost Your Gaming Speed","body":"Auto Swipe in Dating Apps","plat":["facebook","instagram","audience_network","messenger"]},"df_kohli_slots":{"w":360,"h":360,"video":true,"page":"Money Max","start":"2025-03-19","stop":"2025-03-21","days":3,"cap":"play.google.com","title":"Get Rewarded NOW!","body":"Invite Friends and Join the Challenge to Get Rewards Now!","plat":["facebook","instagram","audience_network","messenger"]},"testimonial_350":{"w":360,"h":360,"video":true,"page":"Auto clicker 3103v4","start":"2025-04-01","stop":"2025-04-12","days":12,"cap":"play.google.com","title":"Auto click x10000","body":"Easy to use","plat":["facebook","instagram","audience_network","messenger"]},"invest200":{"w":360,"h":640,"video":true,"page":"A page named after a person","start":"2025-04-22","stop":"2025-04-23","days":2,"cap":"play.google.com","title":"100% work","body":"x1000 click speed","plat":["facebook","instagram","audience_network","messenger"],"masked":true},"tez888_influencer":{"w":360,"h":640,"video":true,"page":"Tez888 Games","start":"2024-11-11","stop":"2025-01-05","days":56,"cap":"tez888.live","title":"300% Bonus for New Players – Join India’s No.1 Gaming Site!","body":"🚀 Take your first step with Tez888 today!\n🎮 Get instant access to India’s top games like Aviator, Crazy Time, and Roulette.\n🎁 300% Welcome Bonus for new users – up to ₹35,000 on your first deposit!\n🛡️ Experience unmatched security and fairness, only on Tez888!","plat":["facebook","instagram"]}},"ig":{"aviatorgame":[{"f":"aviatorgame_0","w":560,"h":560,"id":"DMNPr9WKcyi"},{"f":"aviatorgame_1","w":448,"h":560,"id":"DQB4Imokx97"},{"f":"aviatorgame_2","w":449,"h":560,"id":"DQ0Jsebkr7Y"},{"f":"aviatorgame_3","w":560,"h":560,"id":"DP_NBfokUzN"},{"f":"aviatorgame_4","w":560,"h":560,"id":"Cqp8tflv1nq"},{"f":"aviatorgame_5","w":560,"h":560,"id":"DFnkYY6tKNL"},{"f":"aviatorgame_6","w":560,"h":560,"id":"DMcObxaMHFI"},{"f":"aviatorgame_7","w":560,"h":560,"id":"DCHsdWyucG7"},{"f":"aviatorgame_8","w":448,"h":560,"id":"DPTtbZAgthp"}],"colortrading":[{"f":"colortrading_0","w":560,"h":420,"id":"DBsUki2PkIE"},{"f":"colortrading_1","w":448,"h":560,"id":"DMjUz6bIfGi"},{"f":"colortrading_2","w":483,"h":560,"id":"DGSqeQSJSR5"},{"f":"colortrading_3","w":448,"h":560,"id":"DEtntbdSlhj"},{"f":"colortrading_4","w":560,"h":560,"id":"DODrNlCCE0R"},{"f":"colortrading_5","w":420,"h":560,"id":"DOOSnZojNGX"},{"f":"colortrading_6","w":560,"h":560,"id":"DPJ7J99EvFq"},{"f":"colortrading_7","w":543,"h":560,"id":"DMcUsesJIqZ"},{"f":"colortrading_8","w":420,"h":560,"id":"DQhchFxkj4A"}],"dafabetcricket":[{"f":"dafabetcricket_0","w":560,"h":560,"id":"DEjaj6zPDTO"},{"f":"dafabetcricket_1","w":560,"h":560,"id":"DLCa6L5Jhgb"},{"f":"dafabetcricket_2","w":560,"h":560,"id":"DFHqX4fvULN"},{"f":"dafabetcricket_3","w":560,"h":560,"id":"DGKZ48uvE8C"},{"f":"dafabetcricket_4","w":560,"h":560,"id":"DEMIu2XPurl"},{"f":"dafabetcricket_5","w":560,"h":560,"id":"DEXA71Ovv34"},{"f":"dafabetcricket_6","w":560,"h":560,"id":"DEzFyPRp4FB"},{"f":"dafabetcricket_7","w":560,"h":560,"id":"DE9rxJdJl-v"},{"f":"dafabetcricket_8","w":560,"h":560,"id":"DE7MT_WvSI6"}],"iplbetting":[{"f":"iplbetting_0","w":448,"h":560,"id":"DNvbLzB5Mfe"},{"f":"iplbetting_1","w":560,"h":560,"id":"DO82Ybej-BO"},{"f":"iplbetting_2","w":560,"h":559,"id":"DQtg04Cj4XR"},{"f":"iplbetting_3","w":560,"h":560,"id":"DPA3MxIjF8t"},{"f":"iplbetting_4","w":560,"h":560,"id":"DO8fum5CIp1"},{"f":"iplbetting_5","w":448,"h":560,"id":"DQhMkkdiLtI"},{"f":"iplbetting_6","w":448,"h":560,"id":"DRBBJ4NElGL"},{"f":"iplbetting_7","w":560,"h":559,"id":"DJTT2FQMWVk"},{"f":"iplbetting_8","w":560,"h":560,"id":"DQ4G8TRAgnE"}],"jeetwin":[{"f":"jeetwin_0","w":560,"h":560,"id":"CzlX1HjrJwx"},{"f":"jeetwin_1","w":560,"h":560,"id":"DIWYSprTBXF"},{"f":"jeetwin_2","w":448,"h":560,"id":"DIIr-sfRD-6"},{"f":"jeetwin_3","w":560,"h":560,"id":"CyFR-d9P2NF"},{"f":"jeetwin_4","w":448,"h":560,"id":"DCQe_diz60x"},{"f":"jeetwin_5","w":448,"h":560,"id":"DB8g0_FTGYq"},{"f":"jeetwin_6","w":556,"h":560,"id":"C4pU__URDIb"},{"f":"jeetwin_7","w":448,"h":560,"id":"DCOC4_3z1iG"},{"f":"jeetwin_8","w":560,"h":560,"id":"DFpSRzEhn16"}],"parimatch":[{"f":"parimatch_0","w":560,"h":555,"id":"DQpJMovjHon"},{"f":"parimatch_1","w":552,"h":560,"id":"DQpGsh5CIL8"},{"f":"parimatch_2","w":490,"h":560,"id":"DQpItYDCEh0"},{"f":"parimatch_3","w":560,"h":542,"id":"DQpJzm2gH2L"},{"f":"parimatch_4","w":560,"h":560,"id":"DQqm7HTiZ44"},{"f":"parimatch_5","w":448,"h":560,"id":"DQeJ7U2Cahq"},{"f":"parimatch_6","w":560,"h":544,"id":"DO5aniCEXds"},{"f":"parimatch_7","w":560,"h":560,"id":"DQ-u7v7CVqt"},{"f":"parimatch_8","w":560,"h":544,"id":"DO5aqSYkZJl"}],"1xbet":[{"f":"1xbet_0","w":560,"h":560,"id":"DO_sSrbAbfn"},{"f":"1xbet_1","w":560,"h":560,"id":"DQxhmcWl_zb"},{"f":"1xbet_2","w":560,"h":560,"id":"DP5uFMVExp2"},{"f":"1xbet_3","w":448,"h":560,"id":"DQ642o1DBRQ"},{"f":"1xbet_4","w":560,"h":560,"id":"DO8cxSUj5Vb"},{"f":"1xbet_5","w":560,"h":560,"id":"DQ_c8k3CHEk"},{"f":"1xbet_6","w":448,"h":560,"id":"DOGfKFWiqcH"},{"f":"1xbet_7","w":560,"h":560,"id":"DPAt0cpjxaB"},{"f":"1xbet_8","w":447,"h":560,"id":"DPzKJqSEVeG"}],"fairplayfantasy":[{"f":"fairplayfantasy_0","w":560,"h":560,"id":"DNutkFR2sev"},{"f":"fairplayfantasy_1","w":560,"h":560,"id":"DQMCi7igRtE"},{"f":"fairplayfantasy_2","w":560,"h":560,"id":"CnOKZsYvSoD"},{"f":"fairplayfantasy_3","w":560,"h":560,"id":"CqBjICat10n"},{"f":"fairplayfantasy_4","w":560,"h":560,"id":"Cnyaxt9Lng4"},{"f":"fairplayfantasy_5","w":560,"h":560,"id":"Cn6G9BOo4Ma"},{"f":"fairplayfantasy_6","w":560,"h":560,"id":"CnGOSEOtG8R"},{"f":"fairplayfantasy_7","w":560,"h":560,"id":"Cc2ppHFvMFs"},{"f":"fairplayfantasy_8","w":560,"h":560,"id":"CfdojcWNeP8"}],"rajabets":[{"f":"rajabets_0","w":560,"h":560,"id":"DCmkFAZtaR8"},{"f":"rajabets_1","w":560,"h":560,"id":"C-S1Mg_Nc8Y"},{"f":"rajabets_2","w":560,"h":560,"id":"DDm_bGNtANf"},{"f":"rajabets_3","w":560,"h":560,"id":"DEj7P8EtUVJ"},{"f":"rajabets_4","w":560,"h":560,"id":"DE2wfcAtqC8"},{"f":"rajabets_5","w":560,"h":560,"id":"DEkw9-xT_zP"},{"f":"rajabets_6","w":560,"h":560,"id":"C_YXH5Bta8I"},{"f":"rajabets_7","w":560,"h":560,"id":"DCwDbdQNntg"},{"f":"rajabets_8","w":560,"h":560,"id":"DDexzKcNuc4"}],"stake":[{"f":"stake_0","w":560,"h":560,"id":"DO_LC0Ik0WU"},{"f":"stake_1","w":560,"h":560,"id":"DO_InULCJ4F"},{"f":"stake_2","w":434,"h":560,"id":"DPACcTaDKmP"},{"f":"stake_3","w":560,"h":560,"id":"DPAxC26jD5Z"},{"f":"stake_4","w":560,"h":560,"id":"DO_qZJ0k_0I"},{"f":"stake_5","w":560,"h":560,"id":"DPAxLmWjL8M"},{"f":"stake_6","w":560,"h":560,"id":"DO_LCMEk_DF"},{"f":"stake_7","w":560,"h":560,"id":"DO_gVn7kdv8"},{"f":"stake_8","w":560,"h":560,"id":"DO_qFWDk8kR"}]}};
+const IG = {"aviatorgame":[{"f":"aviatorgame_0","c":["Casino Games","Prediction Games"],"n":["Easy money","Risk minimization","Success story","Addiction normalization"],"ai":false,"t":"This ad promotes the 'Aviator' crash game, featuring a happy man with a large win multiplier (56.00x) on his phone. The ad is harmful as it frames a game of chance as being based on 'strategy', minimizes the inherent risks, and uses a large, atypical win to promote an 'easy money' narrative, which can lead to financial losses and gambling addiction."},{"f":"aviatorgame_1","c":["Casino Games","Prediction Games"],"n":["Easy money","Risk minimization","Time pressure"],"ai":false,"t":"The image is an ad for an online casino game called 'Aviator Race' on the StarBet platform, offering '600 Free Flights' daily. This is harmful as it promotes an 'easy money' narrative and uses risk minimization tactics (free plays) to lure users into a gambling game, which can lead to addiction and financial loss."},{"f":"aviatorgame_2","c":["Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The image is an advertisement for a betting platform named K247 play, showing a schedule for football matches. The slogans 'Play BIG' and 'Win BIG' promote an 'easy money' narrative, which is harmful as it downplays the financial risks and potential for addiction associated with sports betting."},{"f":"aviatorgame_3","c":["Casino Games"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The ad promotes the 'Aviator' gambling game on the Zagabet platform, featuring two excited men next to a phone displaying the game. The messaging 'Every tap is a flight risk, with a fortune on board' creates a harmful narrative of easy money and minimizes the real financial risks by framing gambling as a thrilling adventure with a high chance of a big payoff."},{"f":"aviatorgame_4","c":["Casino Games"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The image displays the user interface of the 'Aviator' online gambling game, showing a multiplier of 2.25x. This ad is harmful because it promotes an 'easy money' narrative by highlighting multipliers, which can mislead users about the high risks involved and potentially lead to gambling addiction."},{"f":"aviatorgame_5","c":["Casino Games","Prediction Games"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The advertisement promotes the 'Aviator' online gambling game on a platform called 'Sultanate Online Book'. The promotion of '10% weekly cashback' is a harmful risk minimization tactic, while the nature of the game itself promotes an 'easy money' narrative, both of which can lead to gambling addiction and financial loss."},{"f":"aviatorgame_6","c":["Casino Games","Prediction Games"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The image promotes the 'Aviator' online gambling game by offering a 'guide & tips'. This is harmful because it implies that the game of chance can be beaten with strategy, minimizing the perceived risk and promoting an easy money narrative, which can encourage reckless betting."},{"f":"aviatorgame_7","c":["Casino Games","Prediction Games"],"n":["Easy money","Risk minimization"],"ai":false,"t":"This image is an advertisement for the 'Aviator' crash gambling game, encouraging users to play via a 'link in bio'. The ad is harmful because it showcases a large win multiplier (21.23x), promoting an 'easy money' narrative and minimizing the significant financial risks inherent in such games, which can lead to gambling addiction."},{"f":"aviatorgame_8","c":["Casino Games","Prediction Games"],"n":["Easy money","Risk minimization"],"ai":false,"t":"This is an advertisement for the online gambling game 'Aviator' available on the 'Somnath Book' platform. The ad is harmful because it promotes an 'easy money' narrative with the slogan 'WIN BIG CASH REWARDS!', which can mislead users about the low probability of winning and encourage addictive gambling behavior."}],"colortrading":[{"f":"colortrading_0","c":["Prediction Games","Lottery / Jackpots"],"n":["Easy money","Risk minimization","Income framing","Success story"],"ai":false,"t":"The image promotes a 'colour trading' game with unrealistic promises like a '100% winning trick' and turning ₹1000 into ₹25,000 daily. This ad is harmful as it presents gambling as a guaranteed, high-return income source, which is deceptive and can lead users to significant financial losses and addiction."},{"f":"colortrading_1","c":["Prediction Games","Trading / Crypto"],"n":["Easy money","Risk minimization","Success story","Time pressure"],"ai":false,"t":"The image advertises a signal group for 'color trading' games, promising guaranteed profits and a 'no loss' strategy. This is extremely harmful as it promotes gambling with deceptive claims of easy, risk-free money, which can lead to addiction and severe financial losses for users."},{"f":"colortrading_2","c":["Prediction Games","Lottery / Jackpots"],"n":["Easy money","Risk minimization","Success story"],"ai":false,"t":"The image advertises a 'Hack Mod App' for a prediction game, showing a list of successful bets to entice users. This is harmful as it promotes cheating, presents a misleading 'easy money' narrative, and likely aims to scam users or distribute malware through the supposed hack."},{"f":"colortrading_3","c":["Casino Games","Lottery / Jackpots","Prediction Games","Sports Betting"],"n":["Easy money","Income framing","Success story"],"ai":false,"t":"The image shows a person holding a very large stack of cash, a visual commonly used to promote gambling or get-rich-quick schemes. This is harmful because it pushes a strong 'easy money' narrative and manipulates the idea of a success story, creating unrealistic expectations of winning that can lead to financial irresponsibility and addiction."},{"f":"colortrading_4","c":["Other (Pyramid Scheme / MLM)"],"n":["Easy money","Risk minimization","Income framing"],"ai":false,"t":"The image advertises a scheme called 'Active Base', promising a 'Daily Salary' based on the number of members recruited and the amount they 'recharge'. This is harmful as it promotes a classic pyramid/Ponzi scheme structure, framing a high-risk, likely fraudulent activity as a stable income source and creating a misleading 'easy money' narrative."},{"f":"colortrading_5","c":["Trading / Crypto","Prediction Games"],"n":["Easy money","Risk minimization","Income framing","Debt solution","Success story"],"ai":false,"t":"The image is a social media story presented as a client testimonial for an investment or trading service, claiming a profit of Rs 39,000 in a single day. The ad is harmful because it promotes an 'easy money' narrative and makes the highly misleading and impossible claim of 'Loss recover gurrented' (guaranteed), which can lead users to financial ruin."},{"f":"colortrading_6","c":["Prediction Games","Casino Games"],"n":["Easy money","Income framing"],"ai":false,"t":"The image promotes a 'Daily Extra Invitation Bonus' for 'BHT CLUB', incentivizing users to recruit new members for monetary rewards. This is harmful because it frames recruitment as an easy way to earn money, a characteristic of pyramid-like schemes often associated with predatory gambling platforms. The instruction to 'contact your Teacher' is a red flag for such organized and potentially exploitative systems."},{"f":"colortrading_7","c":["Prediction Games","Lottery / Jackpots"],"n":["Easy money","Risk minimization","Success story"],"ai":false,"t":"The image promotes 'hacks' for number prediction games, showing logos of various gambling apps and a fabricated list of successful winnings. The ad is harmful as it promotes a deceptive 'easy money' narrative, claiming to offer a guaranteed way to win, which can lure users into gambling and lead to significant financial loss and addiction."},{"f":"colortrading_8","c":["Prediction Games","Trading / Crypto"],"n":["Easy money","Income framing","Risk minimization"],"ai":false,"t":"The image advertises a social media page offering 'Smart Color Trading Strategies', framing a gambling activity as a legitimate investment. This is harmful as it promotes an 'income source framing' and 'easy money' narrative, misleading users into believing they can consistently profit, which can lead to significant financial loss."}],"dafabetcricket":[{"f":"dafabetcricket_0","c":["Sports Betting"],"n":["Risk minimization","Easy money"],"ai":false,"t":"This is an advertisement for a sports betting platform called Thaa7, promoting upcoming cricket matches and offering a welcome bonus. The ad is harmful as it uses a bonus to minimize the perceived risks of gambling and encourages users to bet on sports, which can lead to financial losses and addiction."},{"f":"dafabetcricket_1","c":["Sports Betting"],"n":["Risk minimization","Easy money"],"ai":false,"t":"The advertisement for 'Thala7', a sports betting platform, lists cricket fixtures and offers a 10% welcome bonus to attract new users. This promotion is harmful as it normalizes gambling and uses a bonus to minimize the perceived financial risk, which can lead to addiction and significant monetary loss for users."},{"f":"dafabetcricket_2","c":["Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"This image advertises a sports betting platform, 'Thala7Exch', by displaying a schedule of cricket matches and offering a '10% Welcome Bonus'. The ad is harmful as it promotes gambling by using financial incentives and promising easy transactions, which can normalize betting and lead to financial issues and addiction."},{"f":"dafabetcricket_3","c":["Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The ad promotes sports betting on a Women's Premier League cricket match via the 'Thala7exch' platform. It is harmful as it uses welcome bonuses and phrases like 'Best Odds' to create an 'Easy Money' narrative and minimize the perceived risks of gambling, which can lead to financial losses and addiction."},{"f":"dafabetcricket_4","c":["Sports Betting"],"n":["Risk minimization","Easy money"],"ai":false,"t":"The image is an advertisement for a sports betting platform, Thala7Exch, promoting an India vs Australia cricket match. The ad is harmful as it offers welcome and refill bonuses, which minimizes the perceived risks of gambling and uses images of popular cricketers to attract users, potentially leading to financial loss and addiction."},{"f":"dafabetcricket_5","c":["Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The image is an advertisement for a sports betting platform, THAAI ONLINE BOOK, promoting a cricket match between South Africa and Pakistan. The ad is harmful as it uses welcome and refill bonuses to attract users, promoting an 'easy money' narrative and minimizing the perceived risks of gambling."},{"f":"dafabetcricket_6","c":["Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"This advertisement promotes sports betting on a cricket match through the platform 'Thaa Online Book' / 'thala7exch.com', offering welcome and refill bonuses. The ad is harmful as it normalizes gambling and promotes an 'easy money' narrative by offering bonuses and highlighting 'easy withdrawal', which can mislead users about the actual risks and potential for financial loss."},{"f":"dafabetcricket_7","c":["Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The ad promotes a sports betting website for a cricket match, offering welcome and refill bonuses. It employs potentially harmful narratives like 'easy money' and 'risk minimization' by highlighting 'Best Odds' and bonuses, which can encourage risky gambling behavior."},{"f":"dafabetcricket_8","c":["Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The image is an advertisement for a sports betting platform, Thala7Exch, promoting a BPL cricket match. It offers welcome and refill bonuses to attract users, which is harmful as it minimizes the perceived risks of gambling and promotes an 'easy money' narrative, potentially leading to financial losses and addiction."}],"iplbetting":[{"f":"iplbetting_0","c":["Sports Betting"],"n":["Risk minimization"],"ai":false,"t":"The image is an advertisement for a betting exchange called 'Dynamo' promoting betting on a T20 cricket match. The ad is harmful as it offers a joining bonus, which minimizes the perceived risk for new users and can entice people into gambling."},{"f":"iplbetting_1","c":["Sports Betting","Casino Games"],"n":["Risk minimization","Easy money"],"ai":true,"t":"The ad for 'Sadguru Book' promotes sports betting and live casino games, using an AI-generated woman to attract users. It is harmful as it minimizes the risks of betting by calling it 'hassle-free' and offers a low entry cost, which can encourage impulsive gambling and lead to financial harm."},{"f":"iplbetting_2","c":["Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The image is an advertisement for a sports betting platform, 'Playexch', for a cricket match between South Africa and Pakistan. It encourages users to get a betting ID via WhatsApp, which is a harmful practice as it can lead to unregulated and unsafe gambling, while the promise of 'fast withdrawal' promotes an 'easy money' narrative."},{"f":"iplbetting_3","c":["Sports Betting"],"n":["Easy money"],"ai":false,"t":"This is an advertisement for 'Everest Book', a sports betting platform, promoting a cricket match between Australia A and India A. The ad is harmful as it normalizes gambling on sports, which can lead to financial losses and addiction. The use of official cricket board logos may be unauthorized and designed to mislead users into believing the platform is an official partner."},{"f":"iplbetting_4","c":["Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The image is an advertisement for a betting platform called 'Dynamo Betting Exchange', featuring Pakistani cricketer Shaheen Afridi to promote betting on cricket matches. The use of a popular athlete can normalize gambling and mislead users into thinking it's a safe or endorsed activity, masking the real financial risks involved."},{"f":"iplbetting_5","c":["Sports Betting","Lottery / Jackpots"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The advertisement promotes a 'Cricket Lottery' by Dynamo Betting Exchange, promising a chance to win up to 500,000. The harmful aspect is the strong 'easy money' narrative, which can mislead users into believing that winning large sums is simple, downplaying the significant financial risks and potential for addiction associated with gambling."},{"f":"iplbetting_6","c":["Sports Betting"],"n":["Risk minimization","Easy money"],"ai":false,"t":"This ad promotes Dynamo Betting Exchange for an upcoming cricket series, offering a joining deposit bonus. The promotion of bonuses is harmful as it can minimize the perceived financial risks of betting, encouraging users to deposit and potentially lose money."},{"f":"iplbetting_7","c":["Sports Betting"],"n":["Easy money","Risk minimization","Addiction normalization"],"ai":false,"t":"The image is an advertisement for a sports betting website called METABETS, focusing on an IPL cricket match. The ad promotes gambling by highlighting the ease of transactions with '24/7 hours withdrawal' and '24/7 hours refill', which normalizes constant betting and can contribute to gambling addiction and financial distress."},{"f":"iplbetting_8","c":["Casino Games","Card Games"],"n":["Easy money","Risk minimization","Addiction normalization"],"ai":false,"t":"The ad promotes a 'Daily Check-in' feature for a platform called 247BET, offering daily cash rewards for logging in. The ad is harmful as it promotes an easy money narrative and uses a daily reward system to build a potentially addictive habit of engaging with the gambling platform."}],"jeetwin":[{"f":"jeetwin_0","c":["Sports Betting"],"n":["Addiction normalization"],"ai":false,"t":"The image is an advertisement for the betting platform Jeetwin, promoting the live streaming of a Cricket World Cup semifinal. This is harmful as it uses the popularity of a major sporting event to attract users to a gambling site, thereby normalizing betting in the context of sports fandom."},{"f":"jeetwin_1","c":["Sports Betting","Casino Games","Lottery / Jackpots"],"n":["Easy money"],"ai":false,"t":"The ad promotes a weekly giveaway by the betting platform JeetWin, tied to the IPL. The slogan 'WIN EVERY WEEK' is harmful as it creates a misleading impression that winning valuable prizes is a common and easy event, which can lure users into gambling under false expectations."},{"f":"jeetwin_2","c":["Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The ad promotes a betting platform, JeetWin, using an IPL cricket match to attract users with a '200% IPL Daily Bonus' and a giveaway. The promotion of a large bonus is harmful as it creates an 'easy money' narrative and minimizes the real financial risks of betting, potentially encouraging reckless gambling."},{"f":"jeetwin_3","c":["Sports Betting","Prediction Games"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The image is an advertisement for a platform called JeetWin, inviting users to predict the winner of a cricket match to win daily prizes. The ad is harmful as it promotes an 'easy money' narrative and downplays the financial risks involved in betting, which can lead to addiction and monetary loss."},{"f":"jeetwin_4","c":["Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The ad promotes sports betting on the JeetWin platform for a women's cricket match, offering a 'Free Sports Bet' and cashback. This is harmful as it uses risk minimization tactics and an easy money narrative to entice users, potentially understating the financial risks of gambling."},{"f":"jeetwin_5","c":["Sports Betting"],"n":["Easy money","Risk minimization","Time pressure"],"ai":true,"t":"The ad for JeetWin promotes a 'Weekly Sports Diwali Bonus', using AI-generated imagery of a celebrating cricket player. This is harmful as it associates gambling with a major cultural festival, Diwali, and uses a bonus to promote an 'easy money' narrative, which can lead to financial loss and addiction."},{"f":"jeetwin_6","c":["Sports Betting"],"n":["Risk minimization","Easy money"],"ai":false,"t":"This advertisement for 'Samrat Online Book' uses popular IPL cricketers to promote sports betting. It is harmful as it leverages celebrity endorsements to build false trust and offers bonuses to minimize the perceived risks of gambling, potentially leading to financial losses and addiction."},{"f":"jeetwin_7","c":["Sports Betting","Lottery / Jackpots"],"n":["Easy money"],"ai":true,"t":"The image is an advertisement for a 'Sports Weekly Lucky Draw' by the platform 'JeetWin'. The ad promotes gambling by framing it as a lucky draw, which creates an 'easy money' narrative and can be harmful by encouraging users to participate with unrealistic expectations of winning."},{"f":"jeetwin_8","c":["Casino Games","Prediction Games"],"n":["Easy money","Risk minimization","Income framing","Addiction normalization"],"ai":false,"t":"The ad promotes 'crash games' on the JeetWin online casino, promising 'big wins' and 'incredible rewards'. The image is harmful as it heavily pushes an 'easy money' narrative, minimizes the inherent financial risks with mentions of bonuses, and encourages frequent play which can normalize gambling addiction."}],"parimatch":[{"f":"parimatch_0","c":["Sports Betting","Casino Games","Card Games"],"n":["Easy money","Success story"],"ai":false,"t":"The ad promotes a gambling website called 'Samrat Book', claiming users can 'win unlimited' and that it is the 'No.1 Gaming Site in India'. The key harmful narrative is 'Easy Money' through the 'win unlimited' promise, which is highly misleading and promotes risky financial behavior and potential gambling addiction."},{"f":"parimatch_1","c":["Sports Betting"],"n":[],"ai":false,"t":"The image advertises an online betting service named 'Samrat Online Book', providing direct contact details like phone numbers and a Telegram ID. Promoting gambling through unofficial channels like Telegram is harmful as these platforms are often unregulated, putting users at high risk of financial fraud and addiction without any consumer protection."},{"f":"parimatch_2","c":["Sports Betting","Casino Games","Other (White-label betting platform provider)"],"n":["Easy money","Risk minimization","Income framing"],"ai":false,"t":"The ad promotes 'Samrat Online Book', a service that provides white-label solutions for individuals to run their own betting platforms. It is harmful because it frames participation in the often illegal and high-risk betting industry as a legitimate and easy business opportunity ('Run your own book'), which could lead to severe financial and legal repercussions for users."},{"f":"parimatch_3","c":["Sports Betting","Casino Games"],"n":["Easy money","Income framing"],"ai":false,"t":"The ad promotes 'TAJ777' as a platform for users to start their own betting book, offering casino and live sports services. This is harmful because it frames running a gambling operation as the 'biggest opportunity,' promoting an easy money narrative and framing it as a viable income source, which can be highly misleading and financially risky."},{"f":"parimatch_4","c":["Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The image is an advertisement for a sports betting service named 'Virat 777', promoting a cricket match with bonus offers. The promotion of a 'Welcome Bonus' and 'Refill' bonus is harmful as it normalizes gambling and presents it as a low-risk activity with easy rewards, which can lead to addiction and financial loss."},{"f":"parimatch_5","c":["Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The ad promotes the sports betting platform Parimatch, featuring Leeds United football players, and offers a 125% bonus. This is harmful as the large bonus promotes an 'easy money' narrative and minimizes the perceived risks of betting, potentially encouraging gambling and leading to financial loss."},{"f":"parimatch_6","c":["Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The image is an advertisement for a sports betting website, 'Samrat Online Book,' promoting an upcoming cricket match. By highlighting features like 'Surprise Bonus' and 'Superfast Withdrawal,' the ad promotes a harmful easy money narrative and downplays the financial risks of gambling."},{"f":"parimatch_7","c":["Sports Betting"],"n":["Risk minimization","Addiction normalization"],"ai":false,"t":"The image is an ad for a betting platform called 'Reddy Anna', promoting betting on a future cricket match. The emphasis on '24 HOUR SERVICE', 'REFILL', and 'WITHDRAWAL' is harmful as it normalizes round-the-clock gambling and minimizes the perceived risks, which can encourage addictive behavior."},{"f":"parimatch_8","c":["Sports Betting"],"n":["Easy money","Risk minimization","Time pressure"],"ai":false,"t":"This is an advertisement for a sports betting website called 'Samrat Online Book', promoting betting on a cricket match. The ad is harmful as it uses images of popular athletes to normalize gambling and promotes features like 'Surprise Bonus' to create an 'easy money' narrative, potentially leading to financial losses and addiction."}],"1xbet":[{"f":"1xbet_0","c":["Sports Betting","Casino Games"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The advertisement for 1xBet offers a 100-200% bonus on initial deposits to attract new users. This promotion is harmful as it presents gambling as an easy way to get extra money and downplays the inherent risks, potentially encouraging users to deposit and risk more money than they should."},{"f":"1xbet_1","c":["Sports Betting","Prediction Games"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The image advertises daily sports betting tips from a service called 'Parieur Tunisien', highlighting a combined odd of 11.00. This is harmful because it promotes an 'easy money' narrative and minimizes the inherent risks of gambling by presenting predictions as a reliable way to win, which can lead to financial loss and addiction."},{"f":"1xbet_2","c":["Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The image advertises the sports betting platform 1xBet, offering a 200% bonus with a promo code. This promotion is harmful as it presents an 'easy money' narrative and minimizes the perception of risk, which can encourage users to deposit and bet more money than they might otherwise, increasing the risk of financial loss and addiction."},{"f":"1xbet_3","c":["Sports Betting"],"n":["Easy money","Success story"],"ai":false,"t":"This is a promotional image from the betting company 1xBet related to a football match between Man City and Liverpool. The text \"ANNONCE DES GAGNANTS\" (Announcement of Winners) is a form of success story manipulation, as it highlights winners to make winning seem more common and achievable than it is, which can encourage risky betting behavior."},{"f":"1xbet_4","c":["Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"This is an advertisement for the betting company 1xBet, promoting a '100% Welcome Bonus' with a promo code to attract new users. The ad promotes harmful narratives like 'Easy Money' and 'Risk Minimization', which can mislead users into thinking gambling is a simple and low-risk way to get money, potentially leading to financial losses and addiction."},{"f":"1xbet_5","c":["Sports Betting"],"n":["Addiction normalization"],"ai":false,"t":"This is an advertisement for the betting company 1xBet, featuring footballer Lionel Messi and posing a question about his 'comeback'. The ad is harmful as it uses a globally recognized and admired athlete to promote gambling, which can normalize betting and make it seem like a natural part of being a sports fan, especially to younger audiences."},{"f":"1xbet_6","c":["Sports Betting"],"n":["Risk minimization","Easy money"],"ai":false,"t":"This ad for the betting platform 1xBet promotes its social media channels and offers a promo code for a first deposit bonus. The bonus offer is a harmful narrative as it minimizes the perceived risk of betting and can encourage users to deposit money, potentially leading to financial loss and gambling addiction."},{"f":"1xbet_7","c":["Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"This is an advertisement for the betting company 1xBet, offering a '100% Welcome Bonus' with a promo code. This is harmful as it promotes an 'easy money' narrative and minimizes the perceived risks of gambling by offering a bonus, which can encourage irresponsible betting and lead to financial loss."},{"f":"1xbet_8","c":["Sports Betting"],"n":["Risk minimization"],"ai":false,"t":"The image is an advertisement in Spanish for the betting app 1xBet, with the main call to action being \"REGÍSTRATE\" (Register). The ad promotes gambling, which is inherently risky and can lead to addiction and financial issues, despite a small warning at the bottom."}],"fairplayfantasy":[{"f":"fairplayfantasy_0","c":["Sports Betting"],"n":["Risk minimization"],"ai":false,"t":"The image advertises the betting platform Fairwin77, using a cricket match and celebrity players to attract users. The ad is harmful as it uses celebrity endorsements and misleading claims of being a 'legal' company to normalize gambling and downplay the significant financial risks involved."},{"f":"fairplayfantasy_1","c":["Fantasy Sports","Sports Betting"],"n":["Risk minimization","Easy money"],"ai":false,"t":"This ad for 'fairplay FANTASY' promotes its withdrawal system with a bold guarantee, promising 'double withdrawal' if funds are frozen, and offers free coins on deposit. This is harmful as it uses risk minimization tactics and potentially misleading promises to lure users, downplaying the financial risks involved in such platforms."},{"f":"fairplayfantasy_2","c":["Fantasy Sports","Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The ad features a celebrity, Varun Dhawan, promoting the 'Fairplay Fantasy' app, a fantasy sports platform. This celebrity endorsement is harmful as it can create a false sense of security and trust, minimizing the perceived financial risks of fantasy gaming for his fans."},{"f":"fairplayfantasy_3","c":["Sports Betting","Fantasy Sports"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The ad features celebrity Varun Dhawan promoting the 'Fairplay Fantasy' app, encouraging users to 'Win Big'. This is harmful as it uses a celebrity to build trust, promotes an 'easy money' narrative, and misleads users by framing a gambling activity as a game of skill, which can downplay the financial risks involved."},{"f":"fairplayfantasy_4","c":["Fantasy Sports","Sports Betting","Prediction Games"],"n":["Risk minimization","Addiction normalization"],"ai":false,"t":"The ad promotes 'Fairplay Fantasy,' encouraging users to shift from watching sports to actively participating through fantasy gaming. This is harmful as it frames gambling as a natural extension of sports fandom, potentially minimizing the perception of financial risk and normalizing betting behavior."},{"f":"fairplayfantasy_5","c":["Fantasy Sports","Prediction Games"],"n":["Risk minimization","Addiction normalization"],"ai":false,"t":"The ad features Bollywood actor Varun Dhawan promoting the 'Fairplay Fantasy' app, framing the activity as more thrilling than just watching cricket. The use of a major celebrity is harmful as it can lend undue credibility to a gambling-related activity, minimizing the perceived financial risks and potential for addiction for his fans."},{"f":"fairplayfantasy_6","c":["Fantasy Sports","Prediction Games"],"n":["Risk minimization"],"ai":false,"t":"This advertisement for 'Fairplay Fantasy' features celebrity Varun Dhawan to promote their fantasy sports platform. The use of a celebrity can be harmful as it normalizes and glamorizes an activity with financial risks, potentially leading users, especially fans of the celebrity, to underestimate the dangers of addiction and financial loss."},{"f":"fairplayfantasy_7","c":["Fantasy Sports","Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The image is an advertisement for the 'Fairplay Fantasy' app, promoting a fantasy cricket game for a match between Hyderabad and Gujarat. It is harmful because it frames gambling as a game of skill and a 'battle,' which minimizes the perception of financial risk and can encourage users to spend money, potentially leading to addiction."},{"f":"fairplayfantasy_8","c":["Sports Betting","Fantasy Sports","Prediction Games"],"n":["Risk minimization"],"ai":false,"t":"The ad promotes the 'Fairplay Fantasy' platform by encouraging users to make predictions on an India vs. England cricket match. This is harmful as it normalizes sports betting, framing it as a simple prediction game which minimizes the significant financial risks and potential for addiction."}],"rajabets":[{"f":"rajabets_0","c":["Sports Betting","Casino Games"],"n":["Risk minimization"],"ai":false,"t":"The image is an advertisement for RajaBETS, promoting up to 25% cashback on sports and casino games. The cashback offer is harmful as it minimizes the perceived risk of losing money, which can encourage users to gamble more frequently or with larger amounts."},{"f":"rajabets_1","c":["Sports Betting","Casino Games"],"n":["Easy money","Risk minimization","Time pressure"],"ai":false,"t":"The ad for 'rajaBETS' promotes a 150% welcome bonus as a limited-time offer to attract new users. This is harmful as it employs risk minimization and easy money narratives, and uses time pressure to encourage impulsive deposits without fully considering the financial risks of gambling."},{"f":"rajabets_2","c":["Sports Betting","Casino Games","Lottery / Jackpots"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The image is an advertisement for a 'Welcome 2025 Tournament' by RajaBETS, featuring a large prize pool of ₹5,000,000. This is harmful because it promotes an 'easy money' narrative, making a large win seem attainable while minimizing the very real risk of financial loss, which can encourage gambling addiction."},{"f":"rajabets_3","c":["Casino Games","Sports Betting","Lottery / Jackpots"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The ad promotes a 'Wheel of Fortune VIP' game for a betting platform called RajaBETS, showcasing prizes like a car and significant bonuses. This is harmful as it strongly promotes an 'easy money' narrative and minimizes the inherent financial risks of gambling by focusing on large, attractive prizes."},{"f":"rajabets_4","c":["Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The image is an advertisement for the betting platform RajaBETS, promoting a 200% welcome bonus for sports. The ad is harmful as it uses a large bonus to minimize the perceived risks of gambling and promotes an 'easy money' narrative, which can lead to addiction and financial losses."},{"f":"rajabets_5","c":["Sports Betting","Casino Games"],"n":["Risk minimization"],"ai":false,"t":"The image is an advertisement for a betting platform called RajaBETS, promoting up to 25% cashback on sports and casino games. The cashback offer is a harmful narrative as it minimizes the perceived risks of gambling, which might encourage users to bet more money than they can afford to lose."},{"f":"rajabets_6","c":["Casino Games"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The ad for RajaBETS promotes free spins for their online casino slot machines. The slogan 'Deposit high, win more' is a harmful narrative, as it misleadingly suggests a direct correlation between spending more money and winning, which can encourage excessive gambling and financial loss."},{"f":"rajabets_7","c":["Casino Games","Sports Betting","Lottery / Jackpots"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The ad for RajaBETS promotes a 'Wheel of Fortune' game with high-value prizes like an iPhone and various betting bonuses. This is harmful as it creates an 'easy money' illusion and minimizes the real financial risks of gambling, encouraging potentially addictive behavior."},{"f":"rajabets_8","c":["Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The image is an advertisement for the sports betting platform RajaBets, offering a deposit bonus for betting on football matches. The promotion of 'get extra 200' on a '200 deposit' frames gambling as a low-risk activity with easy returns, which can mislead users and encourage addictive behavior."}],"stake":[{"f":"stake_0","c":["Sports Betting"],"n":["Risk minimization"],"ai":false,"t":"This image is an advertisement for a sports betting service called 'Ambani Book', centered around a cricket match. It's harmful because it promotes gambling and provides direct contact numbers to create betting IDs, making it easily accessible and potentially leading to financial losses and addiction."},{"f":"stake_1","c":["Sports Betting"],"n":["Risk minimization"],"ai":false,"t":"The ad for 'Dynamo Betting Exchange' features Indian cricketer Jasprit Bumrah to promote betting on a cricket match. The use of a famous athlete is a harmful narrative as it can legitimize and normalize gambling, especially for young fans, while downplaying the significant risks of financial loss and addiction."},{"f":"stake_2","c":["Sports Betting","Prediction Games"],"n":["Easy money","Risk minimization","Success story"],"ai":false,"t":"The image displays a list of sports betting tips for football matches, with green checkmarks implying they are all successful predictions. This is harmful as it promotes an 'easy money' narrative and minimizes the inherent risks of gambling by selectively showing only 'wins', which can mislead users into developing a gambling addiction."},{"f":"stake_3","c":["Sports Betting"],"n":["Easy money"],"ai":false,"t":"This is an advertisement for a sports betting platform named 'Everest Nepal Book'. It encourages users to get a new betting ID via WhatsApp, making gambling seem easily accessible. This normalization of betting can be harmful, potentially leading to financial losses and gambling addiction for users."},{"f":"stake_4","c":["Casino Games"],"n":["Easy money","Risk minimization"],"ai":false,"t":"This ad promotes an online casino called 'Highwin Book', encouraging users to play roulette and win real money. The ad is harmful because it pushes an 'easy money' narrative with slogans like 'PLAY HIGH WIN HIGH', which misleads users about the high financial risks of gambling and can lead to addiction."},{"f":"stake_5","c":["Casino Games","Sports Betting","Card Games"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The advertisement for 'Everest Nepal Book' promotes slot games and other betting activities with promises of huge and unlimited winnings. The 'easy money' narrative is particularly harmful, as it can mislead individuals into gambling excessively, potentially leading to significant financial loss and addiction."},{"f":"stake_6","c":["Sports Betting"],"n":["Easy money","Risk minimization"],"ai":false,"t":"The image is an advertisement for a sports betting platform named 'Ambani Book', promoting betting on an Asia Cup cricket match between India and Bangladesh. This ad is harmful as it promotes gambling, which can lead to addiction and financial losses, while using terms like 'Self Deposit' and 'Self Withdrawal' to minimize the perceived risks and complexity."},{"f":"stake_7","c":["Sports Betting","Prediction Games"],"n":["Easy money","Risk minimization","Success story"],"ai":false,"t":"The image advertises a betting tip service, showing predictions for three football matches with large green checkmarks implying guaranteed wins. This is harmful as it creates an 'easy money' narrative and minimizes gambling risks, which can mislead users into making risky financial decisions and potentially develop a gambling addiction."},{"f":"stake_8","c":["Casino Games","Sports Betting"],"n":["Easy money","Risk minimization","Addiction normalization"],"ai":false,"t":"The ad promotes a gambling platform called 'Adani Book', showcasing casino games like roulette and dice. It is harmful because it promotes an 'Easy Money Narrative' with the slogan 'Live Victories', misleading users about the financial risks, while the 24/7 service promotes addictive gambling habits."}],"_extra":[{"f":"n_success_16","tag":"aviatorgame","n":["Easy money","Risk minimization","Success story"],"ai":false,"t":"The ad promotes the 'Aviator' game on the 'Lucky Star' platform by showcasing a massive win of ₹800,000. This is harmful because it pushes a strong 'easy money' narrative and uses a manipulated success story to mislead users about the real odds, minimizing the significant financial risks of gambling."},{"f":"n_success_0","tag":"colortrading","n":["Easy money","Risk minimization","Success story"],"ai":false,"t":"The image displays a list of results from a prediction game, showing a significantly high number of wins compared to losses. This is harmful as it manipulates a success story to create an 'easy money' narrative, which can mislead users into believing they can easily win, downplaying the real financial risks of gambling."},{"f":"n_success_30","tag":"aviatorgame","n":["Easy money","Income framing","Success story"],"ai":false,"t":"The ad promotes the 'Aviator' gambling game on a platform called 'Gurudev Book'. It uses harmful narratives like 'multiply your wealth every time you play' and shows a large, fabricated win, which promotes an easy money narrative and frames gambling as a reliable income source, potentially leading users to financial loss and addiction."},{"f":"n_time_5","tag":"aviatorgame","n":["Easy money","Time pressure","Risk minimization"],"ai":true,"t":"The ad features an AI-generated image of an airplane and a stopwatch, using urgency with 'LAST CHANCE!' to promote a gambling service with a promo code. The harmful aspects include the 'easy money' narrative and time pressure tactics, which encourage impulsive gambling and obscure the associated financial risks."},{"f":"n_time_22","tag":"iplbetting","n":["Easy money","Risk minimization","Time pressure"],"ai":true,"t":"The ad promotes live cricket betting on Lemonbook.in, using stylized imagery of cricketers to attract users. The ad is harmful as it uses time pressure ('PLACE YOUR BETS NOW!') and offers a bonus to trivialize the risks of gambling, promoting an 'easy money' narrative that can lead to financial loss and addiction."},{"f":"n_time_24","tag":"aviatorgame","n":["Easy money","Addiction normalization","Time pressure"],"ai":false,"t":"This is an advertisement for the 'Aviator' casino game on the 'Dream Casino 9' platform. The ad is harmful as it promotes an 'easy money' narrative with high multipliers and uses the slogan 'Cash out before you pass out!', which can normalize addictive gambling behaviors."},{"f":"n_time_15","tag":"1xbet","n":["Easy money","Risk minimization","Time pressure"],"ai":false,"t":"The image is an advertisement for sports betting on a Russian football match, promoting the platform BetWinner with a promo code. The ad uses a countdown timer as a time pressure tactic to create urgency and highlights 'improved odds' to minimize perceived risk, which can encourage impulsive and potentially harmful betting behavior."},{"f":"n_time_13","tag":"jeetwin","n":["Easy money","Risk minimization","Time pressure"],"ai":false,"t":"The image is an ad for a betting or fantasy sports platform, promoting a giveaway and a 200% bonus tied to an IPL cricket match. The promotion of a large bonus can be harmful as it promotes an 'easy money' narrative and minimizes the perceived risks of gambling, potentially leading to financial loss for users."},{"f":"n_addict_4","tag":"aviatorgame","n":["Easy money","Risk minimization","Success story","Addiction normalization"],"ai":false,"t":"This ad promotes the 'Aviator' crash game, featuring a happy man with a large win multiplier (56.00x) on his phone. The ad is harmful as it frames a game of chance as being based on 'strategy', minimizes the inherent risks, and uses a large, atypical win to promote an 'easy money' narrative, which can lead to financial losses and gambling addiction."},{"f":"n_addict_34","tag":"aviatorgame","n":["Risk minimization","Addiction normalization"],"ai":false,"t":"This is an advertisement for the 'Aviator' game from 'World Sports Betting'. The promotion is harmful because it explicitly offers 'free bets too when you ran out of cash,' which normalizes losing all one's money and encourages continued gambling, potentially fostering addiction and minimizing the perception of financial risk."},{"f":"n_addict_12","tag":"jeetwin","n":["Addiction normalization","Risk minimization"],"ai":false,"t":"The image is an advertisement for the gambling platform 'JeetWin Pakistan', promoting its 24/7 customer support. The ad is harmful because it normalizes gambling by presenting it as a professional and reliable service, which can lower a user's perception of the associated financial risks."},{"f":"n_celeb_15","tag":"fairplayfantasy","n":["Easy money","Risk minimization","Addiction normalization"],"ai":false,"t":"The ad features Bollywood actors Varun Dhawan and Shraddha Kapoor promoting the 'Fairplay Fantasy' app. The slogan 'winning big every day' and the use of celebrity influence are harmful as they create a misleading easy money narrative, minimize risks, and could encourage gambling addiction."},{"f":"n_celeb_1","tag":"fairplayfantasy","n":["Easy money","Risk minimization"],"ai":false,"t":"This ad features Bollywood celebrities promoting the 'Fairplay Fantasy' app, with the promise of winning 'instant money'. The use of celebrities and the 'easy money' narrative are harmful as they downplay the significant financial risks of gambling and can lead to addiction."},{"f":"n_celeb_6","tag":"jeetwin","n":["Risk minimization"],"ai":false,"t":"The image is an advertisement for the betting platform 'JeetWin', featuring actress Nidhhi Agerwal as the brand ambassador. The use of a celebrity is a harmful tactic as it can create a false sense of security and trust, minimizing the perceived risks of gambling and making it more appealing to the celebrity's followers."}]};
+const DER = {"series":[["2024-01",6],["2024-03",17],["2024-04",7],["2024-05",41],["2024-06",45],["2024-07",67],["2024-08",225],["2024-09",423],["2024-10",618],["2024-11",366],["2024-12",513],["2025-01",325],["2025-02",362],["2025-03",789],["2025-04",711],["2025-05",1821],["2025-06",1359],["2025-07",753]],"pre2024":27,"hist":[["1",423],["2",1950],["3",1135],["4",567],["5",502],["6",491],["7",384],["8–14",1153],["15–30",703],["31–90",510],["90+",324]],"n_dur":8142,"plat":[["facebook",7883],["instagram",7654],["messenger",5585],["audience_network",5192],["threads",1741]],"ig_apps":[["Thala7 Exch",449],["Aviator",295],["JeetWin",279],["1xBet",201],["Dynamo Exchange",117],["Parimatch",117],["Samrat Online Book",109],["Fairplay",99],["Dhanwan Book",60],["1win",50],["Rajabets",46],["Lotus365 / Lotus606",44],["Betfair",41],["Fairwin77",27],["Playexch",23],["Everest Book",21],["Swastik 111",21],["Reddy Anna Book",17],["Virat 777",17],["Platinum Online Book",15],["Tigro Club",12],["Stake",11],["Laser Book",9],["Dafabet",1]]};
+</script>
+<script>
+(() => {
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const cssv = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const nf = new Intl.NumberFormat('en-IN');
+const nfi = new Intl.NumberFormat('en-US');
+const pct = (v, d = 1) => (v < 0.1 && v > 0 ? v.toFixed(2) : v.toFixed(d)) + '%';
+const onResize = (fn) => { let t; addEventListener('resize', () => { clearTimeout(t); t = setTimeout(fn, 150); }); };
+
+/* ---------------- ad + post cards ---------------- */
+function ranLabel(m) {
+  if (!m.start) return '';
+  const d = new Date(m.start + 'T00:00:00');
+  const mon = d.toLocaleString('en-GB', { month: 'short', year: 'numeric' });
+  return m.days ? `Ran ${m.days} day${m.days > 1 ? 's' : ''} · ${mon}` : `Started ${mon}`;
+}
+function hostOf(c) { return (c || '').replace(/^https?:\/\//, '').replace(/\/$/, '').split('/')[0]; }
+function adCard(name, { cap = '', poster = '', badge = '', showText = true } = {}) {
+  const m = MAN.ads[name];
+  const fig = document.createElement('figure');
+  fig.className = 'ad';
+  const txt = [m.title, m.body].filter(Boolean).join(' · ');
+  const initials = m.masked ? '·' : esc((m.page || '?').replace(/[^A-Za-z0-9]/g, '').slice(0, 1).toUpperCase());
+  const media = m.video
+    ? `<button class="ad-media vid" type="button" data-vid="${name}" aria-label="Play video ad">${badge}<img src="assets/video/${name}${poster}.webp" width="${m.w}" height="${m.h}" alt="" loading="lazy">${poster ? `<img class="orig" src="assets/video/${name}.webp" alt="" loading="lazy"><span class="hint">Hover for the original</span>` : ''}<span class="play">Play</span></button>`
+    : `<button class="ad-media" type="button" data-zoom="ad:${name}" aria-label="Enlarge ad">${badge}<img src="assets/ads/${name}.webp" width="${m.w}" height="${m.h}" alt="Ad creative" loading="lazy"></button>`;
+  fig.innerHTML = `
+    <div class="ad-head"><span class="ad-av">${initials}</span><div style="min-width:0"><div class="ad-page${m.masked ? ' masked' : ''}">${esc(m.page)}</div><div class="ad-sub">Sponsored · ${esc(ranLabel(m))}</div></div></div>
+    ${showText && txt ? `<p class="ad-text">${esc(txt)}</p>` : ''}
+    ${media}
+    <div class="ad-foot"><span>${esc(hostOf(m.cap) || 'no link shown')}</span><span class="arrow">↗</span></div>
+    ${cap ? `<figcaption>${cap}</figcaption>` : ''}`;
+  return fig;
+}
+const IGX = {};
+Object.entries(IG).forEach(([k, arr]) => arr.forEach(p => { IGX[p.f] = { ...p, tag: p.tag || k }; }));
+function postCard(f, cap = '') {
+  const p = IGX[f];
+  const fig = document.createElement('figure');
+  fig.className = 'post';
+  fig.innerHTML = `<div class="tag">#${esc(p.tag)}</div>
+    <button class="ad-media" type="button" data-zoom="ig:${f}" aria-label="Enlarge post" style="margin-top:.4rem">${p.ai ? '<span class="dfbadge"><span class="stamp">AI-generated</span></span>' : ''}<img src="assets/ig/${f}.webp" alt="Instagram post" loading="lazy"></button>
+    <figcaption>${p.n && p.n.length ? `<div class="stamps">${p.n.slice(0, 3).map(n => `<span class="stamp">${esc(n)}</span>`).join('')}</div>` : ''}${cap}</figcaption>`;
+  return fig;
+}
+
+/* video play-in-place */
+document.addEventListener('click', e => {
+  const v = e.target.closest('[data-vid]');
+  if (v) {
+    const name = v.dataset.vid, m = MAN.ads[name];
+    const vid = document.createElement('video');
+    vid.src = `assets/video/${name}.mp4`; vid.controls = true; vid.playsInline = true; vid.autoplay = true;
+    vid.setAttribute('width', m.w); vid.setAttribute('height', m.h);
+    const wrap = document.createElement('div'); wrap.className = 'ad-media'; wrap.style.cursor = 'default';
+    const badge = v.querySelector('.dfbadge'); if (badge) wrap.appendChild(badge);
+    wrap.appendChild(vid);
+    v.replaceWith(wrap);
+    vid.play().catch(() => {});
+    return;
+  }
+  const z = e.target.closest('[data-zoom]');
+  if (z) openLB(z.dataset.zoom);
+});
+
+/* lightbox */
+const lb = $('#lb');
+function openLB(key) {
+  const [kind, f] = key.split(':');
+  let img, text = '';
+  if (kind === 'ad') {
+    const m = MAN.ads[f];
+    img = `assets/ads/${f}.webp`;
+    text = `<h5>Meta ad</h5><p><b>${esc(m.page)}</b><br>${esc(ranLabel(m))}</p>${m.title || m.body ? `<p style="white-space:pre-line">${esc([m.title, m.body].filter(Boolean).join('\n'))}</p>` : ''}<p class="src" style="color:#8F8E96">Links to ${esc(hostOf(m.cap) || '—')} · ${esc((m.plat || []).join(', '))}</p>`;
+  } else {
+    const p = IGX[f];
+    img = `assets/ig/${f}.webp`;
+    text = `<h5>Instagram · #${esc(p.tag)}</h5>${p.n && p.n.length ? `<div class="stamps">${p.n.map(n => `<span class="stamp">${esc(n)}</span>`).join('')}${p.ai ? '<span class="stamp">AI-generated</span>' : ''}</div>` : ''}<p>${esc(p.t)}</p><p class="src" style="color:#8F8E96">Annotation note written by Gemini 2.5 Pro using the study’s codebook.</p>`;
+  }
+  $('#lbm').innerHTML = `<img src="${img}" alt="">`;
+  $('#lbt').innerHTML = text;
+  if (lb.showModal) lb.showModal(); else lb.setAttribute('open', '');
+}
+$('#lbx').addEventListener('click', () => lb.close());
+lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+
+/* ---------------- html bars ---------------- */
+function hbars(el, rows, { max, fmt = v => pct(v), hot = () => false, sub = () => '', button = false, onPick } = {}) {
+  const M = max ?? Math.max(...rows.map(r => r.v));
+  el.innerHTML = '';
+  rows.forEach((r, i) => {
+    const node = document.createElement(button ? 'button' : 'div');
+    node.className = 'hbar' + (hot(r, i) ? ' hot' : '');
+    if (button) { node.type = 'button'; node.setAttribute('aria-pressed', 'false'); node.addEventListener('click', () => onPick(r, node)); }
+    const s = sub(r, i);
+    node.innerHTML = `<div class="lab"><span>${esc(r.k)}</span><b>${fmt(r.v, r)}</b></div><div class="track"><div class="fill" style="width:0%;${r.color ? `background:${r.color}` : ''}"></div></div>${s ? `<div class="sub">${s}</div>` : ''}`;
+    el.appendChild(node);
+  });
+  const go = () => $$('.fill', el).forEach((f, i) => f.style.width = (100 * rows[i].v / M) + '%');
+  reduce ? go() : requestAnimationFrame(() => requestAnimationFrame(go));
+}
+function whenVisible(el, fn, margin = '0px 0px -10% 0px') {
+  if (reduce || !('IntersectionObserver' in window)) { fn(); return; }
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { fn(); io.disconnect(); } }), { rootMargin: margin });
+  io.observe(el);
+}
+
+/* ---------------- top bar ---------------- */
+const chapters = $$('[data-chap]');
+const topbar = $('#topbar'), chapEl = $('#chap'), pbar = $('#pbar');
+function onScroll() {
+  const y = scrollY, h = document.documentElement.scrollHeight - innerHeight;
+  topbar.classList.toggle('on', y > innerHeight * 0.75);
+  pbar.style.width = (100 * y / h) + '%';
+  let cur = '';
+  for (const c of chapters) if (c.getBoundingClientRect().top < innerHeight * 0.35) cur = c.dataset.chap;
+  chapEl.textContent = cur;
+}
+addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+/* ---------------- SIEVE ---------------- */
+(function sieve() {
+  const cv = $('#sieveCanvas'), ctx = cv.getContext('2d');
+  const groups = [
+    { k: 'rel', n: 105 }, { k: 'unrel', n: 131 }, { k: 'nomedia', n: 62 }, { k: 'removed', n: 206 }, { k: 'fiction', n: 2904 }
+  ];
+  const N = groups.reduce((a, g) => a + g.n, 0);
+  const keyOf = []; groups.forEach(g => { for (let i = 0; i < g.n; i++) keyOf.push(g.k); });
+  // states: fill colour token + alpha + outline flag per group
+  const S = [
+    { rel: ['ink', .8], unrel: ['ink', .8], nomedia: ['ink', .8], removed: ['ink', .8], fiction: ['ink', .8] },
+    { rel: ['ink', .85], unrel: ['ink', .85], nomedia: ['ink', .85], removed: ['ink', .85], fiction: ['ink3', .14] },
+    { rel: ['ink', .85], unrel: ['ink', .85], nomedia: ['ink', .85], removed: ['red', .95, 1], fiction: ['ink3', .14] },
+    { rel: ['ink', .9], unrel: ['ink', .9], nomedia: ['ink', .35, 1], removed: ['red', .3, 1], fiction: ['ink3', .1] },
+    { rel: ['red', 1], unrel: ['ink3', .45], nomedia: ['ink3', .2, 1], removed: ['red', .2, 1], fiction: ['ink3', .08] },
+  ];
+  const LEG = [
+    [['ink', '≈340,000 ads collected']],
+    [['ink', 'Possibly betting'], ['ink3', 'Fiction-story apps']],
+    [['ink', 'Possibly betting'], ['red', 'Removed by Meta'], ['ink3', 'Fiction-story apps']],
+    [['ink', 'Media downloaded (23,620)'], ['ink3', 'No media (6,152)'], ['red', 'Removed']],
+    [['red', 'Betting ads (10,526)'], ['ink3', 'Unrelated after annotation (13,094)']],
+  ];
+  let step = 0, cur = {}, W = 0, H = 0, cols = 80, sz = 6, dpr = 1;
+  const colors = () => ({ ink: cssv('--ink'), ink3: cssv('--ink-3'), red: cssv('--red') });
+  function layout() {
+    W = cv.parentElement.clientWidth; cols = W < 520 ? 48 : W < 760 ? 64 : 80;
+    sz = W / cols; const rows = Math.ceil(N / cols);
+    const maxH = innerWidth < 860 ? innerHeight * 0.42 : innerHeight * 0.7;
+    if (rows * sz > maxH) { sz = maxH / rows; }
+    H = rows * sz; dpr = devicePixelRatio || 1;
+    cv.width = Math.round(cols * sz * dpr); cv.height = Math.round(H * dpr);
+    cv.style.width = cols * sz + 'px'; cv.style.height = H + 'px';
+  }
+  function target(st) { const s = S[st]; const o = {}; for (const g of groups) { const [c, a, out] = s[g.k]; o[g.k] = { c, a, out: !!out }; } return o; }
+  function draw(state) {
+    const C = colors();
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, cols * sz, H);
+    const gap = Math.max(.6, sz * .16), s = sz - gap;
+    for (let i = 0; i < N; i++) {
+      const g = state[keyOf[i]]; const x = (i % cols) * sz, y = Math.floor(i / cols) * sz;
+      ctx.globalAlpha = g.a;
+      if (g.out) { ctx.strokeStyle = C[g.c]; ctx.lineWidth = Math.max(.8, s * .16); ctx.strokeRect(x + .5, y + .5, s - 1, s - 1); }
+      else { ctx.fillStyle = C[g.c]; ctx.fillRect(x, y, s, s); }
+    }
+    ctx.globalAlpha = 1;
+  }
+  function legend(st) {
+    const C = colors();
+    $('#sieveLegend').innerHTML = LEG[st].map(([c, t]) => `<span><i style="background:${C[c]}"></i>${t}</span>`).join('');
+  }
+  let anim;
+  function go(st) {
+    if (st === step && Object.keys(cur).length) return;
+    const from = Object.keys(cur).length ? cur : target(st), to = target(st);
+    step = st; legend(st);
+    if (reduce) { cur = to; draw(cur); return; }
+    const t0 = performance.now(); cancelAnimationFrame(anim);
+    const tick = t => {
+      const k = Math.min(1, (t - t0) / 600), e = 1 - Math.pow(1 - k, 3);
+      const mid = {};
+      for (const g of groups) { const a = from[g.k], b = to[g.k]; mid[g.k] = { c: k < .5 ? a.c : b.c, a: a.a + (b.a - a.a) * e, out: k < .5 ? a.out : b.out }; }
+      draw(mid); cur = mid;
+      if (k < 1) anim = requestAnimationFrame(tick); else cur = to;
+    };
+    anim = requestAnimationFrame(tick);
+  }
+  layout(); cur = target(0); draw(cur); legend(0);
+  onResize(() => { layout(); draw(cur); });
+  matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', () => { draw(cur); legend(step); });
+  const steps = $$('#sieve .step');
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { steps.forEach(s => s.classList.toggle('on', s === e.target)); go(+e.target.dataset.step); }
+  }), { rootMargin: '-45% 0px -45% 0px' });
+  steps.forEach(s => io.observe(s));
+  steps[0].classList.add('on');
+})();
+
+/* ---------------- NARRATIVE EXPLORER ---------------- */
+const NARR = [
+  { id: 'easy', label: 'Easy money', paid: 99.39, org: 79.33, def: 'Small stakes shown turning into large, quick wins.',
+    ex: [
+      { a: 'invest200', cap: '<b>“India’s first Aviator app. Invest ₹200 and earn ₹20,000 today.”</b> The ad’s own text describes a clicker app: “100% work · x1000 click speed.”' },
+      { a: 'ipl_1win', cap: 'Text: <b>“Oye bhai, IPL 2025 is ON! … Kohli ke runs, Bumrah ke wickets! 500% bonus up to ₹80,400!”</b>' },
+      { a: 'bc_deposit300', cap: 'One of <b>1,108 ads</b> in the corpus pointing to bcgame-freespin.com.' },
+    ] },
+  { id: 'risk', label: 'Risk minimization', paid: 98.40, org: 78.24, def: 'Outcomes framed as safe, knowable, predictable or verified.',
+    ex: [
+      { a: 'aviator_89_hi', cap: 'In Hindi: <b>“₹10,000 bonus for all new players! India’s biggest hit. 89% chance of winning!”</b> The link caption reads google.play.com, which is not Google Play’s address.' },
+      { a: 'tips_verified', cap: '<b>“VERIFIED · WE DELIVER”</b> stamped over a winning slip, with an invite to a Telegram group.' },
+      { ig: 'fairplayfantasy_1', cap: '<b>“Apki freeze money ko 100% guaranty hamari.”</b> If your money is frozen with us, we’ll pay double. The pitch acknowledges frozen withdrawals.' },
+    ] },
+  { id: 'income', label: 'Income source framing', paid: 23.40, org: 8.59, def: 'Betting presented as a livelihood or a daily income rather than leisure.',
+    ex: [
+      { a: 'plane_income', cap: 'A table converting an <b>“investment amount” into “daily income.”</b> The link led to a staking site behind a Cloudflare check.' },
+      { a: 'daily_profit', cap: '<b>“Daily profit up to 62.5%.”</b> Minimum deposit 8 USDT.' },
+      { a: 'telegram_member_service', cap: 'The supply chain advertises too: an agency selling Telegram members for <b>colour trading, cricket prediction and binary trading</b> channels.' },
+    ] },
+  { id: 'success', label: 'Success story manipulation', paid: 1.85, org: 11.43, def: 'Winners’ stories and testimonials used as proof that anyone can win.',
+    ex: [
+      { a: 'testimonial_350', cap: 'In Hindi: <b>“Ajit got a ₹350 bonus and won ₹6,00,000.”</b> A “total profit” counter climbs past ₹1 lakh. The ad text: “Auto click x10000 · Easy to use.”' },
+      { ig: 'n_success_16', cap: '<b>“₹800,000. Win of the week.”</b>' },
+      { ig: 'n_success_30', cap: '<b>“Multiply your wealth every time you play.”</b>' },
+    ] },
+  { id: 'addict', label: 'Addiction normalization', paid: 0.33, org: 9.74, def: 'Constant or compulsive play framed as normal, fun, or part of being a fan.',
+    ex: [
+      { ig: 'n_time_24', cap: '<b>“Cash out before you pass out!”</b>' },
+      { ig: 'n_addict_34', cap: 'Free bets offered <b>“when you ran out of cash.”</b>' },
+      { ig: 'n_addict_4', cap: '<b>“Simple to play but packed with strategy and real-money thrills.”</b>' },
+    ] },
+  { id: 'debt', label: 'Debt solution marketing', paid: 1.85, org: 0.42, def: 'Betting, or a “service”, pitched as the way to recover losses or pay off debt.',
+    ex: [
+      { a: 'loss_cover_hi', cap: 'In Hindi: <b>“Want to cover your losses with 10 minutes of hacking? Get in touch.”</b> You pay 30% of the winnings after withdrawal.' },
+      { ig: 'colortrading_0', cap: '<b>“Saara loss recover ho jaega.”</b> All your losses will be recovered. “100% winning trick. ₹1,000 se ₹25,000 karlo daily.”' },
+      { ig: 'colortrading_5', cap: 'A “client review” screenshot: <b>“Loss recover gurrented.”</b>' },
+    ] },
+  { id: 'time', label: 'Time pressure', paid: 0.05, org: 3.49, def: 'Countdowns and limited-time offers that rush the decision.',
+    ex: [
+      { a: 'bc_72h', cap: '<b>“72H only. Get 1000%.”</b>' },
+      { ig: 'n_time_5', cap: '<b>“Last chance!”</b>' },
+      { ig: 'n_time_22', cap: '<b>“GT vs SRH live. Place your bets now!”</b> Get your cricket betting ID instantly.' },
+    ] },
+];
+(function explorer() {
+  const list = $('#nlist'), panel = $('#npanel');
+  NARR.forEach((n, i) => {
+    const b = document.createElement('button');
+    b.className = 'nbtn'; b.type = 'button'; b.setAttribute('role', 'tab'); b.id = 'nt-' + n.id;
+    b.setAttribute('aria-controls', 'npanel');
+    b.innerHTML = `<span class="nl">${n.label}</span><span class="np num">${pct(n.paid)}</span><span class="mini"><i style="width:${n.paid}%"></i><i class="o" style="width:${n.org}%"></i></span>`;
+    b.addEventListener('click', () => pick(i));
+    b.addEventListener('keydown', e => {
+      if (e.key === 'ArrowDown' || e.key === 'ArrowRight') { e.preventDefault(); pick((i + 1) % NARR.length, true); }
+      if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') { e.preventDefault(); pick((i - 1 + NARR.length) % NARR.length, true); }
+    });
+    list.appendChild(b);
+  });
+  function pick(i, focus) {
+    const n = NARR[i];
+    $$('.nbtn', list).forEach((b, j) => { b.setAttribute('aria-selected', j === i); b.tabIndex = j === i ? 0 : -1; });
+    if (focus) $$('.nbtn', list)[i].focus();
+    panel.setAttribute('aria-labelledby', 'nt-' + n.id);
+    panel.innerHTML = `<h3>${n.label}</h3><p class="def">${n.def}</p>
+      <div class="pair"><div class="p"><b class="num">${pct(n.paid)}</b><span>of paid ads</span></div><div class="o"><b class="num">${pct(n.org)}</b><span>of Instagram posts</span></div></div>
+      <div class="grid-ex"></div>`;
+    const g = $('.grid-ex', panel);
+    n.ex.forEach(x => g.appendChild(x.a ? adCard(x.a, { cap: x.cap }) : postCard(x.ig, x.cap)));
+  }
+  pick(0);
+})();
+
+/* category bars */
+hbars($('#catBars'), [
+  { k: 'Casino games', v: 49.45 }, { k: 'Sports betting', v: 26.61 }, { k: 'Trading / crypto', v: 20.05 },
+  { k: 'Lottery / jackpots', v: 18.90 }, { k: 'Prediction games', v: 17.43 }, { k: 'Card games', v: 4.19 },
+  { k: 'Fantasy sports', v: 0.49 }
+], { max: 100, hot: r => r.k === 'Trading / crypto' });
+
+/* finance */
+hbars($('#finBars'), [
+  { k: 'Paid Meta ads', v: 20.05, color: 'var(--paid)' }, { k: 'Instagram posts', v: 2.42, color: 'var(--organic)' }
+], { max: 25 });
+(function finGrid() {
+  const g = $('#finGrid');
+  [['tradingview_lookalike', 'Links to <b>tradingview.app-desktops-pc.com</b>. “Offer valid until the end of this week!”'],
+   ['ai_trading_101', '<b>“AI-driven crypto trading.”</b> “Still missing crypto pumps while you’re sleeping or at work?”'],
+   ['binomo_signals', 'A wall of green ticks on currency “CALL” signals, linking to a Telegram group.'],
+   ['bybit_pi', 'A crypto “welcome bonus,” run from a page named with a phone number.']
+  ].forEach(([a, c]) => g.appendChild(adCard(a, { cap: c })));
+})();
+
+/* ---------------- FACES ---------------- */
+(function faces() {
+  const w = $('#vwall');
+  const badge = t => `<span class="dfbadge"><span class="stamp">${t}</span></span>`;
+  [['df_kohli_news', 'Deepfake', 'A fake <b>Aaj Tak</b> segment. In Hindi, an AI-voiced Virat Kohli says the app lets you “spend less and earn the most,” and that “your money will automatically multiply.”'],
+   ['df_ambani_news', 'Deepfake', 'A fake <b>India Today</b> banner: “Mukesh Ambani has launched his app with ₹80,000 bonus for everyone! Virat Kohli also gave his official commentary.”'],
+   ['df_autoclicker', 'AI-manipulated', 'A public figure under an India Today logo. The video ends on a Google Play listing for <b>“Auto Clicker – Smart Auto Tap.”</b>'],
+   ['df_kohli_slots', 'AI-manipulated', 'Kohli’s likeness composited over slot-machine footage: <b>“Super win,” “Total win.”</b>'],
+  ].forEach(([n, t, c]) => w.appendChild(adCard(n, { cap: c, poster: '_duo', badge: badge(t) })));
+
+  // cloaking card: text first, creative on demand
+  const m = MAN.ads.df_kohli_news;
+  const host = $('#cloakCard');
+  const fig = document.createElement('figure'); fig.className = 'ad';
+  fig.style.background = 'var(--stage-2)';
+  fig.innerHTML = `<div class="ad-head"><span class="ad-av">F</span><div style="min-width:0"><div class="ad-page">${esc(m.page)}</div><div class="ad-sub">Sponsored · ${esc(ranLabel(m))}</div></div></div>
+    <p class="ad-text">${esc(m.title)} · ${esc(m.body)}</p>
+    <button class="hidden-media" type="button" id="reveal"><span><strong>This is what the words say.</strong>Auto-clicker. Easy to use. Google Play.<br><br><span class="btn" style="color:var(--stage-red)">Show the video that ran</span></span></button>
+    <div class="ad-foot"><span>play.google.com</span><span class="arrow">↗</span></div>`;
+  host.appendChild(fig);
+  $('#reveal').addEventListener('click', e => {
+    const v = document.createElement('video');
+    v.src = 'assets/video/df_kohli_news.mp4'; v.controls = true; v.playsInline = true; v.autoplay = true;
+    v.setAttribute('width', m.w); v.setAttribute('height', m.h); v.style.cssText = 'display:block;width:100%;height:auto;background:#000';
+    e.currentTarget.replaceWith(v); v.play().catch(() => {});
+  });
+})();
+
+/* ---------------- CRASH ---------------- */
+const EDGE = 0.03;
+const drawCrash = () => { const u = Math.random(); const c = (1 - EDGE) / (1 - u); return c < 1 ? 1 : Math.floor(c * 100) / 100; };
+(function crashDemo() {
+  const cv = $('#crashCanvas'), ctx = cv.getContext('2d'), hist = $('#hist'), rn = $('#roundNo');
+  let W, H, dpr, round = 0, raf;
+  const pill = c => `<span class="${c >= 10 ? 'h' : c >= 2 ? 'm' : ''}">${c.toFixed(2)}x</span>`;
+  const past = []; for (let i = 0; i < 18; i++) past.push(drawCrash());
+  hist.innerHTML = past.map(pill).join('');
+  function size() { dpr = devicePixelRatio || 1; W = cv.clientWidth; H = cv.clientHeight; cv.width = W * dpr; cv.height = H * dpr; }
+  const R = Math.log(2) / 3.2; // multiplier doubles every 3.2s of game time
+  function frame(t, crash, crashed) {
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.fillStyle = '#0B0B0E'; ctx.fillRect(0, 0, W, H);
+    const pad = { l: 16, r: 30, t: 24, b: 22 };
+    const tMax = Math.max(6, t * 1.15), mMax = Math.max(2, Math.exp(R * t) * 1.2);
+    const X = s => pad.l + (W - pad.l - pad.r) * s / tMax;
+    const Y = m => H - pad.b - (H - pad.t - pad.b) * (m - 1) / (mMax - 1);
+    ctx.strokeStyle = 'rgba(255,255,255,.06)'; ctx.lineWidth = 1;
+    for (let i = 1; i < 6; i++) { const y = pad.t + (H - pad.t - pad.b) * i / 6; ctx.beginPath(); ctx.moveTo(pad.l, y); ctx.lineTo(W - pad.r, y); ctx.stroke(); }
+    // curve
+    ctx.beginPath(); ctx.moveTo(X(0), Y(1));
+    const steps = 80; for (let i = 1; i <= steps; i++) { const s = t * i / steps; ctx.lineTo(X(s), Y(Math.exp(R * s))); }
+    const ex = X(t), ey = Y(Math.exp(R * t));
+    ctx.lineTo(ex, H - pad.b); ctx.lineTo(X(0), H - pad.b); ctx.closePath();
+    const grd = ctx.createLinearGradient(0, pad.t, 0, H); grd.addColorStop(0, 'rgba(255,59,79,.42)'); grd.addColorStop(1, 'rgba(255,59,79,.02)');
+    ctx.fillStyle = crashed ? 'rgba(255,255,255,.05)' : grd; ctx.fill();
+    ctx.beginPath(); ctx.moveTo(X(0), Y(1)); for (let i = 1; i <= steps; i++) { const s = t * i / steps; ctx.lineTo(X(s), Y(Math.exp(R * s))); }
+    ctx.strokeStyle = crashed ? 'rgba(255,255,255,.25)' : '#FF3B4F'; ctx.lineWidth = 3; ctx.stroke();
+    // plane
+    if (!crashed) {
+      ctx.save(); ctx.translate(ex, ey); ctx.rotate(-0.35);
+      ctx.fillStyle = '#FF3B4F';
+      ctx.beginPath(); ctx.moveTo(14, 0); ctx.lineTo(-10, -4); ctx.lineTo(-14, -10); ctx.lineTo(-16, -9); ctx.lineTo(-13, -2); ctx.lineTo(-16, 3); ctx.lineTo(-6, 3); ctx.lineTo(-2, 11); ctx.lineTo(2, 11); ctx.lineTo(0, 3); ctx.closePath(); ctx.fill();
+      ctx.restore();
+    }
+    // multiplier text
+    const m = crashed ? crash : Math.exp(R * t);
+    ctx.textAlign = 'center'; ctx.fillStyle = crashed ? '#FF3B4F' : '#F2F1EC';
+    ctx.font = `800 ${Math.min(64, W / 7)}px Eczar, Georgia, serif`;
+    ctx.fillText(m.toFixed(2) + 'x', W / 2, H / 2 + 14);
+    if (crashed) { ctx.font = '700 13px "Libre Franklin", Arial, sans-serif'; ctx.fillStyle = '#A8A7AF'; ctx.fillText('FLEW AWAY!', W / 2, H / 2 - 34); }
+  }
+  function playRound() {
+    const crash = drawCrash(); round++; rn.textContent = 'Round ' + nf.format(round);
+    const tc = Math.log(crash) / R; const t0 = performance.now();
+    const tick = now => {
+      const t = Math.min(tc, (now - t0) / 1000 * 1.6);
+      frame(t, crash, false);
+      if (t < tc) raf = requestAnimationFrame(tick);
+      else {
+        frame(tc, crash, true);
+        past.unshift(crash); past.length = 18; hist.innerHTML = past.map(pill).join('');
+        setTimeout(() => { if (visible) playRound(); else idle = true; }, 1700);
+      }
+    };
+    raf = requestAnimationFrame(tick);
+  }
+  let visible = false, idle = true;
+  size(); frame(Math.log(past[0]) / R, past[0], true);
+  onResize(() => { size(); frame(Math.log(past[0]) / R, past[0], true); });
+  if (reduce) return;
+  new IntersectionObserver(es => es.forEach(e => { visible = e.isIntersecting; if (visible && idle) { idle = false; playRound(); } })).observe(cv);
+})();
+
+/* simulation */
+(function sim() {
+  const sl = $('#target'), cv = $('#simCanvas'), ctx = cv.getContext('2d');
+  const toT = v => Math.round(Math.exp(Math.log(1.1) + (Math.log(20) - Math.log(1.1)) * v / 1000) * 100) / 100;
+  const P = 1000, ROUNDS = 200, BET = 100, START = 10000, SHOW = 70;
+  let paths = [], finals = [], median = [];
+  function run() {
+    const t = toT(+sl.value);
+    $('#tval').textContent = t.toFixed(2) + 'x';
+    $('#tprob').textContent = `wins ${((1 - EDGE) / t * 100).toFixed(1)}% of rounds`;
+    paths = []; finals = new Float64Array(P);
+    const byRound = Array.from({ length: ROUNDS + 1 }, () => new Float64Array(P));
+    for (let p = 0; p < P; p++) {
+      let b = START; const path = p < SHOW ? [b] : null; byRound[0][p] = b;
+      for (let r = 1; r <= ROUNDS; r++) {
+        if (b >= BET) { b -= BET; if (drawCrash() >= t) b += BET * t; }
+        byRound[r][p] = b; if (path) path.push(b);
+      }
+      finals[p] = b; if (path) paths.push(path);
+    }
+    median = byRound.map(a => d3.mean(a));
+    const ahead = finals.filter(v => v > START).length, busted = finals.filter(v => v < BET).length;
+    const med = d3.median(finals) - START, total = d3.sum(finals) - START * P;
+    $('#simstats').innerHTML = `
+      <div><b class="num">${(100 * ahead / P).toFixed(1)}%</b><span>of players ended ahead after 200 rounds${busted ? ` · ${(100 * busted / P).toFixed(1)}% went broke` : ''}</span></div>
+      <div><b class="num" style="color:var(--red)">${med < 0 ? '−' : '+'}₹${nf.format(Math.abs(Math.round(med)))}</b><span>result for the median player</span></div>
+      <div><b class="num">₹${nf.format(Math.round(-total))}</b><span>kept by the house from 1,000 players (expected: ₹${nf.format(Math.round(P * ROUNDS * BET * EDGE))})</span></div>`;
+    draw();
+  }
+  function draw() {
+    const dpr = devicePixelRatio || 1, W = cv.clientWidth, H = cv.clientHeight;
+    cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, W, H);
+    const ink = cssv('--ink'), ink3 = cssv('--ink-3'), rule = cssv('--rule'), red = cssv('--red'), paid = cssv('--paid');
+    const pad = { l: 64, r: 16, t: 12, b: 28 };
+    const all = paths.flat(); let lo = d3.quantile(all.slice().sort(d3.ascending), .005), hi = d3.max(all);
+    lo = Math.min(lo, START * .8); hi = Math.max(hi, START * 1.2);
+    const x = d3.scaleLinear([0, ROUNDS], [pad.l, W - pad.r]), y = d3.scaleLinear([lo, hi], [H - pad.b, pad.t]).nice();
+    ctx.font = '12px "Libre Franklin", Arial, sans-serif'; ctx.fillStyle = ink3; ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+    y.ticks(5).forEach(v => { ctx.strokeStyle = rule; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(pad.l, y(v)); ctx.lineTo(W - pad.r, y(v)); ctx.stroke(); ctx.fillText('₹' + nf.format(v), pad.l - 8, y(v)); });
+    ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+    [0, 50, 100, 150, 200].forEach(v => ctx.fillText(v === 0 ? 'round 0' : v, x(v), H - pad.b + 8));
+    ctx.save(); ctx.beginPath(); ctx.rect(pad.l, pad.t, W - pad.l - pad.r, H - pad.t - pad.b); ctx.clip();
+    ctx.lineWidth = 1; ctx.globalAlpha = .22; ctx.strokeStyle = paid;
+    paths.forEach(p => { ctx.beginPath(); p.forEach((v, i) => i ? ctx.lineTo(x(i), y(v)) : ctx.moveTo(x(i), y(v))); ctx.stroke(); });
+    ctx.globalAlpha = 1; ctx.setLineDash([4, 4]); ctx.strokeStyle = ink; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(pad.l, y(START)); ctx.lineTo(W - pad.r, y(START)); ctx.stroke(); ctx.setLineDash([]);
+    ctx.strokeStyle = red; ctx.lineWidth = 3; ctx.beginPath(); median.forEach((v, i) => i ? ctx.lineTo(x(i), y(v)) : ctx.moveTo(x(i), y(v))); ctx.stroke();
+    ctx.restore();
+    const halo = (t, x0, y0, c) => { ctx.lineWidth = 4; ctx.strokeStyle = cssv('--surface'); ctx.lineJoin = 'round'; ctx.strokeText(t, x0, y0); ctx.fillStyle = c; ctx.fillText(t, x0, y0); };
+    ctx.textAlign = 'right'; ctx.textBaseline = 'bottom'; ctx.font = '700 12px "Libre Franklin", Arial, sans-serif';
+    halo('average player', W - pad.r - 4, y(median[ROUNDS]) + 18, red);
+    ctx.textAlign = 'left'; halo('starting balance', pad.l + 6, y(START) - 5, ink);
+  }
+  let t; sl.addEventListener('input', () => { clearTimeout(t); t = setTimeout(run, 60); });
+  $('#rerun').addEventListener('click', run);
+  onResize(draw);
+  run();
+})();
+$('#ad97').appendChild(adCard('aviator_97', { cap: 'Linked to <b>aviator-gamepride.online</b>. Ran for two days in May 2025.' }));
+
+/* ---------------- CHURN charts ---------------- */
+function colChart(el, data, { yFmt = d => nfi.format(d), hiFn = () => false, annot, allLabels = false } = {}) {
+  const render = () => {
+    const W = el.clientWidth, H = Math.max(230, Math.min(300, W * .55));
+    const m = { t: 26, r: 8, b: 34, l: 44 };
+    const x = d3.scaleBand(data.map(d => d[0]), [m.l, W - m.r]).padding(.18);
+    const y = d3.scaleLinear([0, d3.max(data, d => d[1])], [H - m.b, m.t]).nice();
+    el.innerHTML = '';
+    const svg = d3.select(el).append('svg').attr('class', 'chart').attr('viewBox', `0 0 ${W} ${H}`).attr('width', W).attr('height', H);
+    svg.append('g').attr('class', 'ax').selectAll('line').data(y.ticks(4)).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y).attr('y2', y).attr('stroke', 'var(--rule)');
+    svg.append('g').selectAll('text').data(y.ticks(4)).join('text').attr('x', m.l - 6).attr('y', d => y(d) + 4).attr('text-anchor', 'end').text(yFmt);
+    svg.append('g').selectAll('rect').data(data).join('rect')
+      .attr('x', d => x(d[0])).attr('width', x.bandwidth()).attr('y', d => y(d[1])).attr('height', d => y(0) - y(d[1]))
+      .attr('fill', (d, i) => hiFn(d, i) ? 'var(--red)' : 'var(--ink)').attr('opacity', (d, i) => hiFn(d, i) ? 1 : .78);
+    const every = allLabels ? 1 : Math.ceil(data.length / Math.max(4, Math.floor(W / 52)));
+    svg.append('g').selectAll('text').data(data).join('text').attr('x', d => x(d[0]) + x.bandwidth() / 2).attr('y', H - m.b + 16)
+      .attr('text-anchor', 'middle').attr('font-size', allLabels && W < 520 ? 10 : 12).text((d, i) => i % every === 0 || i === data.length - 1 ? d[2] || d[0] : '');
+    if (annot) annot(svg, { x, y, W, H, m });
+  };
+  render(); onResize(render);
+}
+(function churn() {
+  const h = DER.hist; const tot = DER.n_dur;
+  colChart($('#lifeChart'), h.map(d => [d[0], d[1], d[0]]), {
+    hiFn: (d, i) => i < 3, allLabels: true,
+    annot: (svg, { x, y }) => {
+      const c3 = h.slice(0, 3).reduce((a, d) => a + d[1], 0), c7 = h.slice(0, 7).reduce((a, d) => a + d[1], 0);
+      const g = svg.append('g').attr('font-family', 'Libre Franklin, Arial, sans-serif');
+      g.append('text').attr('x', x('4')).attr('y', y(1950) + 4).attr('font-weight', 700).attr('font-size', 13).text(`${Math.round(100 * c3 / tot)}% ran 3 days or fewer`).attr('fill', 'var(--red)');
+      g.append('text').attr('x', x('4')).attr('y', y(1950) + 22).attr('font-size', 12).text(`${Math.round(100 * c7 / tot)}% ran a week or less`);
+    }
+  });
+  const mlab = s => { const [Y, M] = s.split('-'); const n = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][+M - 1]; return M === '01' ? `${n} ${Y.slice(2)}` : n; };
+  const months = []; const map = Object.fromEntries(DER.series);
+  for (let y = 2024; y <= 2025; y++) for (let mo = 1; mo <= 12; mo++) { const k = `${y}-${String(mo).padStart(2, '0')}`; if (k > '2025-07') break; months.push([k, map[k] || 0, mlab(k)]); }
+  colChart($('#monthChart'), months, { hiFn: d => d[0] === '2025-05' });
+  const P = DER.plat; const N = 8475;
+  const nm = { facebook: 'Facebook', instagram: 'Instagram', messenger: 'Messenger', audience_network: 'Audience Network (other apps)', threads: 'Threads' };
+  hbars($('#platBars'), P.map(([k, v]) => ({ k: nm[k] || k, v: 100 * v / N })), { max: 100, fmt: v => Math.round(v) + '%' });
+})();
+
+/* ---------------- ORGANIC ---------------- */
+const TAGS = [
+  ['dafabetcricket', 486, 'Match-day templates for betting “exchanges.” One layout repeats with new fixtures: 10% welcome bonus, 24x7 withdrawal, a WhatsApp number.'],
+  ['aviatorgame', 400, 'Crash-game promos: big multipliers, “predictor” apps, cashback, promo codes, and the plane.'],
+  ['jeetwin', 378, 'Bonuses timed to IPL matches and festivals, fronted by film-star brand ambassadors.'],
+  ['iplbetting', 343, 'Fixtures, odds and “get your betting ID” offers from online books, many with Pakistani and Indian players side by side.'],
+  ['parimatch', 315, 'An international brand’s tag, reused by local books advertising 24x7 “customer service” on WhatsApp and Telegram.'],
+  ['colortrading', 294, 'Colour-prediction games sold as “trading,” with hacks, signal groups, money piles and loss recovery.'],
+  ['1xbet', 216, 'Promo codes, deposit bonuses and football tips, in several languages.'],
+  ['fairplayfantasy', 160, 'Fantasy and exchange promos with Bollywood faces and promises of “genuine bank withdrawal.”'],
+  ['rajabets', 53, 'Cashback, wheel-of-fortune and welcome-bonus graphics.'],
+  ['stake', 50, 'A mix of exchange IDs, fixtures and “sure” tips.'],
+];
+(function hashtags() {
+  const tabs = $('#tagTabs'), grid = $('#igGrid'), note = $('#tagNote');
+  TAGS.forEach(([t, n], i) => {
+    const b = document.createElement('button'); b.className = 'tab'; b.type = 'button'; b.setAttribute('role', 'tab'); b.id = 'tt-' + t;
+    b.innerHTML = `#${t} <small>${nfi.format(n)}</small>`; b.addEventListener('click', () => pick(i)); tabs.appendChild(b);
+  });
+  function pick(i) {
+    const [t, n, desc] = TAGS[i];
+    $$('.tab', tabs).forEach((b, j) => b.setAttribute('aria-selected', j === i));
+    grid.setAttribute('aria-labelledby', 'tt-' + t);
+    const posts = IG[t] || [];
+    grid.innerHTML = posts.map(p => `<button type="button" data-zoom="ig:${p.f}" aria-label="Open post">${p.ai ? '<span class="ai"><span class="stamp">AI</span></span>' : ''}<img src="assets/ig/${p.f}.webp" alt="Instagram post from #${t}" loading="lazy"></button>`).join('');
+    const narr = {}; posts.forEach(p => p.n.forEach(x => narr[x] = (narr[x] || 0) + 1));
+    note.innerHTML = `<h4>#${t}</h4><div class="tn num">${nfi.format(n)}</div><div class="tl">posts collected</div><p style="margin-top:1rem">${desc}</p>`;
+  }
+  pick(0);
+})();
+hbars($('#brandBars'), DER.ig_apps.slice(0, 10).map(([k, v]) => ({ k, v })), { fmt: v => nfi.format(v), hot: r => /Exch|Book|Exchange/.test(r.k), sub: () => '' });
+
+/* ---------------- DUMBBELL ---------------- */
+const DB = {
+  'Category': [['Sports betting', 26.61, 71.93], ['Casino games', 49.45, 32.23], ['Prediction games', 17.43, 24.28], ['Trading / crypto', 20.05, 2.42], ['Lottery / jackpots', 18.90, 9.13], ['Fantasy sports', 0.49, 5.76], ['Card games', 4.19, 3.99]],
+  'Messaging': [['User acquisition', 99.77, 95.06], ['Promoting a new feature', 85.90, 0.96], ['Misleading or deceptive', 67.38, 14.08], ['Social proof / testimonials', 59.09, 7.79], ['General promotion', 3.50, 95.67], ['Celebrity endorsement', 1.62, 9.94], ['Emotional appeal', 0.56, 9.63]],
+  'Narratives': [['Easy money', 99.39, 79.33], ['Risk minimization', 98.40, 78.24], ['Income source framing', 23.40, 8.59], ['Success story manipulation', 1.85, 11.43], ['Addiction normalization', 0.33, 9.74], ['Time pressure', 0.05, 3.49], ['Debt solution marketing', 1.85, 0.42]],
+  'Media': [['AI-generated media', 14.84, 4.38], ['Sexual content', 1.0, 1.2]],
+};
+(function dumbbell() {
+  const tabs = $('#dbTabs'), box = $('#db');
+  const tx = v => v < 6 ? 'translateX(-4px)' : v > 94 ? 'translateX(calc(-100% + 4px))' : 'translateX(-50%)';
+  Object.keys(DB).forEach((k, i) => { const b = document.createElement('button'); b.type = 'button'; b.setAttribute('role', 'tab'); b.textContent = k; b.addEventListener('click', () => pick(k)); tabs.appendChild(b); });
+  function pick(k) {
+    $$('button', tabs).forEach(b => b.setAttribute('aria-selected', b.textContent === k));
+    const rows = DB[k];
+    box.innerHTML = rows.map(([l, p, o]) => {
+      const a = Math.min(p, o), b = Math.max(p, o);
+      const close = Math.abs(p - o) < 9;
+      return `<div class="r"><div class="l">${l}</div><div class="tr"><div class="base"></div><div class="ln" style="left:${a}%;width:${b - a}%"></div>
+        <div class="dot p" style="left:${p}%"></div><div class="dot o" style="left:${o}%"></div>
+        <div class="v p num" style="left:${p}%;transform:${tx(p)}">${pct(p)}</div><div class="v o num" style="left:${o}%;transform:${tx(o)};${close ? 'top:-6px' : ''}">${pct(o)}</div></div></div>`;
+    }).join('') + `<div class="axis" style="margin-top:.5rem"><div></div><div><span>0%</span><span>50%</span><span>100%</span></div></div>`;
+  }
+  pick('Narratives');
+})();
+
+/* ---------------- FUNNEL ---------------- */
+const DEST = [
+  { k: 'Websites outside the app stores', v: 4544, sub: 'Casino and “free spin” sites, look-alikes and throwaway .online, .site, .top domains' },
+  { k: 'Google Play or Apple App Store listings', v: 1740, sub: 'Including listings that present as utilities or games' },
+  { k: 'Back to Facebook or Instagram', v: 708, sub: 'Profiles, accounts and instant games' },
+  { k: 'Telegram', v: 689, sub: 't.me invite links and “Telegram ads” landing pages', hot: 1 },
+  { k: 'Crypto exchanges and trading sites', v: 621, sub: 'Exchanges, trading “academies” and signal sellers' },
+  { k: 'WhatsApp', v: 29, sub: 'Group invites and chat links (Instagram posts use WhatsApp far more)', hot: 1 },
+];
+hbars($('#destBars'), DEST.map(d => ({ ...d, v: 100 * d.v / 8475, n: d.v })), { max: 60, fmt: (v, r) => `${pct(v)} <span style="font-weight:500;color:var(--ink-3)">· ${nfi.format(r.n)}</span>`, hot: r => r.hot, sub: r => r.sub });
+(function funnelSvg() {
+  const s = d3.select('#funnelSvg'); s.attr('viewBox', '0 0 420 440');
+  const L = [
+    { y: 18, h: 74, w0: 420, w1: 340, t: 'The feed', sub: 'Meta ads · Instagram posts', fill: 'var(--chip)', tc: 'var(--ink)' },
+    { y: 120, h: 84, w0: 330, w1: 250, t: 'Off-platform channels', sub: 'Telegram · WhatsApp · look-alike sites', fill: 'color-mix(in srgb,var(--red) 24%,var(--bg))', tc: 'var(--ink)' },
+    { y: 212, h: 84, w0: 242, w1: 170, t: 'The hook', sub: '“VIP” tips · betting IDs · APKs', fill: 'color-mix(in srgb,var(--red) 55%,var(--bg))', tc: 'var(--ink)' },
+    { y: 304, h: 74, w0: 162, w1: 110, t: 'Deposit', sub: 'UPI · cards · crypto', fill: 'var(--red)', tc: '#fff' },
+  ];
+  L.forEach((l, i) => {
+    const cx = 210, a = cx - l.w0 / 2, b = cx + l.w0 / 2, c = cx + l.w1 / 2, d = cx - l.w1 / 2;
+    s.append('path').attr('d', `M${a},${l.y} L${b},${l.y} L${c},${l.y + l.h} L${d},${l.y + l.h} Z`).attr('fill', l.fill);
+    s.append('text').attr('x', cx).attr('y', l.y + l.h / 2 - 4).attr('text-anchor', 'middle').attr('font-family', 'Eczar, Georgia, serif').attr('font-weight', 800).attr('font-size', i === 3 ? 19 : 18).attr('fill', l.tc).text(l.t);
+    const sub = s.append('text').attr('x', cx).attr('y', l.y + l.h / 2 + 15).attr('text-anchor', 'middle').attr('font-size', i === 2 ? 10.5 : 11.5).attr('fill', i === 3 ? 'rgba(255,255,255,.85)' : 'var(--ink-2)').text(l.sub);
+  });
+  s.append('line').attr('x1', 0).attr('x2', 420).attr('y1', 106).attr('y2', 106).attr('stroke', 'var(--ink-3)').attr('stroke-dasharray', '3 4');
+  s.append('text').attr('x', 420).attr('y', 101).attr('text-anchor', 'end').attr('font-size', 10.5).attr('font-weight', 700).attr('letter-spacing', '.1em').attr('fill', 'var(--ink-3)').text('PLATFORM VISIBILITY ENDS');
+  s.append('text').attr('x', 210).attr('y', 404).attr('text-anchor', 'middle').attr('font-size', 11.5).attr('fill', 'var(--ink-2)').text('Take one channel down and the ads point to a new one.');
+  s.append('text').attr('x', 210).attr('y', 422).attr('text-anchor', 'middle').attr('font-size', 11.5).attr('fill', 'var(--ink-3)').text('Illustration of the pathways described in the study.');
+})();
+
+/* ---------------- REVIEWS ---------------- */
+const THEMES = [
+  { k: 'Financial loss and scam', v: 95158, p: 28.88, q: [
+    ['Total Scam! Don’t Waste Your Money. I deposited ₹300 and it’s been 5 days, still no money in my wallet. No response from customer service.', 202, '4rabet'],
+    ['I won money but i can’t withdraw why? Seems it’s a total waste of time and data… after playing games i won and couldn’t see withdraw options', 795, 'a sports-betting game app'],
+    ['deposit amount and withdrawal amount not credited fastly and are you win some big amount definitely he is blocked you account please don’t use the app. i lost so much money', 251, 'a WinGo lottery-results app'],
+    ['The referral link to friends to join is a scam… fancy writing, “Win up to 1 CRORE for inviting friends”. What a false advertisement.', 351, 'Teen Patti Gold'],
+  ] },
+  { k: 'Miscellaneous negative reactions', v: 59626, p: 18.10, q: [
+    ['Very depressing and negatively designed app. The system will never let you win games irrespective of any game you play under the app.', 615, 'Teen Patti Gold'],
+    ['Faltu game hai. Please don’t play this game and take money loss and mental disturb', 33, 'Teen Patti Gold'],
+  ] },
+  { k: 'Technical problems and reliability', v: 42044, p: 12.76, q: [
+    ['when you are winnining they game will freeze and all your chips lost and the opponent (probably the bots) also see your chips', 187, 'Teen Patti Gold'],
+    ['For some reason it doesn’t respond to my raise or check sometimes. I would have won 2 hands in the 30k and it made me fold.', null, 'quoted in the paper'],
+  ] },
+  { k: 'User experience and usability', v: 39331, p: 11.94, q: [
+    ['Pathetic app. Why should it force me give my phone number. There’s no data privacy these days. Without giving phone number it’s not allowing me to play.', 547, 'Teen Patti Gold'],
+  ] },
+  { k: 'Gameplay fairness and bots', v: 38846, p: 11.79, q: [
+    ['It is verry addictive game. they first let you win then you got addicted, after that you automatically purchase their coins and all. After purchasing coins they again let you win 2/3 rounds after that again you loosen all your coins.', 1021, 'Teen Patti Gold'],
+    ['Bots will win mostly and the games ur about to win u will see players dropping just before SHOW call. Whole idea is to make you buy coins and earn money.', 901, 'Teen Patti Gold'],
+    ['Don’t spend any money. As soon as you make a purchase you will always lose.', null, 'quoted in the paper'],
+  ] },
+  { k: 'Miscellaneous positive reactions', v: 15226, p: 4.62, q: [] },
+  { k: 'Advertising and app permissions', v: 13805, p: 4.19, q: [
+    ['Why are the people so happy over fake coins in the ads?? But the ad shows money being “deposited” to a Visa card on file?? Wouldn’t that constitute false advertising?', 104, 'a social casino app'],
+  ] },
+  { k: 'Customer service', v: 12630, p: 3.83, q: [
+    ['when you reach out to their support team for any major problem. They will be like, “we can’t do anything from our end”. Really poor customer support.', 1446, 'Teen Patti Gold'],
+    ['fake fake fake app I deposit 341 and 500 rupees but money not credit my wallet and I send msg mail around 30 times but no response', 63, '4rabet'],
+  ] },
+  { k: 'App updates and versions', v: 9591, p: 2.91, q: [] },
+  { k: 'Social and multiplayer features', v: 3244, p: 0.98, q: [] },
+];
+(function reviews() {
+  const qbox = $('#themeQuotes');
+  const show = r => {
+    const quotes = r.q.length ? r.q : null;
+    qbox.innerHTML = `<p class="kicker" style="margin-bottom:.4rem">${esc(r.k)}</p><p class="caption" style="margin:0 0 1rem"><b class="num">${nfi.format(r.v)}</b> reviews · ${pct(r.p, 2)} of all one-star reviews</p>` +
+      (quotes ? quotes.map(([t, n, app]) => `<blockquote class="q"><div class="stars" aria-label="One star">★<span style="opacity:.25">★★★★</span></div><p>${esc(t)}</p><footer><span>${esc(app)}</span>${n ? `<b class="num">${nfi.format(n)} found this helpful</b>` : ''}</footer></blockquote>`).join('')
+        : `<p class="note">We did not pull quotes for this theme.</p>`);
+  };
+  hbars($('#themeBars'), THEMES.map(t => ({ ...t, n: t.v, v: t.p })), { max: 30, button: true,
+    fmt: (v, r) => `${nfi.format(r.n)} <span style="font-weight:500;color:var(--ink-3)">· ${pct(v)}</span>`,
+    hot: (r, i) => i === 0 || i === 4,
+    onPick: (r, node) => { $$('#themeBars .hbar').forEach(b => b.setAttribute('aria-pressed', b === node)); show({ ...r, v: r.n }); } });
+  $('#themeBars .hbar').setAttribute('aria-pressed', 'true'); show(THEMES[0]);
+})();
+
+(function hook() {
+  const s = d3.select('#hookSvg'); const W = 520, H = 300, m = { l: 30, r: 16, t: 26, b: 36 };
+  const pts = [[0, 40], [8, 52], [14, 61], [20, 70], [26, 78], [30, 84], [31, 84], [34, 70], [37, 52], [40, 38], [43, 22], [45, 14], [46, 14], [46, 60], [48, 58], [51, 44], [54, 28], [57, 14], [60, 6], [61, 6], [61, 50], [64, 36], [67, 20], [70, 6], [72, 2]];
+  const x = d3.scaleLinear([0, 72], [m.l, W - m.r]), y = d3.scaleLinear([0, 100], [H - m.b, m.t]);
+  s.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', 'var(--rule)');
+  s.append('line').attr('x1', m.l).attr('x2', m.l).attr('y1', y(0)).attr('y2', m.t - 10).attr('stroke', 'var(--rule)');
+  s.append('text').attr('x', m.l - 6).attr('y', m.t - 12).attr('font-size', 11).text('chips / balance');
+  s.append('text').attr('x', W - m.r).attr('y', H - 12).attr('text-anchor', 'end').attr('font-size', 11).text('time playing →');
+  s.append('rect').attr('x', x(0)).attr('y', m.t).attr('width', x(30) - x(0)).attr('height', y(0) - m.t).attr('fill', 'var(--organic)').attr('opacity', .1);
+  s.append('text').attr('x', x(15)).attr('y', m.t + 14).attr('text-anchor', 'middle').attr('font-size', 11.5).attr('font-weight', 700).attr('fill', 'var(--organic)').text('the hook: free play, early wins');
+  s.append('path').attr('d', d3.line().x(d => x(d[0])).y(d => y(d[1])).curve(d3.curveMonotoneX)(pts.slice(0, 7))).attr('fill', 'none').attr('stroke', 'var(--ink)').attr('stroke-width', 3);
+  s.append('path').attr('d', d3.line().x(d => x(d[0])).y(d => y(d[1])).curve(d3.curveLinear)(pts.slice(6))).attr('fill', 'none').attr('stroke', 'var(--red)').attr('stroke-width', 3);
+  [[31, 84, 'deposit'], [46, 60, 'buy chips'], [61, 50, 'buy again']].forEach(([a, b, t]) => {
+    s.append('circle').attr('cx', x(a)).attr('cy', y(b)).attr('r', 5).attr('fill', 'var(--red)');
+    s.append('text').attr('x', x(a) + 8).attr('y', y(b) - 8).attr('font-size', 11.5).attr('font-weight', 700).attr('fill', 'var(--red)').text('₹ ' + t);
+  });
+  s.append('text').attr('x', x(0) + 6).attr('y', y(0) - 10).attr('font-size', 11).attr('font-style', 'italic').attr('fill', 'var(--ink-2)').text('“As soon as you make a purchase you will always lose.”');
+})();
+
+const PV = [
+  ['Rummy Passion delivers instant withdrawals up to ₹10 Lakhs daily!', 'I won money but i can’t withdraw why?', '795 people found this helpful'],
+  ['WINNING IS GUARANTEED 💵 ✅', 'There is no “random”… only “rigged.”', '594 found this helpful'],
+  ['200 रुपये निवेश करें और आज 20,000 रुपये कमाएं (Invest ₹200 and earn ₹20,000 today)', 'I deposited ₹300 and it’s been 5 days, still no money in my wallet.', '202 found this helpful'],
+  ['97% PLAYERS WIN EVERY DAY', 'they first let you win then you got addicted, after that you automatically purchase their coins', '1,021 found this helpful'],
+  ['✅ Withdraw anytime', 'They take deposit but do not withdraw. So be careful.', '118 found this helpful'],
+  ['Play with confidence. Unmatched security and fairness guaranteed!', 'when you reach out to their support team … They will be like, “we can’t do anything from our end”.', '1,446 found this helpful'],
+];
+$('#pvList').innerHTML = PV.map(([a, b, c]) => `<div class="pv"><div class="pr">${esc(a)}</div><div class="ar" aria-hidden="true"></div><div class="re">${esc(b)}<small>${esc(c)}</small></div></div>`).join('');
+
+
+/* ---------------- GANTT (deepfake reruns) ---------------- */
+(function gantt() {
+  const rows = [
+    ['Kohli', '2024-12-16', '2024-12-17', 'Auto Click 3'], ['Kohli', '2025-03-27', '2025-03-29', 'File recovery V5 1002'],
+    ['Kohli', '2025-03-27', '2025-04-18', 'File recovery V5 1002'], ['Kohli', '2025-03-31', '2025-04-12', 'Auto clicker 3103v4'],
+    ['Kohli', '2025-04-04', '2025-04-11', 'File recovery V5 1002'],
+    ['Ambani', '2024-12-17', '2024-12-18', 'Auto click v4 TDT'], ['Ambani', '2024-12-18', '2025-01-17', 'Auto click 1712'],
+    ['Ambani', '2025-03-27', '2025-03-29', 'File recovery V5 1002'],
+  ];
+  const el = $('#gantt');
+  const P = d3.timeParse('%Y-%m-%d');
+  const render = () => {
+    const W = el.clientWidth, narrow = W < 640, lw = narrow ? 0 : 230, rh = 26, top = 8, H = top + rows.length * rh + 6 + (narrow ? rows.length * 14 : 0) + 30;
+    const x = d3.scaleTime([P('2024-12-01'), P('2025-04-30')], [lw + 10, W - 10]);
+    el.innerHTML = '';
+    const svg = d3.select(el).append('svg').attr('class', 'chart').attr('viewBox', `0 0 ${W} ${H}`).attr('width', W).attr('height', H).style('fill', 'var(--stage-ink-2)');
+    x.ticks(d3.timeMonth.every(1)).forEach(t => {
+      svg.append('line').attr('x1', x(t)).attr('x2', x(t)).attr('y1', top - 4).attr('y2', H - 24).attr('stroke', 'var(--stage-rule)');
+      svg.append('text').attr('x', x(t) + 4).attr('y', H - 8).attr('font-size', 11).attr('fill', 'var(--stage-ink-2)').text(d3.timeFormat(t.getMonth() === 0 || t.getMonth() === 11 ? '%b %Y' : '%b')(t));
+    });
+    let y = top;
+    rows.forEach((r, i) => {
+      if (i === 5) { svg.append('line').attr('x1', 0).attr('x2', W).attr('y1', y + 2).attr('y2', y + 2).attr('stroke', 'var(--stage-rule)'); y += 6; }
+      const lab = `${r[0] === 'Kohli' ? 'Kohli clip' : 'Ambani clip'} · ${r[3]}`;
+      if (narrow) { svg.append('text').attr('x', 0).attr('y', y + 11).attr('font-size', 11).attr('fill', 'var(--stage-ink-2)').text(lab); y += 14; }
+      else svg.append('text').attr('x', 0).attr('y', y + rh / 2 + 4).attr('font-size', 11.5).attr('fill', 'var(--stage-ink-2)').text(lab);
+      const x0 = x(P(r[1])), x1 = Math.max(x0 + 4, x(d3.timeDay.offset(P(r[2]), 1)));
+      svg.append('rect').attr('x', x0).attr('y', y + 6).attr('width', x1 - x0).attr('height', rh - 12).attr('rx', 2).attr('fill', r[0] === 'Kohli' ? 'var(--stage-red)' : '#FFB23A');
+      y += rh;
+    });
+  };
+  render(); onResize(render);
+})();
+
+/* ---------------- BEYOND ---------------- */
+hbars($('#regionBars'), [{ k: 'European Union', v: 127811 }, { k: 'United Kingdom', v: 35553 }, { k: 'United States', v: 8370 }], { fmt: v => nfi.format(v) + ' ads' });
+(function heat() {
+  const rows = [['18–24', 3.2, 10.7], ['25–34', 6.8, 24.5], ['35–44', 5.4, 15.9], ['45–54', 4.5, 10.9], ['55–64', 3.8, 6.8], ['65+', 3.0, 4.3]];
+  const el = $('#heat');
+  let h = '<div></div><div class="h">Women</div><div class="h">Men</div>';
+  rows.forEach(([a, f, m]) => {
+    const c = v => { const t = Math.min(1, v / 24.5); return `background:color-mix(in srgb,var(--red) ${Math.round(8 + 92 * t)}%,var(--bg));color:${t > .45 ? '#fff' : 'var(--ink)'}`; };
+    h += `<div class="a">${a}</div><div class="c" style="${c(f)}">${f.toFixed(1)}</div><div class="c" style="${c(m)}">${m.toFixed(1)}</div>`;
+  });
+  el.innerHTML = h;
+})();
+(function waffle() {
+  const cv = $('#waffle'), ctx = cv.getContext('2d'); const N = 3595, K = 977;
+  // spread highlighted cells deterministically (a stand-in for broadcast order)
+  const hot = new Uint8Array(N); let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  let c = 0; while (c < K) { const i = Math.floor(rnd() * N); if (!hot[i]) { hot[i] = 1; c++; } }
+  const draw = () => {
+    const W = cv.clientWidth, cols = W < 500 ? 60 : 85, sz = W / cols, rows = Math.ceil(N / cols), H = rows * sz, dpr = devicePixelRatio || 1;
+    cv.width = W * dpr; cv.height = H * dpr; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const red = cssv('--red'), ink3 = cssv('--ink-3');
+    for (let i = 0; i < N; i++) { ctx.fillStyle = hot[i] ? red : ink3; ctx.globalAlpha = hot[i] ? 1 : .22; ctx.fillRect((i % cols) * sz, Math.floor(i / cols) * sz, sz * .82, sz * .82); }
+    ctx.globalAlpha = 1;
+  };
+  draw(); onResize(draw);
+})();
+})();
+</script>
+</body></html>
