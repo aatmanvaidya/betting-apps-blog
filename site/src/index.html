@@ -2,7 +2,7 @@
 <meta name="description" content="How betting apps recruit Indians through Facebook and Instagram, and what users say happens after they sign up. A data story from 10,526 ads, 2,695 Instagram posts and 329,501 one-star reviews.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Khand:wght@400;500;600;700&family=Kalam:wght@400;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Rozha+One&family=Khand:wght@400;500;600;700&family=Teko:wght@500;600;700&family=Kalam:wght@400;700&family=Martel:wght@400;600&display=swap" rel="stylesheet">
 <style>
 /* Layout: a single light "paper" world. A 40rem reading column with 74rem breakouts for charts and
    ad specimens; hand-inked illustrations, rubber stamps and graph paper borrowed from Indian print vernacular.
@@ -10,9 +10,10 @@
 :root{
   --paper:#F3EADA; --paper-2:#E9DCC4; --card:#FFFBF2; --ink:#231E1A; --ink-2:#5B5148; --ink-3:#8D8173; --rule:#CDBDA3;
   --red:#BE3226; --blue:#2C3F94; --marigold:#D8860A; --haldi:#F2C230; --rani:#C3336C;
-  --f-display:"Rozha One","Iowan Old Style",Georgia,serif;
-  --f-body:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  --f-display:"Yatra One","Rozha One","Iowan Old Style",Georgia,serif;
+  --f-body:"Martel","Iowan Old Style",Georgia,serif;
   --f-ui:"Khand","Arial Narrow","Helvetica Neue",Arial,sans-serif;
+  --f-num:"Teko","Khand","Arial Narrow",sans-serif;
   --f-hand:"Kalam","Bradley Hand","Segoe Print",cursive;
   --col:40rem; --wide:74rem; --gut:clamp(16px,4vw,44px);
   color-scheme:light;
@@ -105,7 +106,7 @@ mark{background:linear-gradient(104deg,transparent 2%,rgba(242,194,48,.55) 4%,rg
 .hero .by b{color:var(--ink);font-weight:700}
 .tally{display:flex;flex-wrap:wrap;justify-content:center;gap:.8rem 2.6rem;margin:2.2rem auto 0;max-width:48rem}
 .tally div{font:500 1.02rem/1.3 var(--f-ui);color:var(--ink-2);max-width:13rem}
-.tally b{display:block;font:700 2.5rem/1 var(--f-ui);color:var(--ink);letter-spacing:.01em}
+.tally b{display:block;font:700 2.5rem/1 var(--f-num);color:var(--ink);letter-spacing:.01em}
 
 /* ---------- intro / sources ---------- */
 .dropcap::first-letter{font-family:var(--f-display);float:left;font-size:4.3em;line-height:.8;margin:.08em .1em 0 0;color:var(--red)}
@@ -115,7 +116,7 @@ mark{background:linear-gradient(104deg,transparent 2%,rgba(242,194,48,.55) 4%,rg
 .srcc .tag{position:absolute;top:-.9rem;left:1rem;background:var(--red);color:#fff;font:600 .82rem/1 var(--f-ui);letter-spacing:.14em;text-transform:uppercase;padding:.4rem .55rem .3rem}
 .srcc svg{height:70px;display:block;margin:.5rem 0 .8rem}
 .srcc .lab{font:600 .85rem/1 var(--f-ui);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
-.srcc .big{font:700 2.9rem/1 var(--f-ui);margin:.35rem 0 .2rem}
+.srcc .big{font:700 2.9rem/1 var(--f-num);margin:.35rem 0 .2rem}
 .srcc .what{font:600 1.2rem/1.2 var(--f-ui)}
 .srcc .how{font:400 1.02rem/1.4 var(--f-ui);color:var(--ink-2);margin-top:.4rem}
 .arrowline{display:flex;justify-content:center;gap:.6rem;align-items:center;font:400 1.2rem/1 var(--f-hand);color:var(--ink-2);margin-top:1.4rem}
@@ -124,7 +125,7 @@ mark{background:linear-gradient(104deg,transparent 2%,rgba(242,194,48,.55) 4%,rg
 /* ---------- stats ---------- */
 .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.4rem;margin:2.4rem 0}
 .stats>div{border-top:2px solid var(--ink);padding-top:.8rem}
-.stats b{display:block;font:700 clamp(3.4rem,7vw,5.4rem)/.9 var(--f-ui);color:var(--red);letter-spacing:-.01em;position:relative;width:max-content}
+.stats b{display:block;font:700 clamp(3.4rem,7vw,5.4rem)/.9 var(--f-num);color:var(--red);letter-spacing:-.01em;position:relative;width:max-content}
 .stats b svg{position:absolute;left:-12%;top:-20%;width:124%;height:136%;overflow:visible;pointer-events:none}
 .stats span{display:block;font:500 1.08rem/1.35 var(--f-ui);color:var(--ink-2);margin-top:.6rem}
 .stats span strong{color:var(--ink);font-weight:700}
@@ -169,7 +170,7 @@ mark{background:linear-gradient(104deg,transparent 2%,rgba(242,194,48,.55) 4%,rg
 .npanel h3{font-size:clamp(1.7rem,3vw,2.4rem);line-height:1.05;margin-bottom:.4rem}
 .npanel .def{font-size:1.08rem;color:var(--ink-2);margin:0 0 1rem;max-width:38rem}
 .pair{display:flex;gap:2.4rem;flex-wrap:wrap;margin-bottom:1.3rem}
-.pair b{display:block;font:700 2.7rem/1 var(--f-ui)}
+.pair b{display:block;font:700 2.7rem/1 var(--f-num)}
 .pair .p b{color:var(--blue)} .pair .o b{color:var(--marigold)}
 .pair span{font:600 .85rem/1.3 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
 @media (max-width:860px){
@@ -219,7 +220,7 @@ mark{background:linear-gradient(104deg,transparent 2%,rgba(242,194,48,.55) 4%,rg
 .hidden-media strong{display:block;color:var(--ink);font:400 1.3rem/1.2 var(--f-display);margin-bottom:.4rem}
 .btn{display:inline-flex;align-items:center;gap:.5rem;font:700 1rem/1 var(--f-ui);letter-spacing:.1em;text-transform:uppercase;padding:.7rem 1rem .55rem;border:2px solid var(--red);border-radius:3px;background:var(--card);cursor:pointer;color:var(--red)}
 .btn:hover{background:var(--red);color:var(--card)}
-.bignum{font:700 clamp(3.6rem,8vw,6rem)/.9 var(--f-ui);letter-spacing:-.01em}
+.bignum{font:700 clamp(3.6rem,8vw,6rem)/.9 var(--f-num);letter-spacing:-.01em}
 
 /* ---------- crash ---------- */
 .graph{background-color:#FCFAF4;background-image:linear-gradient(rgba(122,166,184,.42) 1px,transparent 1px),linear-gradient(90deg,rgba(122,166,184,.42) 1px,transparent 1px),linear-gradient(rgba(122,166,184,.16) 1px,transparent 1px),linear-gradient(90deg,rgba(122,166,184,.16) 1px,transparent 1px);background-size:100px 100px,100px 100px,20px 20px,20px 20px;background-position:-1px -1px}
@@ -232,13 +233,13 @@ mark{background:linear-gradient(104deg,transparent 2%,rgba(242,194,48,.55) 4%,rg
 .sim{margin-top:1.6rem;background:var(--card);border:2px solid var(--ink);border-radius:6px;padding:clamp(16px,2.4vw,28px);box-shadow:6px 6px 0 rgba(141,129,115,.35)}
 .sim .ctrl{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:flex-end}
 .sim label{display:block;font:600 .9rem/1 var(--f-ui);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:.5rem}
-.sim .tv{font:700 2.6rem/1 var(--f-ui)}
+.sim .tv{font:700 2.6rem/1 var(--f-num)}
 .sim .tv small{font:500 1.05rem/1 var(--f-ui);color:var(--ink-2);margin-left:.5rem}
 .sim input[type=range]{width:min(22rem,100%);accent-color:var(--red)}
 .sim .ctrl>div:first-child{flex:1 1 18rem}
 .sim canvas{width:100%;height:300px;display:block;margin-top:1.2rem;border:1.5px solid var(--ink)}
 .simstats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1rem}
-.simstats b{display:block;font:700 2.3rem/1 var(--f-ui)}
+.simstats b{display:block;font:700 2.3rem/1 var(--f-num)}
 .simstats span{font:500 1rem/1.3 var(--f-ui);color:var(--ink-2)}
 @media (max-width:600px){.simstats{grid-template-columns:minmax(0,1fr)}.sim canvas{height:240px}}
 
@@ -300,7 +301,7 @@ button.hbar[aria-pressed="true"]{background:var(--card);box-shadow:inset 4px 0 0
 .iggrid .ai .stamp-s{font-size:.62rem}
 .tagnote h4{font-size:2rem;margin:0 0 .2rem;color:var(--marigold)}
 .tagnote p{font:500 1.12rem/1.42 var(--f-ui);color:var(--ink-2);margin:0 0 1rem}
-.tagnote .tn{font:700 3.6rem/1 var(--f-ui)}
+.tagnote .tn{font:700 3.6rem/1 var(--f-num)}
 .tagnote .tl{font:500 1rem/1.3 var(--f-ui);color:var(--ink-3)}
 .profile{display:grid;grid-template-columns:auto 1fr;gap:1rem 1.2rem;align-items:center;background:var(--card);border:1.5px solid var(--ink);border-radius:10px;padding:1.2rem;box-shadow:6px 6px 0 rgba(141,129,115,.35)}
 .profile .pic{width:76px;height:76px;border-radius:50%;background:conic-gradient(var(--marigold),var(--red),var(--rani),var(--marigold));padding:3px}
@@ -399,7 +400,7 @@ button.hbar[aria-pressed="true"]{background:var(--card);box-shadow:inset 4px 0 0
 .findings .fn{font:700 .95rem/1 var(--f-ui);letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
 .findings h3{font-size:clamp(1.45rem,2.4vw,1.9rem);line-height:1.12;margin:.6rem 0 .7rem}
 .findings p{font-size:1.02rem;line-height:1.55;color:var(--ink-2);margin:0}
-.findings .fig{font:700 2.8rem/1 var(--f-ui);margin-top:1.1rem}
+.findings .fig{font:700 2.8rem/1 var(--f-num);margin-top:1.1rem}
 .findings .fig small{display:block;font:500 .98rem/1.3 var(--f-ui);color:var(--ink-3);margin-top:.3rem}
 @media (max-width:760px){.findings{grid-template-columns:minmax(0,1fr)}}
 
@@ -472,7 +473,7 @@ dialog.lb::backdrop{background:rgba(35,30,26,.72)}
         <path d="M46 278 C 82 276, 112 252, 140 186 L140 286 L46 286 Z" fill="#BE3226" fill-opacity=".14" stroke="none"/>
         <path d="M46 278 C 82 276, 112 252, 140 186" fill="none" stroke="#BE3226" stroke-width="3.2"/>
         <path transform="translate(140 184) rotate(-38)" d="M12 0 L-9 -3 L-13 -9 L-15 -8 L-12 -1 L-14 3 L-6 3 L-2 10 L2 10 L0 3 Z" fill="#BE3226" stroke-width="1.4"/>
-        <text x="95" y="150" font-family="Khand,sans-serif" font-weight="700" font-size="40" text-anchor="middle" fill="#231E1A" stroke="none">2.72x</text>
+        <text x="95" y="150" font-family="Teko,Khand,sans-serif" font-weight="700" font-size="46" text-anchor="middle" fill="#231E1A" stroke="none">2.72x</text>
         <text x="95" y="174" font-family="Khand,sans-serif" font-weight="600" font-size="13" letter-spacing="2" text-anchor="middle" fill="#8D8173" stroke="none">CASH OUT?</text>
         <rect x="2" y="18" width="104" height="30" rx="15" fill="#F2C230"/>
         <text x="54" y="39" font-family="Kalam,cursive" font-size="17" text-anchor="middle" fill="#231E1A" stroke="none">₹500 bonus!</text>
@@ -530,7 +531,7 @@ dialog.lb::backdrop{background:rgba(35,30,26,.72)}
     <div class="sources">
       <div class="srcc">
         <span class="tag">Recruitment</span>
-        <svg viewBox="0 0 140 70" aria-hidden="true"><g filter="url(#wob)" stroke="#231E1A" stroke-width="2" fill="none" stroke-linejoin="round"><rect x="4" y="2" width="56" height="66" rx="6" fill="#FFFBF2"/><circle cx="14" cy="11" r="4"/><path d="M22 11 H48"/><rect x="10" y="20" width="44" height="30" fill="#BE3226" stroke="none"/><text x="32" y="41" text-anchor="middle" font-family="Khand,sans-serif" font-weight="700" font-size="15" fill="#FFFBF2" stroke="none">2.72x</text><path d="M10 58 H40"/><path d="M70 36 H96 M90 30 L97 36 L90 42"/><rect x="104" y="12" width="30" height="48" rx="5" fill="#F2C230"/><text x="119" y="42" text-anchor="middle" font-family="Khand,sans-serif" font-weight="700" font-size="18" fill="#231E1A" stroke="none">₹</text></g></svg>
+        <svg viewBox="0 0 140 70" aria-hidden="true"><g filter="url(#wob)" stroke="#231E1A" stroke-width="2" fill="none" stroke-linejoin="round"><rect x="4" y="2" width="56" height="66" rx="6" fill="#FFFBF2"/><circle cx="14" cy="11" r="4"/><path d="M22 11 H48"/><rect x="10" y="20" width="44" height="30" fill="#BE3226" stroke="none"/><text x="32" y="41" text-anchor="middle" font-family="Teko,Khand,sans-serif" font-weight="700" font-size="17" fill="#FFFBF2" stroke="none">2.72x</text><path d="M10 58 H40"/><path d="M70 36 H96 M90 30 L97 36 L90 42"/><rect x="104" y="12" width="30" height="48" rx="5" fill="#F2C230"/><text x="119" y="42" text-anchor="middle" font-family="Khand,sans-serif" font-weight="700" font-size="18" fill="#231E1A" stroke="none">₹</text></g></svg>
         <div class="lab">Paid ads · Meta Ad Library</div>
         <div class="big num">10,526</div>
         <div class="what">What the industry pays to say</div>
@@ -1262,7 +1263,7 @@ const drawCrash = () => { const u = Math.random(); const c = (1 - EDGE) / (1 - u
     if (!crashed) plane(ex, ey);
     const m = crashed ? crash : Math.exp(R * t);
     ctx.textAlign = 'center'; ctx.fillStyle = crashed ? C.red : C.ink;
-    ctx.font = `700 ${Math.min(76, W / 6)}px Khand, "Arial Narrow", sans-serif`;
+    ctx.font = `700 ${Math.min(76, W / 6)}px Teko, Khand, "Arial Narrow", sans-serif`;
     ctx.fillText(m.toFixed(2) + 'x', W / 2, H / 2 + 20);
     if (crashed) { ctx.font = '700 22px Kalam, cursive'; ctx.fillStyle = C.red; ctx.save(); ctx.translate(W / 2, H / 2 - 38); ctx.rotate(-0.05); ctx.fillText('flew away!', 0, 0); ctx.restore(); }
   }
