@@ -405,6 +405,9 @@ button.hbar[aria-pressed="true"]{background:var(--card);box-shadow:inset 4px 0 0
 .findings p{font-size:1.02rem;line-height:1.55;color:var(--ink-2);margin:0}
 .findings .fig{font:700 2.8rem/1 var(--f-num);margin-top:1.1rem}
 .findings .fig small{display:block;font:500 .98rem/1.3 var(--f-ui);color:var(--ink-3);margin-top:.3rem}
+.findings .fbot{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:.8rem 1rem;margin-top:1.1rem}
+.findings .fbot .fig{margin-top:0;flex:1 1 11rem;min-width:0}
+.findings .fi{flex:none;width:10.5rem;max-width:100%;height:auto;overflow:visible;margin-left:auto}
 @media (max-width:760px){.findings{grid-template-columns:minmax(0,1fr)}}
 
 /* ---------- beyond ---------- */
@@ -895,10 +898,37 @@ dialog.lb::backdrop{background:rgba(35,30,26,.72)}
     <p class="kicker"><span>Summary</span><span class="hi" lang="hi">हमने क्या पाया</span></p>
     <h2 class="chap">What we found</h2>
     <div class="findings">
-      <article><div class="fn">Finding 1</div><h3>The pitch and the experience don’t match</h3><p>Ads show small stakes turning into large wins and frame outcomes as knowable. Reviews describe losing, blocked withdrawals, unclear rules and absent support.</p><div class="fig num">99.4% → 28.9%<small>of ads sell easy money · of one-star reviews are about financial loss and scams</small></div></article>
-      <article><div class="fn">Finding 2</div><h3>Enforcement lags, and transparency depends on where you live</h3><p>Meta had taken down 20,591 ads by the time we collected the data, after they had run. Ads shown in India disclose no reach, spend or payer; similar ads in the EU must.</p><div class="fig num">20,591<small>ads already taken down at collection</small></div></article>
-      <article><div class="fn">Finding 3</div><h3>AI is a force multiplier</h3><p>Generative tools make fake news segments and celebrity endorsements cheap to produce, which fits a burn-and-churn playbook of short-lived pages and ads.</p><div class="fig num">14.8%<small>of paid ads used AI-generated or manipulated media</small></div></article>
-      <article><div class="fn">Finding 4</div><h3>The shadow funnel survives takedowns</h3><p>Ads and posts push users to Telegram, WhatsApp, look-alike sites and disguised app listings. Removing one app leaves the recruitment infrastructure on Meta intact.</p><div class="fig num">8.1%<small>of distinct ads linked straight to Telegram</small></div></article>
+      <article><div class="fn">Finding 1</div><h3>The pitch and the experience don’t match</h3><p>Ads show small stakes turning into large wins and frame outcomes as knowable. Reviews describe losing, blocked withdrawals, unclear rules and absent support.</p><div class="fbot"><div class="fig num">99.4% → 28.9%<small>of ads sell easy money · of one-star reviews are about financial loss and scams</small></div><svg class="fi" viewBox="0 0 160 100" aria-hidden="true"><g filter="url(#wob)" stroke="#231E1A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+<rect x="6" y="12" width="58" height="62" rx="5" fill="#FFFBF2"/><rect x="12" y="18" width="46" height="18" fill="#F2C230"/>
+<text x="35" y="52" text-anchor="middle" font-family="Teko,sans-serif" font-weight="700" font-size="17" fill="#231E1A" stroke="none">₹100 →</text>
+<text x="35" y="68" text-anchor="middle" font-family="Kalam,cursive" font-weight="700" font-size="13" fill="#BE3226" stroke="none">₹1 lakh!</text>
+<text x="80" y="52" text-anchor="middle" font-family="Yatra One,serif" font-size="32" fill="#BE3226" stroke="none">≠</text>
+<rect x="98" y="28" width="56" height="42" rx="6" fill="#F8E2BD"/><path d="M98 38 H154" fill="none"/>
+<rect x="117" y="46" width="18" height="15" rx="2" fill="#F2C230"/><path d="M121 46 V41 a5 5 0 0 1 10 0 V46" fill="none"/><circle cx="126" cy="54" r="1.8" fill="#231E1A" stroke="none"/>
+</g><text x="126" y="88" text-anchor="middle" font-family="Kalam,cursive" font-size="12" fill="#5B5148">pending…</text></svg></div></article>
+      <article><div class="fn">Finding 2</div><h3>Enforcement lags, and transparency depends on where you live</h3><p>Meta had taken down 20,591 ads by the time we collected the data, after they had run. Ads shown in India disclose no reach, spend or payer; similar ads in the EU must.</p><div class="fbot"><div class="fig num">20,591<small>ads already taken down at collection</small></div><svg class="fi" viewBox="0 0 160 100" aria-hidden="true"><g filter="url(#wob)" stroke="#231E1A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+<rect x="8" y="10" width="64" height="76" rx="5" fill="#FFFBF2"/><rect x="14" y="16" width="52" height="34" fill="#E9DCC4"/><path d="M14 50 L30 32 L42 44 L50 36 L66 50 Z" fill="#D8860A" stroke-width="1.6"/>
+<path d="M14 60 H62 M14 68 H50 M14 76 H58" fill="none" stroke="#8D8173" stroke-width="2.4"/>
+<g transform="rotate(-14 40 40)"><rect x="12" y="30" width="56" height="20" fill="rgba(255,251,242,.7)" stroke="#BE3226" stroke-width="2.6"/><text x="40" y="45" text-anchor="middle" font-family="Teko,sans-serif" font-weight="700" font-size="16" letter-spacing="1.5" fill="#BE3226" stroke="none">REMOVED</text></g>
+<circle cx="116" cy="44" r="26" fill="#FFFBF2"/><path d="M116 22 V26 M116 62 V66 M94 44 H98 M134 44 H138" fill="none"/>
+<path d="M116 44 V28 M116 44 L128 52" fill="none" stroke-width="2.6"/><circle cx="116" cy="44" r="2.4" fill="#231E1A" stroke="none"/>
+</g><text x="116" y="90" text-anchor="middle" font-family="Kalam,cursive" font-weight="700" font-size="14" fill="#BE3226">too late!</text></svg></div></article>
+      <article><div class="fn">Finding 3</div><h3>AI is a force multiplier</h3><p>Generative tools make fake news segments and celebrity endorsements cheap to produce, which fits a burn-and-churn playbook of short-lived pages and ads.</p><div class="fbot"><div class="fig num">14.8%<small>of paid ads used AI-generated or manipulated media</small></div><svg class="fi" viewBox="0 0 160 100" aria-hidden="true"><g filter="url(#wob)" stroke="#231E1A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+<rect x="42" y="6" width="58" height="68" rx="4" fill="#E9DCC4"/><rect x="32" y="12" width="58" height="68" rx="4" fill="#F8E2BD"/>
+<rect x="22" y="18" width="58" height="68" rx="4" fill="#FFFBF2"/>
+<circle cx="51" cy="46" r="12" fill="#F2D2A6"/><path d="M28 84 Q28 62 51 62 Q74 62 74 84 Z" fill="#C3336C"/>
+<circle cx="47" cy="45" r="1.6" fill="#231E1A" stroke="none"/><circle cx="56" cy="45" r="1.6" fill="#231E1A" stroke="none"/><path d="M47 51 Q51.5 54 56 51" fill="none" stroke-width="1.6"/>
+<path d="M122 14 L126 26 L138 30 L126 34 L122 46 L118 34 L106 30 L118 26 Z" fill="#F2C230"/><path d="M144 54 L146 60 L152 62 L146 64 L144 70 L142 64 L136 62 L142 60 Z" fill="#F2C230" stroke-width="1.6"/>
+<rect x="104" y="56" width="32" height="20" rx="4" fill="#2C3F94"/><text x="120" y="71" text-anchor="middle" font-family="Teko,sans-serif" font-weight="700" font-size="16" letter-spacing="1" fill="#FFFBF2" stroke="none">AI</text>
+</g><text x="124" y="92" text-anchor="middle" font-family="Kalam,cursive" font-size="12" fill="#5B5148">copy ×1000</text></svg></div></article>
+      <article><div class="fn">Finding 4</div><h3>The shadow funnel survives takedowns</h3><p>Ads and posts push users to Telegram, WhatsApp, look-alike sites and disguised app listings. Removing one app leaves the recruitment infrastructure on Meta intact.</p><div class="fbot"><div class="fig num">8.1%<small>of distinct ads linked straight to Telegram</small></div><svg class="fi" viewBox="0 0 160 100" aria-hidden="true"><g filter="url(#wob)" stroke="#231E1A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+<rect x="14" y="4" width="14" height="14" fill="#FFFBF2"/><rect x="38" y="4" width="14" height="14" fill="#FFFBF2"/><rect x="62" y="4" width="14" height="14" fill="#FFFBF2"/>
+<path d="M21 20 V25 M45 20 V25 M69 20 V25" fill="none" stroke-width="1.8"/>
+<path d="M10 28 H88 L58 60 V84 H40 V60 Z" fill="#F8E2BD"/><path d="M22 38 H76" fill="none" stroke="#C3336C" stroke-width="2.4"/>
+<path d="M60 74 H108" fill="none"/><path d="M101 67 L109 74 L101 81" fill="none"/>
+<path d="M114 72 L152 56 L140 90 L130 80 Z" fill="#2C8FE0"/><path d="M130 80 L152 56 L126 76 Z" fill="#FFFBF2" stroke-width="1.6"/>
+<rect x="112" y="4" width="26" height="26" rx="6" fill="#FFFBF2"/><path d="M118 10 L132 24 M132 10 L118 24" fill="none" stroke="#BE3226" stroke-width="3"/>
+</g><text x="126" y="44" text-anchor="middle" font-family="Kalam,cursive" font-size="12" fill="#BE3226">app removed…</text></svg></div></article>
     </div>
   </div>
 </section>
