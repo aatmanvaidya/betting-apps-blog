@@ -107,6 +107,7 @@ mark{background:linear-gradient(104deg,transparent 2%,rgba(242,194,48,.55) 4%,rg
 .tally{display:flex;flex-wrap:wrap;justify-content:center;gap:.8rem 2.6rem;margin:2.2rem auto 0;max-width:48rem}
 .tally div{font:500 1.02rem/1.3 var(--f-ui);color:var(--ink-2);max-width:13rem}
 .tally b{display:block;font:700 2.5rem/1 var(--f-num);color:var(--ink);letter-spacing:.01em}
+.tally .ic{display:block;height:2.7rem;width:auto;margin:0 auto .45rem;overflow:visible}
 
 /* ---------- intro / sources ---------- */
 .dropcap::first-letter{font-family:var(--f-display);float:left;font-size:4.3em;line-height:.8;margin:.08em .1em 0 0;color:var(--red)}
@@ -451,6 +452,7 @@ dialog.lb::backdrop{background:rgba(35,30,26,.72)}
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <filter id="wob"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="2.6"/></filter>
+  <filter id="wobS" filterUnits="userSpaceOnUse" x="-10" y="-10" width="80" height="80"><feTurbulence type="fractalNoise" baseFrequency=".06" numOctaves="2" seed="5"/><feDisplacementMap in="SourceGraphic" scale="1.6"/></filter>
   <filter id="stampInk" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="7" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.5 1.72" result="m"/><feComposite in="SourceGraphic" in2="m" operator="in" result="c"/><feTurbulence type="fractalNoise" baseFrequency=".05" numOctaves="1" seed="2" result="w"/><feDisplacementMap in="c" in2="w" scale="2.5"/></filter>
 </svg>
 
@@ -514,9 +516,9 @@ dialog.lb::backdrop{background:rgba(35,30,26,.72)}
   <p class="dek">Betting apps find Indian users through a steady stream of Facebook and Instagram ads that promise quick, risk-free money. We read 10,526 of those ads, 2,695 Instagram posts and 329,501 one-star app reviews, and compared the pitch with what people say happens after they sign up.</p>
   <p class="by">By <b>Aatman Vaidya</b> (University of Tübingen) &amp; <b>Kiran Garimella</b> (Rutgers University)</p>
   <div class="tally">
-    <div><b class="num">10,526</b>betting ads from Meta’s Ad Library, coded by hand</div>
-    <div><b class="num">2,695</b>public Instagram posts from 10 betting hashtags</div>
-    <div><b class="num">3.3 lakh</b>one-star Google Play reviews of 58 apps</div>
+    <div><svg class="ic" viewBox="0 0 60 40" aria-hidden="true"><g filter="url(#wobS)" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M30 20 C22 5 4 5 4 20 C4 35 22 35 30 20 C38 5 56 5 56 20 C56 35 38 35 30 20" stroke="#231E1A" stroke-width="9.5"/><path d="M30 20 C22 5 4 5 4 20 C4 35 22 35 30 20 C38 5 56 5 56 20 C56 35 38 35 30 20" stroke="#2C6BE0" stroke-width="5.5"/></g></svg><b class="num">10,526</b>betting ads from Meta’s Ad Library, coded by hand</div>
+    <div><svg class="ic" viewBox="0 0 60 60" aria-hidden="true"><defs><linearGradient id="igG" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#F2C230"/><stop offset=".45" stop-color="#C3336C"/><stop offset="1" stop-color="#5B3FA6"/></linearGradient></defs><g filter="url(#wobS)" stroke-linejoin="round"><rect x="5" y="5" width="50" height="50" rx="15" fill="url(#igG)" stroke="#231E1A" stroke-width="2.4"/><circle cx="30" cy="30" r="11.5" fill="none" stroke="#FFFBF2" stroke-width="4"/><circle cx="43.5" cy="16.5" r="3.2" fill="#FFFBF2"/></g></svg><b class="num">2,695</b>public Instagram posts from 10 betting hashtags</div>
+    <div><svg class="ic" viewBox="0 0 60 60" aria-hidden="true"><g filter="url(#wobS)" stroke="#231E1A" stroke-width="2.2" stroke-linejoin="round"><path d="M12 6 L12 54 L30 30 Z" fill="#2C8FE0"/><path d="M12 6 L40 24.7 L30 30 Z" fill="#2FA55A"/><path d="M12 54 L40 35.3 L30 30 Z" fill="#D8402F"/><path d="M40 24.7 L50 30 L40 35.3 L30 30 Z" fill="#F2C230"/></g></svg><b class="num">3.3 lakh</b>one-star Google Play reviews of 58 apps</div>
   </div>
 </header>
 
